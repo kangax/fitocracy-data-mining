@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fito crunching</title>
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.1/js/jquery.tablesorter.js"></script>
+  <script src="http://rawgit.com/lodash/lodash/3.9.3/lodash.min.js"></script>
+
+  <script src="new_data.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.1/css/theme.blue.min.css">
+
+  <style>
+    body { padding: 20px; }
+    .exercises { width: 600px; }
+  </style>
+</head>
+<body>
+  <script>
+    document.write(
+      '<p><b>Total exercises</b>: ' + Object.keys(data).length + '</p>' +
+      '<p><input placeholder="Filter by ..." class="filter-exercises"></p>'
+    );
+
+
+    var sortedByLength = _.sortBy(data, function(o) { return o.length }).reverse();
+
+    var sortedByLengthMarkup = _.template(
+      '<table class="table table-bordered table-hover exercises">\
+        <thead>\
+          <th>Name</th>\
+          <th>Workouts</th>\
+          <th>Sets</th>\
+          <th>Reps</th>\
+          <th>Unit</th>\
+          <th>Kg\'s</th>\
+        </thead>\
+        <tbody>\
+          <%= list %>\
+        </tbody>\
+      </table>'
+    );
+
+    var list = sortedByLength.map(function(exercise) {
+
+      var sets = _.flatten(exercise.map(function(o) { return o.actions }));
+      var reps = sets.map(function(o) { return o.effort1 });
+      var totalReps = _.sum(reps);
+
+      var metricUnit = sets.find(function(o) {
+        return o.effort1_metric;
+      });
+
+      var totalKg = _.sum(_.flatten(sets.map(function(o){ return o.effort0_metric })));
+
+      var unitAbbr = (metricUnit && metricUnit.effort1_metric_unit)
+        ? metricUnit.effort1_metric_unit.abbr
+        : '';
+
+      return (
+        '<tr>' +
+          '<td>' + exercise[0].actions[0].action.name + '</td>' +
+          '<td>' + exercise.length + '</td>' +
+          '<td>' + sets.length + '</td>' +
+          '<td>' + (totalReps ? totalReps.toFixed(0) : '') + '</td>' +
+          '<td>' +
+            unitAbbr +
+          '</td>' +
+          '<td>' +
+            ((unitAbbr === 'reps' && totalKg !== 0) ? totalKg.toFixed(0) : '') +
+          '</td>' +
+        '</tr>'
+      );
+    });
+
+    document.write(sortedByLengthMarkup({ list: list.join('') }));
+
+    $(".exercises").tablesorter({
+      theme: 'blue'
+    });
+
+    var $rows = $(".exercises tbody tr")
+    $('.filter-exercises').on('input', function() {
+
+      var re = new RegExp(this.value, 'i');
+
+      console.log(this.value, re);
+
+      for (var i = 0, len = $rows.length; i < len; i++) {
+        if (re.test($rows[i].cells[0].textContent)) {
+          $rows[i].style.display = '';
+        }
+        else {
+          $rows[i].style.display = 'none';
+        }
+      }
+    });
+
+  </script>
+</body>
+</html>

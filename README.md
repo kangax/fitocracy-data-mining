@@ -1,0 +1,64 @@
+### Step 1
+
+Replace USER_ID with yours and execute this in console.
+
+```js
+var USER_ID = 30591;
+
+$.get('https://www.fitocracy.com/get_user_activities/' + USER_ID).done(function(activityDefs) {
+  var activities = window.__activities = { };
+  var remaining = activityDefs.length;
+
+  activityDefs.forEach(function(activityDef, index) {
+    var activityUrl = 'https://www.fitocracy.com/_get_activity_history_json/?activity-id=' + activityDef.id;
+
+    $.get(activityUrl).done(function(json) {
+      activities[activityDef.name] = json;
+      console.log('Fetched', activityDef.name, '. Remaining: ', remaining--);
+    });
+  });
+});
+```
+
+
+### STEP 2
+
+Data cleanup, execute in console after everything in step 1 is fetched.
+
+```js
+Object.keys(__activities).forEach(function(activityName) {
+  __activities[activityName].forEach(function(session) {
+    session.actions.forEach(function(action) {
+      delete action.user;
+      delete action.api_id;
+      delete action.api_source;
+      delete action.allow_share;
+      delete action.submitted;
+      delete action.subgroup; // ?
+      delete action.subgroup_order; // ?
+      delete action.is_pr; // ?
+
+      ['0', '1', '2', '3', '4', '5'].forEach(function(num) {
+        if (action['effort' + num] === null) {
+          delete action['effort' + num];
+          delete action['effort' + num + '_imperial'];
+          delete action['effort' + num + '_imperial_string'];
+          delete action['effort' + num + '_imperial_unit'];
+          delete action['effort' + num + '_metric'];
+          delete action['effort' + num + '_metric_string'];
+          delete action['effort' + num + '_metric_unit'];
+          delete action['effort' + num + '_string'];
+          delete action['effort' + num + '_unit'];
+        }
+      });
+    });
+  });
+});
+
+copy(JSON.stringify(__activities));
+```
+
+### STEP 3
+
+Your buffer has all the data; paste it to data.js
+
