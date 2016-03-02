@@ -23,7 +23,8 @@ $.get('https://www.fitocracy.com/get_user_activities/' + USER_ID).done(function(
 
 ### STEP 2
 
-Data cleanup, execute in console after everything in step 1 is fetched.
+The code above will create a pretty big object (~84MB in my case) so we need to cleanup the data.
+Execute in console after everything in step 1 is fetched.
 
 ```js
 Object.keys(__activities).forEach(function(activityName) {
