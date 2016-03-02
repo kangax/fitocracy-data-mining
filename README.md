@@ -35,9 +35,19 @@ Object.keys(__activities).forEach(function(activityName) {
       delete action.api_source;
       delete action.allow_share;
       delete action.submitted;
-      delete action.subgroup; // ?
-      delete action.subgroup_order; // ?
-      delete action.is_pr; // ?
+      delete action.subgroup; // could this be useful?
+      delete action.subgroup_order; // and this?
+      delete action.action_group_id;
+      delete action.is_pr;
+      delete action.id; // do we need this?
+
+      // redundant
+      delete action.action.name;
+      delete action.action.set_name;
+
+      if (!action.notes) {
+        delete action.notes;
+      }
 
       ['0', '1', '2', '3', '4', '5'].forEach(function(num) {
         if (action['effort' + num] === null) {
