@@ -1,103 +1,307 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fito crunching</title>
+  <title>Fito data mining</title>
 
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.1/js/jquery.tablesorter.js"></script>
-  <script src="http://rawgit.com/lodash/lodash/3.9.3/lodash.min.js"></script>
+  <script src="https://fb.me/react-0.14.7.js"></script>
+  <script src="https://fb.me/react-dom-0.14.7.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
+  <script src="https://rawgit.com/lodash/lodash/4.6.1/dist/lodash.min.js"></script>
 
   <script src="new_data.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.1/css/theme.blue.min.css">
 
-  <style>
-    body { padding: 20px; }
-    .exercises { width: 600px; }
-  </style>
+  <link rel="stylesheet" href="master.css">
 </head>
 <body>
-  <script>
-    document.write(
-      '<p><b>Total exercises</b>: ' + Object.keys(data).length + '</p>' +
-      '<p><input placeholder="Filter by ..." class="filter-exercises"></p>'
-    );
 
+  <div id="wrapper"></div>
 
-    var sortedByLength = _.sortBy(data, function(o) { return o.length }).reverse();
+  <script type="text/babel">
 
-    var sortedByLengthMarkup = _.template(
-      '<table class="table table-bordered table-hover exercises">\
-        <thead>\
-          <th>Name</th>\
-          <th>Workouts</th>\
-          <th>Sets</th>\
-          <th>Reps</th>\
-          <th>Unit</th>\
-          <th>Kg\'s</th>\
-        </thead>\
-        <tbody>\
-          <%= list %>\
-        </tbody>\
-      </table>'
-    );
-
-    var list = sortedByLength.map(function(exercise) {
-
-      var sets = _.flatten(exercise.map(function(o) { return o.actions }));
-      var reps = sets.map(function(o) { return o.effort1 });
-      var totalReps = _.sum(reps);
-
-      var metricUnit = sets.find(function(o) {
-        return o.effort1_metric;
-      });
-
-      var totalKg = _.sum(_.flatten(sets.map(function(o){ return o.effort0_metric })));
-
-      var unitAbbr = (metricUnit && metricUnit.effort1_metric_unit)
-        ? metricUnit.effort1_metric_unit.abbr
-        : '';
-
-      return (
-        '<tr>' +
-          '<td>' + exercise[0].actions[0].action.name + '</td>' +
-          '<td>' + exercise.length + '</td>' +
-          '<td>' + sets.length + '</td>' +
-          '<td>' + (totalReps ? totalReps.toFixed(0) : '') + '</td>' +
-          '<td>' +
-            unitAbbr +
-          '</td>' +
-          '<td>' +
-            ((unitAbbr === 'reps' && totalKg !== 0) ? totalKg.toFixed(0) : '') +
-          '</td>' +
-        '</tr>'
-      );
-    });
-
-    document.write(sortedByLengthMarkup({ list: list.join('') }));
-
-    $(".exercises").tablesorter({
-      theme: 'blue'
-    });
-
-    var $rows = $(".exercises tbody tr")
-    $('.filter-exercises').on('input', function() {
-
-      var re = new RegExp(this.value, 'i');
-
-      console.log(this.value, re);
-
-      for (var i = 0, len = $rows.length; i < len; i++) {
-        if (re.test($rows[i].cells[0].textContent)) {
-          $rows[i].style.display = '';
+    class ExerciseDetails extends React.Component {
+      render() {
+        if (!this.props.selectedExercise) {
+          return (
+            <div className="exercise-details"></div>
+          );
         }
-        else {
-          $rows[i].style.display = 'none';
-        }
+        var dayWithMaxTotalReps = _.maxBy(this.props.selectedExercise,
+          (obj) => _.sumBy(obj.actions, (set) => set.effort1));
+
+        var maxTotalReps = _.sumBy(dayWithMaxTotalReps.actions,
+          (set) => set.effort1);
+
+        var dayWithMaxReps = _.maxBy(this.props.selectedExercise,
+          (obj) => _.maxBy(obj.actions, (set) => set.effort1));
+
+        var maxReps = _.maxBy(_.maxBy(this.props.selectedExercise,
+          (obj) => _.maxBy(obj.actions,
+            (set) => set.effort1).effort1).actions,
+              (set) => set.effort1).effort1;
+
+        return (
+          <div className="exercise-details">
+            <h4 style={{ marginTop: '0', marginBottom: '20px' }}>
+              { this.props.selectedExercise[0].actions[0].action.name }
+            </h4>
+            <p>
+              Most total reps (<b>{ maxTotalReps }</b>) on <b>
+              { dayWithMaxTotalReps.date }</b>
+            </p>
+            <p>
+              Max reps (<b>{ maxReps }</b>) on <b>
+              { dayWithMaxReps.date }</b>
+            </p>
+            <p>
+              1RM: ..., 2RM: ..., 3RM: ..., 4RM: ..., 5RM: ...
+            </p>
+            <ul style={{ marginTop: '30px' }}>
+              { this.props.selectedExercise.map(this._renderSession.bind(this)) }
+            </ul>
+          </div>
+        );
       }
-    });
+      _selectSession(session) {
+        console.log(session);
+      }
+      _renderSession(session) {
+        return (
+          <li onClick={ this._selectSession.bind(this, session) }
+              key={session.id}>
+            <p>
+              <span style={{ marginRight: '10px' }}>
+                { session.date }
+              </span>
+              { session.actions.map(
+                  (set) =>
+                    <span className="set" key={set.id}>
+                      { set.effort1 }
+                      { set.effort0_imperial
+                          ? ('×' + Math.round(set.effort0_imperial) + 'lb')
+                          : ' reps'
+                      }
+                    </span>
+                )
+              }
+            </p>
+          </li>
+        )
+      }
+    }
 
+    class ExerciseList extends React.Component {
+      render() {
+        return (
+          <table className="table table-bordered table-hover exercise-list">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Workouts</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Unit</th>
+                <th>Lb's</th>
+              </tr>
+            </thead>
+            <tbody>
+              { this._renderBody() }
+            </tbody>
+            { this._renderTotal() }
+          </table>
+        );
+      }
+      _getExercises() {
+        return Object.keys(this.props.data)
+          .map((prop) => this.props.data[prop]);
+      }
+      _getFormattedExerciseData(exercise) {
+
+        const sets = _.flatten(exercise.map(function(o) { return o.actions }));
+        const reps = sets.map(function(o) { return o.effort1 });
+        const totalReps = _.sum(reps);
+
+        const metricUnit = sets.find(function(o) {
+          return o.effort1_metric;
+        });
+
+        const totalLb = _.sum(_.flatten(sets.map((o) => o.effort0_imperial )));
+
+        const unitAbbr = (metricUnit && metricUnit.effort1_metric_unit)
+          ? metricUnit.effort1_metric_unit.abbr
+          : '';
+
+        return { sets, reps, totalReps, metricUnit, totalLb, unitAbbr };
+      }
+      _isSelected(exercise) {
+        return this._getName(exercise) ===
+               this._getName(this.props.selectedExercise);
+      }
+      _isVisible(exercise) {
+        const exerciseName = this._getName(exercise);
+        const re = new RegExp(this.props.searchQuery || '.*', 'i');
+
+        return re.test(exerciseName);
+      }
+      _renderBody() {
+        return this._getExercises()
+          .map((exercise) => this._renderRow(exercise));
+      }
+      _renderRow(exercise) {
+
+        if (!this._isVisible(exercise)) {
+          return null;
+        }
+
+        const data = this._getFormattedExerciseData(exercise);
+
+        return (
+          <tr key={ this._getName(exercise) }
+              onClick={ this.props.onSelect.bind(this, this._getName(exercise)) }
+              className={ this._isSelected(exercise) ? 'selected' : '' }>
+
+            <td>
+              { this._getName(exercise) }
+            </td>
+            <td>
+              { exercise.length }
+            </td>
+            <td>
+              { data.sets.length }
+            </td>
+            <td>
+              { data.totalReps ? data.totalReps.toFixed(0) : '' }
+            </td>
+            <td>
+              { data.unitAbbr }
+            </td>
+            <td>
+              {
+                (data.unitAbbr === 'reps' && data.totalLb)
+                  ? data.totalLb.toFixed(0)
+                  : ''
+              }
+            </td>
+          </tr>
+        );
+      }
+      _getName(exercise) {
+        return exercise && exercise[0].actions[0].action.name;
+      }
+      _renderTotal() {
+        let totalWorkouts = 0;
+        let totalSets = 0;
+        let totalReps = 0;
+        let totalLb = 0;
+
+        this._getExercises().forEach((exercise) => {
+          if (this._isVisible(exercise)) {
+            const data = this._getFormattedExerciseData(exercise);
+
+            totalWorkouts += exercise.length;
+            totalSets += data.sets.length || 0;
+            totalReps += data.totalReps || 0;
+            totalLb += data.totalLb || 0;
+          }
+        });
+
+        return (
+          <tfoot>
+            <tr>
+              <th>Total:</th>
+              <th>{ totalWorkouts }</th>
+              <th>{ totalSets }</th>
+              <th>{ totalReps }</th>
+              <th></th>
+              <th>{ Math.round(totalLb) }</th>
+            </tr>
+          </tfoot>
+        );
+      }
+    }
+
+    class Viewer extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          selectedExercise: props.selectedExercise,
+          searchQuery: ''
+        };
+      }
+      render() {
+        return (
+          <div>
+            <div>
+              <b>Total exercises</b>: { Object.keys(data).length }
+
+              <input
+                placeholder="Filter by ..."
+                className="filter-exercises"
+                onChange={ this.onSearch.bind(this) }
+                value={ this.state.searchQuery }
+                style={{ marginLeft: '10px' }}
+              />
+
+              <ul className="predefined-links">
+                <li>
+                  <a href="#" onClick={ this.onPredefinedClick.bind(this) }>
+                    (chin|pull)-up
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={ this.onPredefinedClick.bind(this) }>
+                    ^neck
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={ this.onPredefinedClick.bind(this) }>
+                    ring
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={ this.onPredefinedClick.bind(this) }>
+                    squat
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="table-wrapper">
+              <ExerciseList
+                data={ this.props.data }
+                onSelect={ this.onSelect.bind(this) }
+                selectedExercise={ this.state.selectedExercise }
+                searchQuery={ this.state.searchQuery } />
+            </div>
+            <ExerciseDetails
+                selectedExercise={ this.state.selectedExercise } />
+          </div>
+        );
+      }
+      onPredefinedClick(e) {
+        this.setState({
+          searchQuery: e.target.textContent
+        });
+      }
+      onSelect(name) {
+        this.setState({
+          selectedExercise: this.props.data[name]
+        });
+      }
+      onSearch(event) {
+        this.setState({
+          searchQuery: event.target.value
+        });
+      }
+    }
+
+    ReactDOM.render(
+      <Viewer data={data} />,
+      document.getElementById('wrapper')
+    );
   </script>
 </body>
 </html>
+
