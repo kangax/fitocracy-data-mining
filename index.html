@@ -29,19 +29,7 @@
             <div className="exercise-details"></div>
           );
         }
-        var dayWithMaxTotalReps = _.maxBy(this.props.selectedExercise,
-          (obj) => _.sumBy(obj.actions, (set) => set.effort1));
-
-        var maxTotalReps = _.sumBy(dayWithMaxTotalReps.actions,
-          (set) => set.effort1);
-
-        var dayWithMaxReps = _.maxBy(this.props.selectedExercise,
-          (obj) => _.maxBy(obj.actions, (set) => set.effort1));
-
-        var maxReps = _.maxBy(_.maxBy(this.props.selectedExercise,
-          (obj) => _.maxBy(obj.actions,
-            (set) => set.effort1).effort1).actions,
-              (set) => set.effort1).effort1;
+        const stats = this._getStats();
 
         return (
           <div className="exercise-details">
@@ -49,21 +37,86 @@
               { this.props.selectedExercise[0].actions[0].action.name }
             </h4>
             <p>
-              Most total reps (<b>{ maxTotalReps }</b>) on <b>
-              { dayWithMaxTotalReps.date }</b>
+              Most total reps (<b>{ stats.maxTotalReps }</b>) on <b>
+              { stats.dayWithMaxTotalReps.date }</b>
             </p>
             <p>
-              Max reps (<b>{ maxReps }</b>) on <b>
-              { dayWithMaxReps.date }</b>
+              Max reps (<b>{ stats.maxReps }</b>) on <b>
+              { stats.dayWithMaxReps.date }</b>
             </p>
-            <p>
-              1RM: ..., 2RM: ..., 3RM: ..., 4RM: ..., 5RM: ...
-            </p>
+            <table className="table table-bordered"><thead><tr>{
+              _.range(1, 16).map((num) => <th key={num}>{num + 'RM'}</th>)
+            }</tr></thead>
+            <tbody><tr>
+            {
+              _.range(1, 16).map(
+                (num) => (
+                  <td key={num}>
+                    { stats[num + 'RM']
+                      ? <span>{ stats[num + 'RM'] }<em>lb</em></span>
+                      : '' }
+                  </td>
+                )
+              )
+            }
+            </tr></tbody></table>
             <ul style={{ marginTop: '30px' }}>
               { this.props.selectedExercise.map(this._renderSession.bind(this)) }
             </ul>
           </div>
         );
+      }
+      _getStats() {
+
+        const propName = this.props.selectedExercise[0].actions[0].effort1 === undefined
+          ? 'effort0_imperial' // secs
+          : 'effort1'; // reps
+
+        const dayWithMaxTotalReps = _.maxBy(this.props.selectedExercise,
+          (obj) => _.sumBy(obj.actions, (set) => set[propName]));
+
+        const maxTotalReps = Math.round(_.sumBy(dayWithMaxTotalReps.actions,
+          (set) => set[propName]));
+
+        const dayWithMaxReps = _.maxBy(this.props.selectedExercise,
+          (obj) => _.maxBy(obj.actions, (set) => set[propName]));
+
+        const maxReps = Math.round(_.maxBy(_.maxBy(this.props.selectedExercise,
+          (obj) => _.maxBy(obj.actions,
+            (set) => set[propName])[propName]).actions,
+              (set) => set[propName])[propName]);
+
+        const getWeightForRM = (RM) => {
+          const weightProp = this.props.selectedExercise[0].actions[0].effort0_imperial
+            ? 'effort0_imperial'
+            : 'effort3_imperial';
+
+          const maxRepObj = _.maxBy(_.filter(_.flatten(
+            this.props.selectedExercise.map((obj) => obj.actions)),
+              obj => obj[propName] === RM), weightProp);
+
+          if (maxRepObj) {
+            return this._getPrefix(maxRepObj) +
+                   Math.round(maxRepObj[weightProp]);
+          }
+        }
+
+        const stats = {
+          dayWithMaxTotalReps,
+          maxTotalReps,
+          dayWithMaxReps,
+          maxReps
+        };
+
+        _.range(1, 16).forEach(
+          (num) => stats[num + 'RM'] = getWeightForRM(num));
+
+        return stats;
+      }
+      _getPrefix(repObj) {
+        return repObj.string.indexOf('assisted') > -1
+          ? '-'
+          : '';
       }
       _selectSession(session) {
         console.log(session);
@@ -72,22 +125,30 @@
         return (
           <li onClick={ this._selectSession.bind(this, session) }
               key={session.id}>
-            <p>
-              <span style={{ marginRight: '10px' }}>
+            <div style={{ marginBottom: '5px' }}>
+              <span className="date">
                 { session.date }
               </span>
-              { session.actions.map(
-                  (set) =>
-                    <span className="set" key={set.id}>
-                      { set.effort1 }
-                      { set.effort0_imperial
-                          ? ('×' + Math.round(set.effort0_imperial) + 'lb')
-                          : ' reps'
-                      }
-                    </span>
-                )
-              }
-            </p>
+              <span className="sets">{ session.actions.map(
+                  function(set) {
+
+                    const propName = set.effort0_imperial
+                      ? 'effort0_imperial'
+                      : 'effort3_imperial';
+
+                    return (
+                      <span className={'set ' + (set[propName] ? 'weighted' : '') }
+                            key={set.id}>
+                        { set.effort1 }
+                        { set[propName]
+                            ? ('×' + this._getPrefix(set) + Math.round(set[propName]) + 'lb')
+                            : ''
+                        }
+                      </span>
+                    );
+                  }.bind(this))
+              }</span>
+            </div>
           </li>
         )
       }
@@ -104,7 +165,7 @@
                 <th>Sets</th>
                 <th>Reps</th>
                 <th>Unit</th>
-                <th>Lb's</th>
+                <th>Lbs</th>
               </tr>
             </thead>
             <tbody>
@@ -304,4 +365,3 @@
   </script>
 </body>
 </html>
-
