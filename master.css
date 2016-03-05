@@ -9,7 +9,7 @@ body {
   vertical-align: top;
   margin-left: 20px;
   overflow: scroll;
-  max-width: 700px;
+  max-width: 900px;
 }
 .exercise-details ul {
   padding-left: 0;
@@ -28,9 +28,12 @@ tr.selected {
   background: #ccc !important;
 }
 .set {
-  background: #ddf;
-  padding: 3px;
+  background: #eee;
+  padding: 3px 6px;
   margin-right: 6px;
+}
+.weighted {
+  background: #ccc;
 }
 .table-wrapper {
   height: 1000px;
@@ -51,4 +54,18 @@ tr.selected {
   display: block;
   padding: 5px 10px;
   background: #eee;
+}
+
+td em { color: #ccc; font-style: normal; }
+
+.date {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  min-width: 30px;
+}
+.sets {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 600px;
 }
