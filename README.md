@@ -1,3 +1,13 @@
+## What does this do that Fito doesn't?
+
+- Shows **1RM, 2RM, ..., 15RM** for each exercise (i.e. which max weight you've done for 2, 3, 4, etc. reps)
+- Shows **estimated 1RM** according to your heaviest set (rep x weight)
+- Shows **total performed sets, reps, volume** (sets x reps x weight)
+- Allows to **filter and find exercise** quickly using regular expression
+- Shows all of your sessions/sets/reps **at a glance, with easy access to notes**
+
+## Fetching data
+
 ### Step 1
 
 Replace USER_ID with yours and execute this in console.
@@ -73,3 +83,16 @@ copy(JSON.stringify(__activities));
 
 Your buffer has all the data; paste it to data.js
 
+## Other attempts to export data
+
+- https://github.com/thegreatape/fitocracy-export
+- https://github.com/luketurner/fitocracy-export
+- http://www.romanito.com/fitnotes/
+
+## TODO
+
+- Add date range selector
+- Add table sorting
+- Display Powerlifting and Weightlifting totals
+- Fix time-based exercises like L-Sit
+- Fix distance-based exercises like Walking
