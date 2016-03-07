@@ -19,13 +19,51 @@
 <body>
 
   <div id="wrapper"></div>
-  
+
   <script type="text/babel">
 
     class QuickStats extends React.Component {
       render() {
         return (
-          <h3>Quick stats</h3>
+          <div className="quick-stats">
+            <h4 className="quick-stats__header">Quick stats</h4>
+            <p>
+              <label>
+                Estimated <abbr title="Powerlifting">PL</abbr> total:
+              </label>
+              <span data-tip={
+                  quickStats.maxSquat.RM + '×' + quickStats.maxSquat.original
+                }>
+                Squat (<b>{ ~~quickStats.maxSquat.estimated }</b><em>lb</em>)
+              </span> +
+              <span data-tip={
+                quickStats.maxBench.RM + '×' + quickStats.maxBench.original
+              }>
+                Bench (<b>{ ~~quickStats.maxBench.estimated }</b><em>lb</em>)
+              </span> +
+              <span data-tip={
+                quickStats.maxDeadlift.RM + '×' + quickStats.maxDeadlift.original
+              }>
+                Deadlift (<b>{ ~~quickStats.maxDeadlift.estimated }</b><em>lb</em>)
+              </span> =
+              <b> {
+                ~~quickStats.maxSquat.estimated +
+                ~~quickStats.maxBench.estimated +
+                ~~quickStats.maxDeadlift.estimated
+              }</b>
+              <em>lb</em>
+            </p>
+            <p>
+              <label>
+                Estimated <abbr title="Weightlifting">WL</abbr> total:
+              </label>
+              Clean & Jerk (<b>{ ~~quickStats.maxCJ.estimated }</b><em>lb</em>) +
+              Snatch (<b>{ ~~quickStats.maxSnatch.estimated }</b><em>lb</em>) =
+              <b> { ~~quickStats.maxCJ.estimated + ~~quickStats.maxSnatch.estimated }</b>
+              <em>lb</em>
+            </p>
+            <p>Fastest mile: ...</p>
+          </div>
         );
       }
     }
@@ -378,18 +416,14 @@
         return (
           <div>
             <div>
-              <div>
-                <QuickStats />
-              </div>
-
-              <b>Total exercises</b>: { Object.keys(data).length }
-
               <input
-                placeholder="Filter by ..."
+                placeholder={
+                  'Filter through ' + Object.keys(data).length + ' exercises'
+                }
                 className="filter-exercises"
                 onChange={ this.onSearch.bind(this) }
                 value={ this.state.searchQuery }
-                style={{ marginLeft: '10px' }}
+                style={{ width: '300px' }}
               />
 
               <ul className="predefined-links">
@@ -423,8 +457,11 @@
                 searchQuery={ this.state.searchQuery } />
               <ReactTooltip place="top" />
             </div>
-            <ExerciseDetails
+            <div className="details-wrapper">
+              <QuickStats data={ this.props.data } />
+              <ExerciseDetails
                 selectedExercise={ this.state.selectedExercise } />
+            </div>
           </div>
         );
       }
@@ -445,11 +482,32 @@
       }
     }
 
-    ReactDOM.render(
+    function getQuickStats() {
+
+      function get1RMFor(exerciseName) {
+        const quickStats = ReactDOM.render(
+          <ExerciseDetails
+            selectedExercise={ data[exerciseName]} />,
+          document.createElement('div'));
+
+        return quickStats._getStats().estimated1RM;
+      }
+
+      return {
+        maxSquat: get1RMFor('Barbell Squat'),
+        maxBench: get1RMFor('Barbell Bench Press'),
+        maxDeadlift: get1RMFor('Barbell Deadlift'),
+        maxCJ: get1RMFor('Clean and Jerk'),
+        maxSnatch: get1RMFor('Snatch')
+      };
+    }
+
+    const quickStats = getQuickStats();
+
+    const viewer = ReactDOM.render(
       <Viewer data={data} />,
       document.getElementById('wrapper')
     );
-
 
   </script>
 </body>

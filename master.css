@@ -1,8 +1,9 @@
 body {
   padding: 20px;
+  font-size: 13px;
 }
 .exercise-list {
-	width: 800px;
+  min-width: 700px;
 }
 .exercise-details {
   display: inline-block;
@@ -49,7 +50,11 @@ tr.selected {
 .table-wrapper {
   height: 1000px;
   overflow: scroll;
-  float: left;
+  display: inline-block;
+}
+.details-wrapper {
+  display: inline-block;
+  vertical-align: top;
 }
 .predefined-links {
   padding-left: 0;
@@ -67,7 +72,7 @@ tr.selected {
   background: #eee;
 }
 
-td em { color: #ccc; font-style: normal; }
+em { color: #ccc; font-style: normal; }
 
 .date {
   display: inline-block;
@@ -81,4 +86,18 @@ td em { color: #ccc; font-style: normal; }
 }
 .has-notes {
   background: #ffc;
+}
+
+.quick-stats {
+  margin: 0 0 20px 20px;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.quick-stats__header {
+  margin: 0 0 20px 0;
+}
+.quick-stats label {
+  margin-right: 20px;
 }
