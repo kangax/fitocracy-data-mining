@@ -27,14 +27,25 @@ body {
 tr.selected {
   background: #ccc !important;
 }
+
 .set {
   background: #eee;
-  padding: 3px 6px;
   margin-right: 6px;
+  min-width: 30px;
+  text-align: center;
+  display: inline-block;
 }
-.weighted {
+.set--weighted {
   background: #ccc;
+  min-width: 55px;
 }
+.set--max-reps {
+  background: #aaf;
+}
+.set--max-weight {
+  background: #faa;
+}
+
 .table-wrapper {
   height: 1000px;
   overflow: scroll;
@@ -62,10 +73,12 @@ td em { color: #ccc; font-style: normal; }
   display: inline-block;
   vertical-align: top;
   margin-right: 10px;
-  min-width: 30px;
 }
 .sets {
   display: inline-block;
   vertical-align: top;
   max-width: 600px;
+}
+.has-notes {
+  background: #ffc;
 }
