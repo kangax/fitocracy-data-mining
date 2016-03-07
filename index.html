@@ -27,43 +27,108 @@
         return (
           <div className="quick-stats">
             <h4 className="quick-stats__header">Quick stats</h4>
-            <p>
-              <label>
-                Estimated <abbr title="Powerlifting">PL</abbr> total:
-              </label>
-              <span data-tip={
-                  quickStats.maxSquat.RM + '×' + quickStats.maxSquat.original
-                }>
-                Squat (<b>{ ~~quickStats.maxSquat.estimated }</b><em>lb</em>)
-              </span> +
-              <span data-tip={
-                quickStats.maxBench.RM + '×' + quickStats.maxBench.original
-              }>
-                Bench (<b>{ ~~quickStats.maxBench.estimated }</b><em>lb</em>)
-              </span> +
-              <span data-tip={
-                quickStats.maxDeadlift.RM + '×' + quickStats.maxDeadlift.original
-              }>
-                Deadlift (<b>{ ~~quickStats.maxDeadlift.estimated }</b><em>lb</em>)
-              </span> =
-              <b> {
-                ~~quickStats.maxSquat.estimated +
-                ~~quickStats.maxBench.estimated +
-                ~~quickStats.maxDeadlift.estimated
-              }</b>
-              <em>lb</em>
-            </p>
-            <p>
-              <label>
-                Estimated <abbr title="Weightlifting">WL</abbr> total:
-              </label>
-              Clean & Jerk (<b>{ ~~quickStats.maxCJ.estimated }</b><em>lb</em>) +
-              Snatch (<b>{ ~~quickStats.maxSnatch.estimated }</b><em>lb</em>) =
-              <b> { ~~quickStats.maxCJ.estimated + ~~quickStats.maxSnatch.estimated }</b>
-              <em>lb</em>
-            </p>
+            { this.renderPL() }
+            { this.renderEstimatedPL() }
+            { this.renderWL() }
+            { this.renderEstimatedWL() }
             <p>Fastest mile: ...</p>
+            <p>Longest distance ran: ...</p>
           </div>
+        );
+      }
+      renderPL() {
+        return (
+          <p>
+            <label>
+              <abbr title="Powerlifting">PL</abbr> total:
+            </label>
+            <span>
+              Squat (<b>{ ~~quickStats.maxSquatActual }</b><em>lb</em>)
+            </span> +
+            <span>
+              Bench (<b>{ ~~quickStats.maxBenchActual }</b><em>lb</em>)
+            </span> +
+            <span>
+              Deadlift (<b>{ ~~quickStats.maxDeadliftActual }</b><em>lb</em>)
+            </span> =
+            <b> {
+              ~~quickStats.maxSquatActual +
+              ~~quickStats.maxBenchActual +
+              ~~quickStats.maxDeadliftActual
+            }</b>
+            <em>lb</em>
+          </p>
+        );
+      }
+      renderEstimatedPL() {
+        return (
+          <p>
+            <label>
+              Estimated <abbr title="Powerlifting">PL</abbr> total:
+            </label>
+            <span data-tip={
+                quickStats.maxSquat.RM + '×' + quickStats.maxSquat.original
+              }>
+              Squat (<b>{ ~~quickStats.maxSquat.estimated }</b><em>lb</em>)
+            </span> +
+            <span data-tip={
+              quickStats.maxBench.RM + '×' + quickStats.maxBench.original
+            }>
+              Bench (<b>{ ~~quickStats.maxBench.estimated }</b><em>lb</em>)
+            </span> +
+            <span data-tip={
+              quickStats.maxDeadlift.RM + '×' + quickStats.maxDeadlift.original
+            }>
+              Deadlift (<b>{ ~~quickStats.maxDeadlift.estimated }</b><em>lb</em>)
+            </span> =
+            <b> {
+              ~~quickStats.maxSquat.estimated +
+              ~~quickStats.maxBench.estimated +
+              ~~quickStats.maxDeadlift.estimated
+            }</b>
+            <em>lb</em>
+          </p>
+        );
+      }
+      renderWL() {
+        return (quickStats.maxSnatchActual && quickStats.maxCJActual) ? (
+          <p>
+            <label>
+              <abbr title="Weightlifting">WL</abbr> total:
+            </label>
+            <span>
+              Clean & Jerk (<b>{ ~~quickStats.maxCJActual }</b><em>lb</em>)
+            </span> +
+            <span>
+              Snatch (<b>{ ~~quickStats.maxSnatchActual }</b><em>lb</em>)
+            </span> =
+            <b> {
+              ~~quickStats.maxCJActual +
+              ~~quickStats.maxSnatchActual
+            }</b>
+            <em>lb</em>
+          </p>
+        ) : null;
+      }
+      renderEstimatedWL() {
+        return (
+          <p>
+            <label>
+              Estimated <abbr title="Weightlifting">WL</abbr> total:
+            </label>
+            <span data-tip={
+              quickStats.maxCJ.RM + '×' + quickStats.maxCJ.original
+            }>
+              Clean & Jerk (<b>{ ~~quickStats.maxCJ.estimated }</b><em>lb</em>)
+            </span> +
+            <span data-tip={
+              quickStats.maxSnatch.RM + '×' + quickStats.maxSnatch.original
+            }>
+              Snatch (<b>{ ~~quickStats.maxSnatch.estimated }</b><em>lb</em>)
+            </span> =
+            <b> { ~~quickStats.maxCJ.estimated + ~~quickStats.maxSnatch.estimated }</b>
+            <em>lb</em>
+          </p>
         );
       }
     }
@@ -484,21 +549,36 @@
 
     function getQuickStats() {
 
-      function get1RMFor(exerciseName) {
+      function getStatsFor(exerciseName) {
         const quickStats = ReactDOM.render(
           <ExerciseDetails
             selectedExercise={ data[exerciseName]} />,
           document.createElement('div'));
 
-        return quickStats._getStats().estimated1RM;
+        return quickStats._getStats();
       }
 
+      const squatStats = getStatsFor('Barbell Squat');
+      const benchStats = getStatsFor('Barbell Bench Press');
+      const deadliftStats = getStatsFor('Barbell Deadlift');
+      const cjStats = getStatsFor('Clean and Jerk');
+      const snatchStats = getStatsFor('Snatch');
+
+      console.log(squatStats);
+
       return {
-        maxSquat: get1RMFor('Barbell Squat'),
-        maxBench: get1RMFor('Barbell Bench Press'),
-        maxDeadlift: get1RMFor('Barbell Deadlift'),
-        maxCJ: get1RMFor('Clean and Jerk'),
-        maxSnatch: get1RMFor('Snatch')
+        maxSquat: squatStats.estimated1RM,
+        maxBench: benchStats.estimated1RM,
+        maxDeadlift: deadliftStats.estimated1RM,
+
+        maxCJ: cjStats.estimated1RM,
+        maxSnatch: snatchStats.estimated1RM,
+
+        maxSquatActual: squatStats['1RM'] && squatStats['1RM'].weight,
+        maxBenchActual: benchStats['1RM'] && benchStats['1RM'].weight,
+        maxDeadliftActual: deadliftStats['1RM'] && deadliftStats['1RM'].weight,
+        maxCJActual: cjStats['1RM'] && cjStats['1RM'].weight,
+        maxSnatchActual: snatchStats['1RM'] && snatchStats['1RM'].weight
       };
     }
 
