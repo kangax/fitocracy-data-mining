@@ -10,7 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
   <script src="https://rawgit.com/lodash/lodash/4.6.1/dist/lodash.min.js"></script>
 
-  <script src="new_data.js"></script>
+  <script src="data2.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/react-tooltip/dist/react-tooltip.min.css">
@@ -31,9 +31,21 @@
             { this.renderEstimatedPL() }
             { this.renderWL() }
             { this.renderEstimatedWL() }
-            <p>Fastest mile: ...</p>
-            <p>Longest distance ran: ...</p>
+            { this.renderTotalDistance() }
+            <p><label>Fastest mile:</label> ...</p>
           </div>
+        );
+      }
+      renderTotalDistance() {
+        return (
+          <p>
+            <label>
+              Total distance:
+            </label>
+            <b>{ quickStats.totalMilesRunning }</b>
+            <em>mi</em> ran, <b>{ quickStats.totalMilesWalking }</b>
+            <em>mi</em> walked
+          </p>
         );
       }
       renderPL() {
@@ -42,21 +54,20 @@
             <label>
               <abbr title="Powerlifting">PL</abbr> total:
             </label>
-            <span>
-              Squat (<b>{ ~~quickStats.maxSquatActual }</b><em>lb</em>)
-            </span> +
-            <span>
-              Bench (<b>{ ~~quickStats.maxBenchActual }</b><em>lb</em>)
-            </span> +
-            <span>
-              Deadlift (<b>{ ~~quickStats.maxDeadliftActual }</b><em>lb</em>)
-            </span> =
             <b> {
               ~~quickStats.maxSquatActual +
               ~~quickStats.maxBenchActual +
               ~~quickStats.maxDeadliftActual
             }</b>
-            <em>lb</em>
+            <em>lb</em> (
+              <span>
+              { ~~quickStats.maxSquatActual }<em>lb</em> squat
+              </span>, <span>
+              { ~~quickStats.maxBenchActual }<em>lb</em> bench
+              </span>, <span>
+              { ~~quickStats.maxDeadliftActual }<em>lb</em> deadlift
+              </span>
+            )
           </p>
         );
       }
@@ -66,27 +77,25 @@
             <label>
               Estimated <abbr title="Powerlifting">PL</abbr> total:
             </label>
-            <span data-tip={
-                quickStats.maxSquat.RM + '×' + quickStats.maxSquat.original
-              }>
-              Squat (<b>{ ~~quickStats.maxSquat.estimated }</b><em>lb</em>)
-            </span> +
-            <span data-tip={
-              quickStats.maxBench.RM + '×' + quickStats.maxBench.original
-            }>
-              Bench (<b>{ ~~quickStats.maxBench.estimated }</b><em>lb</em>)
-            </span> +
-            <span data-tip={
-              quickStats.maxDeadlift.RM + '×' + quickStats.maxDeadlift.original
-            }>
-              Deadlift (<b>{ ~~quickStats.maxDeadlift.estimated }</b><em>lb</em>)
-            </span> =
             <b> {
               ~~quickStats.maxSquat.estimated +
               ~~quickStats.maxBench.estimated +
               ~~quickStats.maxDeadlift.estimated
             }</b>
-            <em>lb</em>
+            <em>lb</em> (
+            <span data-tip={
+                quickStats.maxSquat.RM + '×' + quickStats.maxSquat.original
+              }>
+              { ~~quickStats.maxSquat.estimated }<em>lb</em> squat
+            </span>, <span data-tip={
+              quickStats.maxBench.RM + '×' + quickStats.maxBench.original
+            }>
+              { ~~quickStats.maxBench.estimated }<em>lb</em> bench
+            </span>, <span data-tip={
+              quickStats.maxDeadlift.RM + '×' + quickStats.maxDeadlift.original
+            }>
+              { ~~quickStats.maxDeadlift.estimated }<em>lb</em> deadlift
+            </span>)
           </p>
         );
       }
@@ -96,17 +105,15 @@
             <label>
               <abbr title="Weightlifting">WL</abbr> total:
             </label>
-            <span>
-              Clean & Jerk (<b>{ ~~quickStats.maxCJActual }</b><em>lb</em>)
-            </span> +
-            <span>
-              Snatch (<b>{ ~~quickStats.maxSnatchActual }</b><em>lb</em>)
-            </span> =
             <b> {
               ~~quickStats.maxCJActual +
               ~~quickStats.maxSnatchActual
             }</b>
-            <em>lb</em>
+            <em>lb</em> (<span>
+              <b>{ ~~quickStats.maxCJActual }</b><em>lb</em> clean & jerk
+            </span>, <span>
+              <b>{ ~~quickStats.maxSnatchActual }</b><em>lb</em> snatch
+            </span>)
           </p>
         ) : null;
       }
@@ -116,23 +123,27 @@
             <label>
               Estimated <abbr title="Weightlifting">WL</abbr> total:
             </label>
-            <span data-tip={
+            <b> { ~~quickStats.maxCJ.estimated + ~~quickStats.maxSnatch.estimated }</b>
+            <em>lb</em> (<span data-tip={
               quickStats.maxCJ.RM + '×' + quickStats.maxCJ.original
             }>
-              Clean & Jerk (<b>{ ~~quickStats.maxCJ.estimated }</b><em>lb</em>)
-            </span> +
-            <span data-tip={
+              { ~~quickStats.maxCJ.estimated }<em>lb</em> clean & jerk
+            </span>, <span data-tip={
               quickStats.maxSnatch.RM + '×' + quickStats.maxSnatch.original
             }>
-              Snatch (<b>{ ~~quickStats.maxSnatch.estimated }</b><em>lb</em>)
-            </span> =
-            <b> { ~~quickStats.maxCJ.estimated + ~~quickStats.maxSnatch.estimated }</b>
-            <em>lb</em>
+              { ~~quickStats.maxSnatch.estimated }<em>lb</em> snatch
+            </span>)
           </p>
         );
       }
     }
     class ExerciseDetails extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          showVolume: false
+        };
+      }
       render() {
         if (!this.props.selectedExercise) {
           return (
@@ -192,17 +203,28 @@
                 </tr>
               </tbody>
             </table>
+            <p>
+              Show volume <input
+                type="checkbox" id="show-volume"
+                onClick={ this.onVolumeClick.bind(this) } />
+            </p>
             <ul style={{ marginTop: '30px' }}>
               { this.props.selectedExercise.map(this._renderSession.bind(this)) }
             </ul>
           </div>
         );
       }
+      onVolumeClick() {
+        this.setState({ showVolume: !this.state.showVolume });
+      }
       _getRepPropName(set) {
         set = set || this.props.selectedExercise[0].actions[0];
-        return set.effort1 === undefined
-          ? 'effort0_imperial' // secs
-          : 'effort1'; // reps
+        if (set.effort1_unit) { // reps or miles
+          return 'effort1';
+        }
+        if (set.effort0_unit) { // minutes
+          return 'effort0';
+        }
       }
       _getStats() {
 
@@ -290,13 +312,39 @@
                 { session.date }
               </span>
               <span className="sets">
-                { this._renderSets(session) }
+                {
+                  this.state.showVolume
+                    ? this._renderVolume(session)
+                    : this._renderSets(session)
+                }
               </span>
             </div>
           </li>
         )
       }
+      _renderVolume(session) {
+        const volume = _.sumBy(session.actions, (set) => {
+
+          const propName = set.effort0_imperial
+            ? 'effort0_imperial'
+            : 'effort3_imperial';
+
+          const reps = set[this._getRepPropName(set)];
+          const weight = set[propName];
+
+          console.log(`reps ${reps} weight ${weight}`);
+
+          return Math.round(reps * (weight || 1)) || 0;
+        });
+        return (
+          <span className="volume">
+            <span style={{ width: (volume / 10) + "px" }} className="volume-bg"></span>
+            <span className="volume-num">{ volume }</span>
+          </span>
+        );
+      }
       _renderSets(session) {
+
         const stats = this._getStats();
 
         return session.actions.map((set) => {
@@ -564,7 +612,29 @@
       const cjStats = getStatsFor('Clean and Jerk');
       const snatchStats = getStatsFor('Snatch');
 
-      console.log(squatStats);
+      function transformToMile(o) {
+        if (!o.effort1_unit) return;
+        if (o.effort1_unit.abbr === 'mi') return o.effort1;
+        if (o.effort1_unit.abbr === 'km') return o.effort1 * 0.621371;
+        if (o.effort1_unit.abbr === 'm') return o.effort1 / 1000 * 0.621371;
+      }
+      function getTotalMiles(exerciseName) {
+        return _.sum(
+          _.flatten(data[exerciseName].map(_.property('actions')))
+            .map(o=>transformToMile(o))
+        );
+      }
+
+      const totalMilesRunning = Math.round(
+        getTotalMiles('Running (treadmill)') +
+        getTotalMiles('Running') +
+        getTotalMiles('Running (Intervals/Sprints)')
+      );
+
+      const totalMilesWalking = Math.round(
+        getTotalMiles('Walking (treadmill)') +
+        getTotalMiles('Walking')
+      );
 
       return {
         maxSquat: squatStats.estimated1RM,
@@ -578,7 +648,10 @@
         maxBenchActual: benchStats['1RM'] && benchStats['1RM'].weight,
         maxDeadliftActual: deadliftStats['1RM'] && deadliftStats['1RM'].weight,
         maxCJActual: cjStats['1RM'] && cjStats['1RM'].weight,
-        maxSnatchActual: snatchStats['1RM'] && snatchStats['1RM'].weight
+        maxSnatchActual: snatchStats['1RM'] && snatchStats['1RM'].weight,
+
+        totalMilesRunning: totalMilesRunning,
+        totalMilesWalking: totalMilesWalking
       };
     }
 

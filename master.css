@@ -72,8 +72,6 @@ tr.selected {
   background: #eee;
 }
 
-em { color: #ccc; font-style: normal; }
-
 .date {
   display: inline-block;
   vertical-align: top;
@@ -90,7 +88,7 @@ em { color: #ccc; font-style: normal; }
 
 .quick-stats {
   margin: 0 0 20px 20px;
-  background: #eee;
+  background: #eef;
   border: 1px solid #ccc;
   padding: 10px;
 }
@@ -99,5 +97,25 @@ em { color: #ccc; font-style: normal; }
   margin: 0 0 20px 0;
 }
 .quick-stats label {
-  margin-right: 20px;
+  width: 150px;
+}
+.volume {
+  display: inline-block;
+  position: relative;
+  height: 18px;
+}
+.volume-bg {
+  height: 18px;
+  background: #aaa;
+  z-index: 1;
+  display: inline-block;
+}
+.volume-num {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  height: 18px;
+  color: #222;
+  text-shadow: 0 0 1px #fff;
 }
