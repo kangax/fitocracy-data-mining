@@ -52,7 +52,7 @@ Object.keys(__activities).forEach(function(activityName) {
       delete action.id; // do we need this?
 
       // redundant
-      delete action.action.name;
+      // delete action.action.name;
       delete action.action.set_name;
 
       if (!action.notes) {
@@ -70,6 +70,10 @@ Object.keys(__activities).forEach(function(activityName) {
           delete action['effort' + num + '_metric_unit'];
           delete action['effort' + num + '_string'];
           delete action['effort' + num + '_unit'];
+        }
+        else {
+          delete action['effort' + num + '_unit'].id;
+          delete action['effort' + num + '_unit'].name;
         }
       });
     });
@@ -93,6 +97,5 @@ Your buffer has all the data; paste it to data.js
 
 - Add date range selector
 - Add table sorting
-- Display Powerlifting and Weightlifting totals
 - Fix time-based exercises like L-Sit
 - Fix distance-based exercises like Walking
