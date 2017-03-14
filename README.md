@@ -10,7 +10,7 @@
 
 ### Step 1
 
-Replace USER_ID with yours and execute this in console.
+Go to https://www.fitocracy.com/profile/<USER_NAME>/?performance (replacing <USER_NAME> with your fitocracy user name). Replace USER_ID with yours and execute this in console.
 
 ```js
 var USER_ID = 30591;
