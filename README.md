@@ -85,7 +85,7 @@ copy(JSON.stringify(__activities));
 
 ### STEP 3
 
-Your buffer has all the data; paste it to data.js
+Your buffer has all the data; paste it to /public/js/data.js
 
 ## Other apps that export Fitocracy data
 
