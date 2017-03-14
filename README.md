@@ -87,7 +87,7 @@ copy(JSON.stringify(__activities));
 
 Your buffer has all the data; paste it to data.js
 
-## Other attempts to export data
+## Other apps that export Fitocracy data
 
 - https://github.com/thegreatape/fitocracy-export
 - https://github.com/luketurner/fitocracy-export
@@ -95,7 +95,6 @@ Your buffer has all the data; paste it to data.js
 
 ## TODO
 
-- Add date range selector
 - Add table sorting
 - Fix time-based exercises like L-Sit
 - Fix distance-based exercises like Walking
