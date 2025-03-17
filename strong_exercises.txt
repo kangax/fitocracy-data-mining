@@ -1,0 +1,515 @@
+Bench Press (Paused)
+Bench Press (Barbell)
+Bent Over Row (Dumbbell)
+Bench Press - Close Grip (Barbell)
+Seated Row (Plate Loaded)
+Hanging Leg Raise (Arm Supported)
+Russian Twist (Weighted)
+Push Up
+Face Pull (Cable)
+Lat Pulldown (Straight Arm)
+Deadlift (Barbell)
+Deadlift (Paused)
+Seated Calf Raise (Plate Loaded)
+Rear Delt Flys (Suspension Trainer)
+Hanging Leg Raise (Toes To Bar)
+Abductor (Machine)
+Seated Leg Curl (Machine)
+Bicep Curl (Cable)
+Pallof Press
+Overhead Press (Barbell)
+Shoulder Press (Klokov)
+Pull Up (Wide Grip)
+Tricep Extension (Overhead)
+Plank (One Arm One Leg)
+Lateral Raise (Cable)
+Tricep Extension (Suspension Trainer)
+Foam Rolling
+Squat (Paused)
+Squat (Barbell)
+Lunge (Barbell)
+Leg Extension (Machine)
+Lying Leg Curl (Machine)
+Fallouts (Suspension Trainer, Static)
+Back Extension
+Neck Extension (Plate)
+Neck Flexion (Plate)
+Neck Lateral Flexion (Plate)
+T Bar Row (Chest Supported)
+Hanging Leg Raise
+Lateral Raise (Dumbbell)
+Tricep Push down
+Cable Crunch
+Heavy Bag
+Leg Extension (One Leg)
+Glute Ham Raise
+Pull Up
+Deadlift High Pull (Barbell)
+Fallouts (Suspension Trainer, Reps)
+Rear Delt Flys (Dumbbells)
+Lat Pulldown (Cable)
+Good Morning (Barbell)
+Standing Calf Raise (Machine)
+Bicep Curl (Barbell)
+Kirk Shrug (Smith Machine)
+Leg Curl (Unilateral)
+Overhead Press (Dumbbell)
+Lat Pulldown - Wide Grip (Cable)
+Rear Delt Flys (Dumbbell, Laying)
+Shrug (Behind Back)
+Front Raise (Dumbbell)
+Hack Squat
+Crunch (Machine)
+Bicep Curl (Dumbbell, Fat Grip)
+Shrug (Cable)
+Bicycle Crunch
+Leg Kickback
+Tricep Extension (Dumbbell, Lying)
+Crunch (TRX)
+Oblique Crunch (TRX)
+V Up
+Plank (Long Lever)
+Box Jump (24”)
+Pendlay Row (Barbell)
+Seated Row (Wide Neutral Grip)
+Seated Wide-Grip Row (Cable)
+Lat Pulldown (V-Bar)
+Shoulder Press (Machine)
+Romanian Deadlift (One Leg, Dumbbells)
+Side Plank (One Leg)
+Hip Thrust (One Leg, Jumping)
+Walking
+Bench Press (Smith Machine)
+Lat Pulldown (Behind Neck)
+Kirk Shrug (Dumbbell)
+Frog Pump
+Hanging Knee Raise (Oblique)
+Shrug (Dumbbell)
+Seated Row (Plate Loaded, One Arm)
+Pull Up (Neutral Wide Grip)
+Hanging Leg Raise (One Leg)
+Rear Delt Flys (Bent Over, Cable, One Arm)
+Halo
+Side Plank Crunch
+Seated Row (Plate Loaded, High, One Arm)
+Seated Row (Cable)
+Tricep Push Down (Reverse, One Arm)
+Stretching
+Lat Pulldown (Machine, One Arm)
+Chest Dip
+Rear Delt Flys (Machine)
+Shrug (Machine)
+Ball Slams
+Lateral Raise (Machine)
+Seated Calf Raise (Angled)
+Leg Press
+Around the World
+Romanian Deadlift (Barbell)
+Lateral Raise (One Arm, Leaning)
+Chin Up
+Handgripper (Alternating)
+Cable Twist
+Push Press
+Kettlebell Swing (Two Arms)
+Standing Calf Raise (Dumbbell)
+Bent Over Row (Dumbbell, Chest Supported)
+Triceps Extension (Dumbbell)
+Stiff Leg Deadlift (Barbell)
+Chest Fly
+Row (Machine, High)
+Pull Up (Neutral Grip)
+Hip Thrust (Barbell)
+Ab Wheel
+Rack Pull (Barbell)
+Push Up (Diamond)
+Lunge (Dumbbell)
+Hip Circle Walk
+Leg Press (Narrow Stance)
+Bicep Curl (Dumbbell)
+Bicep Curl (Cable, One Arm)
+Kirk Shrug
+Pectoral Fly (Cable, Standing)
+Bench Press (Seated, Incline)
+T Bar Row
+Bench Press (Seated, Decline)
+Hanging Leg Raise (Paused)
+Rear Delt Flys (Machine, Neutral Grip)
+Handstand Push-up (Deficit)
+Overhead Squat (Barbell)
+Standing Calf Raise (Bodyweight)
+Squat (Bodyweight)
+Superman
+Stiff Leg Deadlift (Dumbbell)
+Romanian Deadlift (Dumbbell)
+Lat Pulldown - Underhand (Cable)
+Seated Overhead Press (Dumbbell)
+Incline Bench Press (Dumbbell)
+Chest Press (Machine)
+Seated Leg Press (Machine)
+Goblet Squat (Kettlebell)
+Bulgarian Split Squat
+Lat Pulldown (Single Arm)
+Upright Row (Cable)
+Crunch
+Bent Over One Arm Row (Dumbbell)
+Lat Pulldown (Machine)
+Cable Pull Through
+Ab Wheel (Standing)
+Front Squat (Barbell)
+Hip Adductor (Cable, Standing)
+Lateral Raise (Bent Arm, Power)
+Bent Over Row (Cable)
+Lat Pulldown (Pulley Machine, 2 Arms)
+Seated Calf Raise (Machine)
+Seated Row (Machine)
+Bicep Curl (Suspension Trainer)
+Lunge (Smith Machine)
+Tricep Push Down (Rope)
+Lat Pulldown (Straight Arm, Rope)
+Squeeze Press (Standing, Dumbbell)
+Neck Extension (Cable)
+Neck Flexion (Cable)
+Neck Lateral Flexion (Cable)
+Incline Curl (Dumbbell)
+Hanging Leg Raise (Static)
+Jump Squat
+Handgripper
+Back Extension (Machine)
+Iso-Lateral Chest Press (Machine)
+Shoulder Press (Plate Loaded)
+Bench Press (Dumbbell)
+Bent Over Row (Barbell)
+Bicep Curl (Dumbbell, Cross-body)
+Calf Press on Leg Press
+Preacher Curl (Machine)
+Tricep Extension (Leaning, Rack)
+Bent Over Row (Cable, One Arm)
+Shoulder Press (Cable, Floor)
+Hanging Leg Raise (Weighted)
+Ball Slams (Wall, Sideways)
+Incline Chest Press (Machine)
+Landmine Twist
+Farmer Walk (Unilateral)
+Front Raise (Barbell)
+Skullcrusher (Barbell)
+Standing Calf Raise (Barbell)
+Upright Row (Barbell, Wide)
+Landmine Press
+Spider Curl (Dumbbell)
+Arnold Press (Dumbbell)
+Meadows Row
+Mountain Climber
+Tricep Push Down (Reverse)
+One Arm Landmine Row
+Face Pull (High)
+Preacher Curl (Barbell)
+Glute Kickback (Machine)
+Lunge (Bodyweight)
+Plank (One Arm One Leg, Bent Knees)
+Ring Pull Up
+Front Raise (Dumbbell, Laying)
+Rear Delt Flys (Bent Over, Cable)
+Chest Fly (Cable, High To Low)
+Jump Through
+Front Raise (Dumbbell, Seated, Incline)
+Jump Rope
+Hammer Curl (Cable)
+Triceps Extension (Machine)
+Sumo Deadlift (Barbell)
+Hammer Curl (Band)
+Chest Fly (Cable, Low To High)
+Ring Inversion
+Ring Dip
+Lateral Raise (Dumbbell, Partial)
+Handstand Push Up
+Skin The Cat
+One Arm Row (Kettlebell)
+L Sit
+Rear Delt Raise (3 Way)
+Lateral Raise (One Arm)
+Upright Row (Dumbbell)
+Front Raise (Cable, One Arm)
+Tricep Extension (Dumbbell, One Arm)
+Handstand
+Hip Thrust (Plate Loaded Machine)
+Bent Over Row - Underhand (Barbell)
+Box Jump (30”)
+V Up (One Arm)
+Bulgarian Split Squat (Jump)
+Rack Pull (Barbell, Snatch, Low)
+Ski Erg
+Front Raise (Plate)
+Back Extension (Reverse)
+Inverted Row (Bodyweight)
+Kettlebell Clean & Press (One Arm)
+Kettlebell Clean & Press
+Hip Thrust (One Leg)
+V Up (Full Extension)
+Rear Delt Flys (Cable, High To Low)
+Yoga
+Iso-Lateral Row (Machine)
+Squat (Machine)
+Romanian Deadlift (Snatch)
+Spider Curl (Barbell)
+Trap Bar Deadlift
+Trap  Bar Deadlift (Stiff Leg)
+Step-up
+Kirk Shrug (Snatch Grip)
+External Shoulder Rotation
+Kettlebell Swing (Double)
+Wrist Curl (Cable)
+Rowing (Machine)
+Face Pull (Band)
+Lat Pulldown (Straight Arm, Band, Unilateral)
+Tricep Push Down (Band, Unilateral)
+Pallof Press (Band)
+Jumping Jack
+Shadow Boxing
+Push Up (Ring)
+Deadlift (Kettlebell)
+Front Raise (Band)
+Staircase Run
+Lateral Jump
+Burpee
+Spider-Man Lounge
+Bear Crawl
+Shuttle Run
+Crab Walk
+Kettlebell Clean
+Bent Over Row (Kettlebell, 2 Arms)
+Lat Pulldown (Straight Arm, Band)
+High Row (Suspension Trainer)
+Low Row (Suspension Trainer)
+Jump Squat (Weighted)
+Tricep Push Down (Band)
+Pistol Squat (Box)
+Lying Leg Curl (Static)
+Plank
+Hanging Knee Raise
+Tricep Extension (Band)
+Torso Rotation (Band)
+Chest Fly (Band)
+Jump Squat (Suspension)
+V Up (Cross Body)
+Seated Overhead Press (One Arm)
+Hanging Knee Raise (3 Ways)
+Rear Delt Flys (Bent Over, Band, One Arm)
+V Up (Figure 8)
+Lunge (Overhead)
+Kettlebell Swing (One Arm)
+Kettlebell Snatch
+Kettlebell Press
+Fly Circles (Suspension Trainer)
+Waiter Walk (One Arm)
+Farmer Walk (Unilateral, Racked)
+Overhead Squat (Kettlebell, One Arm)
+Z Press (One Arm)
+Y Raises (Suspension Trainer)
+Push Up (Med Ball)
+Staircase Walk
+Staircase Waiter Walk
+Push-Up (Suspension Trainer)
+Push Up (Decline, 20”)
+Pull Apart (Band)
+Pistol Squat (Suspension Trainer)
+Step Up (Weighted)
+Seated Palms Up Wrist Curl (Dumbbell)
+Seated Palms Down Wrist Curl
+Lateral Raise (Band)
+Push Up (Decline, 24”)
+Weighted Punches
+Ring Pull-Up (L-Sit)
+Wrist Roller
+Torso Rotation (Suspension Trainer)
+Push Up (One Arm)
+Hammer Curl (Dumbbell)
+Chest Fly (Suspension Trainer)
+Jump Rope (Double Under)
+Pull Through (Band)
+Wall Ball
+Squeeze Press (Laying, Kettlebell)
+Wrist Rotation
+Farmer Walk (Distance)
+Upright Row (Barbell)
+Heavy Bag Walk
+Hammer Curl (Kettlebell Rope)
+Hiking
+Bicep Curl (Band)
+Upright Row (Band)
+One Arm Row (Kneeling, Band)
+Face Pull (Band, One Arm)
+Thruster (Barbell)
+Rope Pull
+Snatch (Dumbbell)
+Burpee (Over DB)
+L Sit Rope Pull
+Thruster (Dumbbell)
+Rope Pull (Machine)
+Power Snatch (Barbell)
+Hang Clean (Barbell)
+Swimming
+Burpee (Over Bar)
+Snatch Pull (Barbell)
+Sit Up
+Muscle Up
+Bag Over Shoulder
+Clean (Barbell)
+Russian Dip
+Battle Ropes
+Split Jump
+Snatch Deadlift
+Ghd Sit Up
+Tuck Planche
+Windshield Wipers
+Power Clean
+Split Jerk (Barbell)
+Clean and Jerk (Barbell)
+Burpee (Over Box)
+Snatch (Barbell)
+Pistol Squat
+Push Up (Hand Release)
+Burpee (Med Ball)
+Wall Ball (2 For 1)
+Clean (Medicine Ball)
+Cluster (Barbell)
+Clean (Dumbbells)
+Front Squat (Dumbbells)
+Muscle Snatch
+No Feet Snatch
+Hang Snatch (Barbell)
+Deadlift (Sandbag)
+Snatch Balance (No Feet)
+Kettlebell Turkish Get Up
+Barbell Rollout
+Headstand
+Thruster (Kettlebell, One Arm)
+Power Clean (Sandbag)
+Manmaker
+Jerk Drive
+Tall Snatch
+High Hang Snatch
+Drop Snatch
+Press In Snatch
+Squat (Sandbag)
+Overhead Squat (Medicine Ball)
+Ring Muscle Up (Jumping)
+Burpee Pull-Up
+Ring Muscle Up
+Clean And Jerk (Dumbbell)
+Air Bike
+Box Jump
+Chest To Bar
+Wall Walk
+Running (Treadmill)
+Renegade Row
+Toes To Bar
+German Snatch
+Bulgarian Split Squat (Front Rack)
+Split Jerk (Dumbbell)
+German Clean
+Power Jerk
+Hollow Body Hold
+Snatch Deadlift (Paused)
+Devil Press
+Split Jerk (Paused)
+Hang Clean (Dumbbell)
+Push Press (Dumbbell)
+Snatch (Blocks)
+Kettlebell Clean (Two Arms)
+Thruster (Kettlebell)
+Inchworm
+Snatch (Clean Grip)
+Snatch (Pause At Knee)
+Snatch Liftoff
+Ring Muscle Up (Negative)
+Cuban Press
+Trap Bar Deadlift (Jumping)
+Kettlebell Press (Bottom Up)
+Farmer Walk (Racked)
+Reverse Lunge (Kettlebell Up)
+Push Press (Snatch Grip)
+Front Squat (Double Kettlebell, Bottom Up)
+Kettlebell Press (Double)
+Ring Muscle Up (Bottom Part)
+Snatch Balance
+Press In Split
+Sumo Deadlift High Pull (Barbell)
+Parallette Shoot Through
+Knees to Elbows
+Running
+Split Jerk Behind Neck In Split
+Split Jerk Behind Neck
+Incline Chest Fly (Dumbbell)
+Hang Clean And Jerk (Dumbbell)
+Kipping Pull Up
+Deadlift (Cable)
+Side Plank (Adductor)
+Ground To Shoulder (D Ball)
+Handstand Taps
+Low Row One Arm (Suspension Trainer)
+Ring Dip Top Hold
+Cycling (Indoor)
+Handstand Wall Walk
+Hang Clean And Jerk (Dumbbell, 2 Arms)
+Front Squat (Kettlebells)
+Tire Flip
+Rope Climb (Legless)
+Deadlift (Dumbbell)
+Kettlebell Jerk
+Power Snatch (From Hip)
+Ring Muscle Up (Box)
+Sandbag Carry (70lb)
+Kettlebell Snatch (Double)
+Cluster (Dumbbell)
+Cluster (Kettlebell)
+Sled Push
+Lunge (Overhead, Dumbbells)
+Power Clean And Jerk (Dumbbell, 2 Arms)
+Squat (Safety Bar)
+Squat Walkout
+Ring Push Up
+Clean And Press (Dumbbell)
+Power Jerk (Behind Neck)
+Sled Pull
+Clean Pull
+Earthquake Press
+Burpee (Facing The Bar)
+Box Jump Over
+Handstand Push Up (Chest To Wall)
+Pull Up (Rope)
+Ground To Overhead (Kettlebell)
+Kettlebell Push-Up
+Beastmaker
+Static Hang (One Arm)
+Shuttle Run (Distance)
+Rope Pull (Sled)
+Snatch Deadlift (Deficit)
+Suitcase Deadlift
+Slow Pull Snatch
+Front Squat (Barbell, Paused)
+Burpee Snatch (Dumbbell)
+Burpee (Over Bench)
+Lunge (Barbell, Racked)
+Hanging Leg Raise (One Arm)
+Burpee (Deadlift)
+Handstand Walk
+Lunge (Front Rack, Dumbbell)
+Reverse Curl (Barbell)
+Rope Climb
+Burpee (Broad Jump)
+Snatch (Dumbbell, Double)
+Chest To Bar (Strict)
+Box Jump (36”)
+Box Jump (38”)
+Depth Jump
+Calf Jump
+Power Clean (Dumbbell)
+Burpee Muscle Up
+Lateral Box Jump
+Toes Through Rings
+Static Hang (Two Arms)
+Lunge (Jumping)
+Broad Jump
+Triceps Extension (Cable)
+Farmer Walk
+Chest Dip (Straight Bar)

@@ -1,0 +1,3796 @@
+{
+  "metadata": {
+    "exportDate": "2025-03-17T19:06:04.699Z",
+    "count": 515
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Bench Press (Paused)",
+      "primaryType": "resistance",
+      "baseExercise": "Bench Press",
+      "modifier": "Paused",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 2,
+      "name": "Bench Press (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bench Press",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 3,
+      "name": "Bent Over Row (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bent Over Row",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 4,
+      "name": "Bench Press - Close Grip (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bench Press - Close Grip",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 5,
+      "name": "Seated Row (Plate Loaded)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Row",
+      "modifier": "Plate Loaded",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 6,
+      "name": "Hanging Leg Raise (Arm Supported)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Leg Raise",
+      "modifier": "Arm Supported"
+    },
+    {
+      "id": 7,
+      "name": "Russian Twist (Weighted)",
+      "primaryType": "resistance",
+      "baseExercise": "Russian Twist",
+      "modifier": "Weighted",
+      "category": "Core"
+    },
+    {
+      "id": 8,
+      "name": "Push Up",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 9,
+      "name": "Face Pull (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Face Pull",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 10,
+      "name": "Lat Pulldown (Straight Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Straight Arm",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 11,
+      "name": "Deadlift (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Deadlift",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 12,
+      "name": "Deadlift (Paused)",
+      "primaryType": "resistance",
+      "baseExercise": "Deadlift",
+      "modifier": "Paused",
+      "category": "Lower Body"
+    },
+    {
+      "id": 13,
+      "name": "Seated Calf Raise (Plate Loaded)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Calf Raise",
+      "modifier": "Plate Loaded"
+    },
+    {
+      "id": 14,
+      "name": "Rear Delt Flys (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Suspension Trainer"
+    },
+    {
+      "id": 15,
+      "name": "Hanging Leg Raise (Toes To Bar)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Leg Raise",
+      "modifier": "Toes To Bar"
+    },
+    {
+      "id": 16,
+      "name": "Abductor (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Abductor",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 17,
+      "name": "Seated Leg Curl (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Leg Curl",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 18,
+      "name": "Bicep Curl (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Bicep Curl",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 19,
+      "name": "Pallof Press",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 20,
+      "name": "Overhead Press (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Overhead Press",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 21,
+      "name": "Shoulder Press (Klokov)",
+      "primaryType": "resistance",
+      "baseExercise": "Shoulder Press",
+      "modifier": "Klokov",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 22,
+      "name": "Pull Up (Wide Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Pull Up",
+      "modifier": "Wide Grip",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 23,
+      "name": "Tricep Extension (Overhead)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Extension",
+      "modifier": "Overhead"
+    },
+    {
+      "id": 24,
+      "name": "Plank (One Arm One Leg)",
+      "primaryType": "duration",
+      "baseExercise": "Plank",
+      "modifier": "One Arm One Leg",
+      "category": "Core"
+    },
+    {
+      "id": 25,
+      "name": "Lateral Raise (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Lateral Raise",
+      "modifier": "Cable",
+      "equipment": "Cable"
+    },
+    {
+      "id": 26,
+      "name": "Tricep Extension (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Extension",
+      "modifier": "Suspension Trainer"
+    },
+    {
+      "id": 27,
+      "name": "Foam Rolling",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 28,
+      "name": "Squat (Paused)",
+      "primaryType": "resistance",
+      "baseExercise": "Squat",
+      "modifier": "Paused",
+      "category": "Lower Body"
+    },
+    {
+      "id": 29,
+      "name": "Squat (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Squat",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 30,
+      "name": "Lunge (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 31,
+      "name": "Leg Extension (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Leg Extension",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 32,
+      "name": "Lying Leg Curl (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Lying Leg Curl",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 33,
+      "name": "Fallouts (Suspension Trainer, Static)",
+      "primaryType": "duration",
+      "baseExercise": "Fallouts",
+      "modifier": "Suspension Trainer, Static"
+    },
+    {
+      "id": 34,
+      "name": "Back Extension",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 35,
+      "name": "Neck Extension (Plate)",
+      "primaryType": "resistance",
+      "baseExercise": "Neck Extension",
+      "modifier": "Plate"
+    },
+    {
+      "id": 36,
+      "name": "Neck Flexion (Plate)",
+      "primaryType": "resistance",
+      "baseExercise": "Neck Flexion",
+      "modifier": "Plate"
+    },
+    {
+      "id": 37,
+      "name": "Neck Lateral Flexion (Plate)",
+      "primaryType": "resistance",
+      "baseExercise": "Neck Lateral Flexion",
+      "modifier": "Plate"
+    },
+    {
+      "id": 38,
+      "name": "T Bar Row (Chest Supported)",
+      "primaryType": "resistance",
+      "baseExercise": "T Bar Row",
+      "modifier": "Chest Supported",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 39,
+      "name": "Hanging Leg Raise",
+      "primaryType": "duration"
+    },
+    {
+      "id": 40,
+      "name": "Lateral Raise (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Lateral Raise",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 41,
+      "name": "Tricep Push down",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 42,
+      "name": "Cable Crunch",
+      "primaryType": "distance",
+      "equipment": "Cable",
+      "category": "Core"
+    },
+    {
+      "id": 43,
+      "name": "Heavy Bag",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 44,
+      "name": "Leg Extension (One Leg)",
+      "primaryType": "resistance",
+      "baseExercise": "Leg Extension",
+      "modifier": "One Leg"
+    },
+    {
+      "id": 45,
+      "name": "Glute Ham Raise",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 46,
+      "name": "Pull Up",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 47,
+      "name": "Deadlift High Pull (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Deadlift High Pull",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 48,
+      "name": "Fallouts (Suspension Trainer, Reps)",
+      "primaryType": "resistance",
+      "baseExercise": "Fallouts",
+      "modifier": "Suspension Trainer, Reps"
+    },
+    {
+      "id": 49,
+      "name": "Rear Delt Flys (Dumbbells)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Dumbbells",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 50,
+      "name": "Lat Pulldown (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 51,
+      "name": "Good Morning (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Good Morning",
+      "modifier": "Barbell",
+      "equipment": "Barbell"
+    },
+    {
+      "id": 52,
+      "name": "Standing Calf Raise (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Standing Calf Raise",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 53,
+      "name": "Bicep Curl (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bicep Curl",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 54,
+      "name": "Kirk Shrug (Smith Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Kirk Shrug",
+      "modifier": "Smith Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 55,
+      "name": "Leg Curl (Unilateral)",
+      "primaryType": "resistance",
+      "baseExercise": "Leg Curl",
+      "modifier": "Unilateral",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 56,
+      "name": "Overhead Press (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Overhead Press",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 57,
+      "name": "Lat Pulldown - Wide Grip (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown - Wide Grip",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 58,
+      "name": "Rear Delt Flys (Dumbbell, Laying)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Dumbbell, Laying",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 59,
+      "name": "Shrug (Behind Back)",
+      "primaryType": "resistance",
+      "baseExercise": "Shrug",
+      "modifier": "Behind Back"
+    },
+    {
+      "id": 60,
+      "name": "Front Raise (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Raise",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 61,
+      "name": "Hack Squat",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 62,
+      "name": "Crunch (Machine)",
+      "primaryType": "distance",
+      "baseExercise": "Crunch",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 63,
+      "name": "Bicep Curl (Dumbbell, Fat Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Bicep Curl",
+      "modifier": "Dumbbell, Fat Grip",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 64,
+      "name": "Shrug (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Shrug",
+      "modifier": "Cable",
+      "equipment": "Cable"
+    },
+    {
+      "id": 65,
+      "name": "Bicycle Crunch",
+      "primaryType": "distance",
+      "category": "Core"
+    },
+    {
+      "id": 66,
+      "name": "Leg Kickback",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 67,
+      "name": "Tricep Extension (Dumbbell, Lying)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Extension",
+      "modifier": "Dumbbell, Lying",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 68,
+      "name": "Crunch (TRX)",
+      "primaryType": "distance",
+      "baseExercise": "Crunch",
+      "modifier": "TRX",
+      "category": "Core"
+    },
+    {
+      "id": 69,
+      "name": "Oblique Crunch (TRX)",
+      "primaryType": "distance",
+      "baseExercise": "Oblique Crunch",
+      "modifier": "TRX",
+      "category": "Core"
+    },
+    {
+      "id": 70,
+      "name": "V Up",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 71,
+      "name": "Plank (Long Lever)",
+      "primaryType": "duration",
+      "baseExercise": "Plank",
+      "modifier": "Long Lever",
+      "category": "Core"
+    },
+    {
+      "id": 72,
+      "name": "Box Jump (24”)",
+      "primaryType": "complex",
+      "baseExercise": "Box Jump",
+      "modifier": "24”"
+    },
+    {
+      "id": 73,
+      "name": "Pendlay Row (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Pendlay Row",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 74,
+      "name": "Seated Row (Wide Neutral Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Row",
+      "modifier": "Wide Neutral Grip",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 75,
+      "name": "Seated Wide-Grip Row (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Wide-Grip Row",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 76,
+      "name": "Lat Pulldown (V-Bar)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "V-Bar",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 77,
+      "name": "Shoulder Press (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Shoulder Press",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 78,
+      "name": "Romanian Deadlift (One Leg, Dumbbells)",
+      "primaryType": "resistance",
+      "baseExercise": "Romanian Deadlift",
+      "modifier": "One Leg, Dumbbells",
+      "equipment": "Dumbbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 79,
+      "name": "Side Plank (One Leg)",
+      "primaryType": "duration",
+      "baseExercise": "Side Plank",
+      "modifier": "One Leg",
+      "category": "Core"
+    },
+    {
+      "id": 80,
+      "name": "Hip Thrust (One Leg, Jumping)",
+      "primaryType": "resistance",
+      "baseExercise": "Hip Thrust",
+      "modifier": "One Leg, Jumping"
+    },
+    {
+      "id": 81,
+      "name": "Walking",
+      "primaryType": "distance"
+    },
+    {
+      "id": 82,
+      "name": "Bench Press (Smith Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Bench Press",
+      "modifier": "Smith Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 83,
+      "name": "Lat Pulldown (Behind Neck)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Behind Neck",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 84,
+      "name": "Kirk Shrug (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Kirk Shrug",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 85,
+      "name": "Frog Pump",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 86,
+      "name": "Hanging Knee Raise (Oblique)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Knee Raise",
+      "modifier": "Oblique"
+    },
+    {
+      "id": 87,
+      "name": "Shrug (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Shrug",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 88,
+      "name": "Seated Row (Plate Loaded, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Row",
+      "modifier": "Plate Loaded, One Arm",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 89,
+      "name": "Pull Up (Neutral Wide Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Pull Up",
+      "modifier": "Neutral Wide Grip",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 90,
+      "name": "Hanging Leg Raise (One Leg)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Leg Raise",
+      "modifier": "One Leg"
+    },
+    {
+      "id": 91,
+      "name": "Rear Delt Flys (Bent Over, Cable, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Bent Over, Cable, One Arm",
+      "equipment": "Cable"
+    },
+    {
+      "id": 92,
+      "name": "Halo",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 93,
+      "name": "Side Plank Crunch",
+      "primaryType": "duration",
+      "category": "Core"
+    },
+    {
+      "id": 94,
+      "name": "Seated Row (Plate Loaded, High, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Row",
+      "modifier": "Plate Loaded, High, One Arm",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 95,
+      "name": "Seated Row (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Row",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 96,
+      "name": "Tricep Push Down (Reverse, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Push Down",
+      "modifier": "Reverse, One Arm",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 97,
+      "name": "Stretching",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 98,
+      "name": "Lat Pulldown (Machine, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Machine, One Arm",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 99,
+      "name": "Chest Dip",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 100,
+      "name": "Rear Delt Flys (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 101,
+      "name": "Shrug (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Shrug",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 102,
+      "name": "Ball Slams",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 103,
+      "name": "Lateral Raise (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Lateral Raise",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 104,
+      "name": "Seated Calf Raise (Angled)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Calf Raise",
+      "modifier": "Angled"
+    },
+    {
+      "id": 105,
+      "name": "Leg Press",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 106,
+      "name": "Around the World",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 107,
+      "name": "Romanian Deadlift (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Romanian Deadlift",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 108,
+      "name": "Lateral Raise (One Arm, Leaning)",
+      "primaryType": "resistance",
+      "baseExercise": "Lateral Raise",
+      "modifier": "One Arm, Leaning"
+    },
+    {
+      "id": 109,
+      "name": "Chin Up",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 110,
+      "name": "Handgripper (Alternating)",
+      "primaryType": "resistance",
+      "baseExercise": "Handgripper",
+      "modifier": "Alternating"
+    },
+    {
+      "id": 111,
+      "name": "Cable Twist",
+      "primaryType": "resistance",
+      "equipment": "Cable",
+      "category": "Core"
+    },
+    {
+      "id": 112,
+      "name": "Push Press",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 113,
+      "name": "Kettlebell Swing (Two Arms)",
+      "primaryType": "complex",
+      "baseExercise": "Kettlebell Swing",
+      "modifier": "Two Arms",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 114,
+      "name": "Standing Calf Raise (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Standing Calf Raise",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 115,
+      "name": "Bent Over Row (Dumbbell, Chest Supported)",
+      "primaryType": "resistance",
+      "baseExercise": "Bent Over Row",
+      "modifier": "Dumbbell, Chest Supported",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 116,
+      "name": "Triceps Extension (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Triceps Extension",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 117,
+      "name": "Stiff Leg Deadlift (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Stiff Leg Deadlift",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 118,
+      "name": "Chest Fly",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 119,
+      "name": "Row (Machine, High)",
+      "primaryType": "distance",
+      "baseExercise": "Row",
+      "modifier": "Machine, High",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 120,
+      "name": "Pull Up (Neutral Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Pull Up",
+      "modifier": "Neutral Grip",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 121,
+      "name": "Hip Thrust (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Hip Thrust",
+      "modifier": "Barbell",
+      "equipment": "Barbell"
+    },
+    {
+      "id": 122,
+      "name": "Ab Wheel",
+      "primaryType": "resistance",
+      "category": "Core"
+    },
+    {
+      "id": 123,
+      "name": "Rack Pull (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Rack Pull",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 124,
+      "name": "Push Up (Diamond)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Up",
+      "modifier": "Diamond",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 125,
+      "name": "Lunge (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 126,
+      "name": "Hip Circle Walk",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 127,
+      "name": "Leg Press (Narrow Stance)",
+      "primaryType": "resistance",
+      "baseExercise": "Leg Press",
+      "modifier": "Narrow Stance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 128,
+      "name": "Bicep Curl (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bicep Curl",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 129,
+      "name": "Bicep Curl (Cable, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Bicep Curl",
+      "modifier": "Cable, One Arm",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 130,
+      "name": "Kirk Shrug",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 131,
+      "name": "Pectoral Fly (Cable, Standing)",
+      "primaryType": "resistance",
+      "baseExercise": "Pectoral Fly",
+      "modifier": "Cable, Standing",
+      "equipment": "Cable"
+    },
+    {
+      "id": 132,
+      "name": "Bench Press (Seated, Incline)",
+      "primaryType": "resistance",
+      "baseExercise": "Bench Press",
+      "modifier": "Seated, Incline",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 133,
+      "name": "T Bar Row",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 134,
+      "name": "Bench Press (Seated, Decline)",
+      "primaryType": "resistance",
+      "baseExercise": "Bench Press",
+      "modifier": "Seated, Decline",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 135,
+      "name": "Hanging Leg Raise (Paused)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Leg Raise",
+      "modifier": "Paused"
+    },
+    {
+      "id": 136,
+      "name": "Rear Delt Flys (Machine, Neutral Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Machine, Neutral Grip",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 137,
+      "name": "Handstand Push-up (Deficit)",
+      "primaryType": "resistance",
+      "baseExercise": "Handstand Push-up",
+      "modifier": "Deficit",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 138,
+      "name": "Overhead Squat (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Overhead Squat",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 139,
+      "name": "Standing Calf Raise (Bodyweight)",
+      "primaryType": "resistance",
+      "baseExercise": "Standing Calf Raise",
+      "modifier": "Bodyweight"
+    },
+    {
+      "id": 140,
+      "name": "Squat (Bodyweight)",
+      "primaryType": "resistance",
+      "baseExercise": "Squat",
+      "modifier": "Bodyweight",
+      "category": "Lower Body"
+    },
+    {
+      "id": 141,
+      "name": "Superman",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 142,
+      "name": "Stiff Leg Deadlift (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Stiff Leg Deadlift",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 143,
+      "name": "Romanian Deadlift (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Romanian Deadlift",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 144,
+      "name": "Lat Pulldown - Underhand (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown - Underhand",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 145,
+      "name": "Seated Overhead Press (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Overhead Press",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 146,
+      "name": "Incline Bench Press (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Incline Bench Press",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 147,
+      "name": "Chest Press (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Chest Press",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 148,
+      "name": "Seated Leg Press (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Leg Press",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Lower Body"
+    },
+    {
+      "id": 149,
+      "name": "Goblet Squat (Kettlebell)",
+      "primaryType": "resistance",
+      "baseExercise": "Goblet Squat",
+      "modifier": "Kettlebell",
+      "equipment": "Kettlebell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 150,
+      "name": "Bulgarian Split Squat",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 151,
+      "name": "Lat Pulldown (Single Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Single Arm",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 152,
+      "name": "Upright Row (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Upright Row",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 153,
+      "name": "Crunch",
+      "primaryType": "distance",
+      "category": "Core"
+    },
+    {
+      "id": 154,
+      "name": "Bent Over One Arm Row (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bent Over One Arm Row",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 155,
+      "name": "Lat Pulldown (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 156,
+      "name": "Cable Pull Through",
+      "primaryType": "resistance",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 157,
+      "name": "Ab Wheel (Standing)",
+      "primaryType": "resistance",
+      "baseExercise": "Ab Wheel",
+      "modifier": "Standing",
+      "category": "Core"
+    },
+    {
+      "id": 158,
+      "name": "Front Squat (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Squat",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 159,
+      "name": "Hip Adductor (Cable, Standing)",
+      "primaryType": "resistance",
+      "baseExercise": "Hip Adductor",
+      "modifier": "Cable, Standing",
+      "equipment": "Cable"
+    },
+    {
+      "id": 160,
+      "name": "Lateral Raise (Bent Arm, Power)",
+      "primaryType": "resistance",
+      "baseExercise": "Lateral Raise",
+      "modifier": "Bent Arm, Power"
+    },
+    {
+      "id": 161,
+      "name": "Bent Over Row (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Bent Over Row",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 162,
+      "name": "Lat Pulldown (Pulley Machine, 2 Arms)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Pulley Machine, 2 Arms",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 163,
+      "name": "Seated Calf Raise (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Calf Raise",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 164,
+      "name": "Seated Row (Machine)",
+      "primaryType": "distance",
+      "baseExercise": "Seated Row",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 165,
+      "name": "Bicep Curl (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Bicep Curl",
+      "modifier": "Suspension Trainer",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 166,
+      "name": "Lunge (Smith Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Smith Machine",
+      "equipment": "Machine",
+      "category": "Lower Body"
+    },
+    {
+      "id": 167,
+      "name": "Tricep Push Down (Rope)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Push Down",
+      "modifier": "Rope",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 168,
+      "name": "Lat Pulldown (Straight Arm, Rope)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Straight Arm, Rope",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 169,
+      "name": "Squeeze Press (Standing, Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Squeeze Press",
+      "modifier": "Standing, Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 170,
+      "name": "Neck Extension (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Neck Extension",
+      "modifier": "Cable",
+      "equipment": "Cable"
+    },
+    {
+      "id": 171,
+      "name": "Neck Flexion (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Neck Flexion",
+      "modifier": "Cable",
+      "equipment": "Cable"
+    },
+    {
+      "id": 172,
+      "name": "Neck Lateral Flexion (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Neck Lateral Flexion",
+      "modifier": "Cable",
+      "equipment": "Cable"
+    },
+    {
+      "id": 173,
+      "name": "Incline Curl (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Incline Curl",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 174,
+      "name": "Hanging Leg Raise (Static)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Leg Raise",
+      "modifier": "Static"
+    },
+    {
+      "id": 175,
+      "name": "Jump Squat",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 176,
+      "name": "Handgripper",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 177,
+      "name": "Back Extension (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Back Extension",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 178,
+      "name": "Iso-Lateral Chest Press (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Iso-Lateral Chest Press",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 179,
+      "name": "Shoulder Press (Plate Loaded)",
+      "primaryType": "resistance",
+      "baseExercise": "Shoulder Press",
+      "modifier": "Plate Loaded",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 180,
+      "name": "Bench Press (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bench Press",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 181,
+      "name": "Bent Over Row (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bent Over Row",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 182,
+      "name": "Bicep Curl (Dumbbell, Cross-body)",
+      "primaryType": "resistance",
+      "baseExercise": "Bicep Curl",
+      "modifier": "Dumbbell, Cross-body",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 183,
+      "name": "Calf Press on Leg Press",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 184,
+      "name": "Preacher Curl (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Preacher Curl",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 185,
+      "name": "Tricep Extension (Leaning, Rack)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Extension",
+      "modifier": "Leaning, Rack"
+    },
+    {
+      "id": 186,
+      "name": "Bent Over Row (Cable, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Bent Over Row",
+      "modifier": "Cable, One Arm",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 187,
+      "name": "Shoulder Press (Cable, Floor)",
+      "primaryType": "resistance",
+      "baseExercise": "Shoulder Press",
+      "modifier": "Cable, Floor",
+      "equipment": "Cable",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 188,
+      "name": "Hanging Leg Raise (Weighted)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Leg Raise",
+      "modifier": "Weighted"
+    },
+    {
+      "id": 189,
+      "name": "Ball Slams (Wall, Sideways)",
+      "primaryType": "resistance",
+      "baseExercise": "Ball Slams",
+      "modifier": "Wall, Sideways"
+    },
+    {
+      "id": 190,
+      "name": "Incline Chest Press (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Incline Chest Press",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 191,
+      "name": "Landmine Twist",
+      "primaryType": "resistance",
+      "category": "Core"
+    },
+    {
+      "id": 192,
+      "name": "Farmer Walk (Unilateral)",
+      "primaryType": "resistance",
+      "baseExercise": "Farmer Walk",
+      "modifier": "Unilateral"
+    },
+    {
+      "id": 193,
+      "name": "Front Raise (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Raise",
+      "modifier": "Barbell",
+      "equipment": "Barbell"
+    },
+    {
+      "id": 194,
+      "name": "Skullcrusher (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Skullcrusher",
+      "modifier": "Barbell",
+      "equipment": "Barbell"
+    },
+    {
+      "id": 195,
+      "name": "Standing Calf Raise (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Standing Calf Raise",
+      "modifier": "Barbell",
+      "equipment": "Barbell"
+    },
+    {
+      "id": 196,
+      "name": "Upright Row (Barbell, Wide)",
+      "primaryType": "resistance",
+      "baseExercise": "Upright Row",
+      "modifier": "Barbell, Wide",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 197,
+      "name": "Landmine Press",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 198,
+      "name": "Spider Curl (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Spider Curl",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 199,
+      "name": "Arnold Press (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Arnold Press",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 200,
+      "name": "Meadows Row",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 201,
+      "name": "Mountain Climber",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 202,
+      "name": "Tricep Push Down (Reverse)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Push Down",
+      "modifier": "Reverse",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 203,
+      "name": "One Arm Landmine Row",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 204,
+      "name": "Face Pull (High)",
+      "primaryType": "resistance",
+      "baseExercise": "Face Pull",
+      "modifier": "High",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 205,
+      "name": "Preacher Curl (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Preacher Curl",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 206,
+      "name": "Glute Kickback (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Glute Kickback",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 207,
+      "name": "Lunge (Bodyweight)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Bodyweight",
+      "category": "Lower Body"
+    },
+    {
+      "id": 208,
+      "name": "Plank (One Arm One Leg, Bent Knees)",
+      "primaryType": "duration",
+      "baseExercise": "Plank",
+      "modifier": "One Arm One Leg, Bent Knees",
+      "category": "Core"
+    },
+    {
+      "id": 209,
+      "name": "Ring Pull Up",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 210,
+      "name": "Front Raise (Dumbbell, Laying)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Raise",
+      "modifier": "Dumbbell, Laying",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 211,
+      "name": "Rear Delt Flys (Bent Over, Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Bent Over, Cable",
+      "equipment": "Cable"
+    },
+    {
+      "id": 212,
+      "name": "Chest Fly (Cable, High To Low)",
+      "primaryType": "resistance",
+      "baseExercise": "Chest Fly",
+      "modifier": "Cable, High To Low",
+      "equipment": "Cable"
+    },
+    {
+      "id": 213,
+      "name": "Jump Through",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 214,
+      "name": "Front Raise (Dumbbell, Seated, Incline)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Raise",
+      "modifier": "Dumbbell, Seated, Incline",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 215,
+      "name": "Jump Rope",
+      "primaryType": "resistance",
+      "category": "Cardio"
+    },
+    {
+      "id": 216,
+      "name": "Hammer Curl (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Hammer Curl",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 217,
+      "name": "Triceps Extension (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Triceps Extension",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 218,
+      "name": "Sumo Deadlift (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Sumo Deadlift",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 219,
+      "name": "Hammer Curl (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Hammer Curl",
+      "modifier": "Band",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 220,
+      "name": "Chest Fly (Cable, Low To High)",
+      "primaryType": "resistance",
+      "baseExercise": "Chest Fly",
+      "modifier": "Cable, Low To High",
+      "equipment": "Cable"
+    },
+    {
+      "id": 221,
+      "name": "Ring Inversion",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 222,
+      "name": "Ring Dip",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 223,
+      "name": "Lateral Raise (Dumbbell, Partial)",
+      "primaryType": "resistance",
+      "baseExercise": "Lateral Raise",
+      "modifier": "Dumbbell, Partial",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 224,
+      "name": "Handstand Push Up",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 225,
+      "name": "Skin The Cat",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 226,
+      "name": "One Arm Row (Kettlebell)",
+      "primaryType": "resistance",
+      "baseExercise": "One Arm Row",
+      "modifier": "Kettlebell",
+      "equipment": "Kettlebell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 227,
+      "name": "L Sit",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 228,
+      "name": "Rear Delt Raise (3 Way)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Raise",
+      "modifier": "3 Way"
+    },
+    {
+      "id": 229,
+      "name": "Lateral Raise (One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Lateral Raise",
+      "modifier": "One Arm"
+    },
+    {
+      "id": 230,
+      "name": "Upright Row (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Upright Row",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 231,
+      "name": "Front Raise (Cable, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Raise",
+      "modifier": "Cable, One Arm",
+      "equipment": "Cable"
+    },
+    {
+      "id": 232,
+      "name": "Tricep Extension (Dumbbell, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Extension",
+      "modifier": "Dumbbell, One Arm",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 233,
+      "name": "Handstand",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 234,
+      "name": "Hip Thrust (Plate Loaded Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Hip Thrust",
+      "modifier": "Plate Loaded Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 235,
+      "name": "Bent Over Row - Underhand (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Bent Over Row - Underhand",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 236,
+      "name": "Box Jump (30”)",
+      "primaryType": "complex",
+      "baseExercise": "Box Jump",
+      "modifier": "30”"
+    },
+    {
+      "id": 237,
+      "name": "V Up (One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "V Up",
+      "modifier": "One Arm"
+    },
+    {
+      "id": 238,
+      "name": "Bulgarian Split Squat (Jump)",
+      "primaryType": "resistance",
+      "baseExercise": "Bulgarian Split Squat",
+      "modifier": "Jump",
+      "category": "Lower Body"
+    },
+    {
+      "id": 239,
+      "name": "Rack Pull (Barbell, Snatch, Low)",
+      "primaryType": "resistance",
+      "baseExercise": "Rack Pull",
+      "modifier": "Barbell, Snatch, Low",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 240,
+      "name": "Ski Erg",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 241,
+      "name": "Front Raise (Plate)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Raise",
+      "modifier": "Plate"
+    },
+    {
+      "id": 242,
+      "name": "Back Extension (Reverse)",
+      "primaryType": "resistance",
+      "baseExercise": "Back Extension",
+      "modifier": "Reverse"
+    },
+    {
+      "id": 243,
+      "name": "Inverted Row (Bodyweight)",
+      "primaryType": "resistance",
+      "baseExercise": "Inverted Row",
+      "modifier": "Bodyweight",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 244,
+      "name": "Kettlebell Clean & Press (One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Kettlebell Clean & Press",
+      "modifier": "One Arm",
+      "equipment": "Kettlebell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 245,
+      "name": "Kettlebell Clean & Press",
+      "primaryType": "resistance",
+      "equipment": "Kettlebell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 246,
+      "name": "Hip Thrust (One Leg)",
+      "primaryType": "resistance",
+      "baseExercise": "Hip Thrust",
+      "modifier": "One Leg"
+    },
+    {
+      "id": 247,
+      "name": "V Up (Full Extension)",
+      "primaryType": "resistance",
+      "baseExercise": "V Up",
+      "modifier": "Full Extension"
+    },
+    {
+      "id": 248,
+      "name": "Rear Delt Flys (Cable, High To Low)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Cable, High To Low",
+      "equipment": "Cable"
+    },
+    {
+      "id": 249,
+      "name": "Yoga",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 250,
+      "name": "Iso-Lateral Row (Machine)",
+      "primaryType": "distance",
+      "baseExercise": "Iso-Lateral Row",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 251,
+      "name": "Squat (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Squat",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Lower Body"
+    },
+    {
+      "id": 252,
+      "name": "Romanian Deadlift (Snatch)",
+      "primaryType": "resistance",
+      "baseExercise": "Romanian Deadlift",
+      "modifier": "Snatch",
+      "category": "Lower Body"
+    },
+    {
+      "id": 253,
+      "name": "Spider Curl (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Spider Curl",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 254,
+      "name": "Trap Bar Deadlift",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 255,
+      "name": "Trap  Bar Deadlift (Stiff Leg)",
+      "primaryType": "resistance",
+      "baseExercise": "Trap  Bar Deadlift",
+      "modifier": "Stiff Leg",
+      "category": "Lower Body"
+    },
+    {
+      "id": 256,
+      "name": "Step-up",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 257,
+      "name": "Kirk Shrug (Snatch Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Kirk Shrug",
+      "modifier": "Snatch Grip",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 258,
+      "name": "External Shoulder Rotation",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 259,
+      "name": "Kettlebell Swing (Double)",
+      "primaryType": "complex",
+      "baseExercise": "Kettlebell Swing",
+      "modifier": "Double",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 260,
+      "name": "Wrist Curl (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Wrist Curl",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 261,
+      "name": "Rowing (Machine)",
+      "primaryType": "distance",
+      "baseExercise": "Rowing",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 262,
+      "name": "Face Pull (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Face Pull",
+      "modifier": "Band",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 263,
+      "name": "Lat Pulldown (Straight Arm, Band, Unilateral)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Straight Arm, Band, Unilateral",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 264,
+      "name": "Tricep Push Down (Band, Unilateral)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Push Down",
+      "modifier": "Band, Unilateral",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 265,
+      "name": "Pallof Press (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Pallof Press",
+      "modifier": "Band"
+    },
+    {
+      "id": 266,
+      "name": "Jumping Jack",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 267,
+      "name": "Shadow Boxing",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 268,
+      "name": "Push Up (Ring)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Up",
+      "modifier": "Ring",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 269,
+      "name": "Deadlift (Kettlebell)",
+      "primaryType": "resistance",
+      "baseExercise": "Deadlift",
+      "modifier": "Kettlebell",
+      "equipment": "Kettlebell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 270,
+      "name": "Front Raise (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Raise",
+      "modifier": "Band"
+    },
+    {
+      "id": 271,
+      "name": "Staircase Run",
+      "primaryType": "distance",
+      "category": "Cardio"
+    },
+    {
+      "id": 272,
+      "name": "Lateral Jump",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 273,
+      "name": "Burpee",
+      "primaryType": "complex"
+    },
+    {
+      "id": 274,
+      "name": "Spider-Man Lounge",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 275,
+      "name": "Bear Crawl",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 276,
+      "name": "Shuttle Run",
+      "primaryType": "distance",
+      "category": "Cardio"
+    },
+    {
+      "id": 277,
+      "name": "Crab Walk",
+      "primaryType": "resistance",
+      "category": "Core"
+    },
+    {
+      "id": 278,
+      "name": "Kettlebell Clean",
+      "primaryType": "resistance",
+      "equipment": "Kettlebell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 279,
+      "name": "Bent Over Row (Kettlebell, 2 Arms)",
+      "primaryType": "resistance",
+      "baseExercise": "Bent Over Row",
+      "modifier": "Kettlebell, 2 Arms",
+      "equipment": "Kettlebell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 280,
+      "name": "Lat Pulldown (Straight Arm, Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Lat Pulldown",
+      "modifier": "Straight Arm, Band",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 281,
+      "name": "High Row (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "High Row",
+      "modifier": "Suspension Trainer",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 282,
+      "name": "Low Row (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Low Row",
+      "modifier": "Suspension Trainer",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 283,
+      "name": "Jump Squat (Weighted)",
+      "primaryType": "resistance",
+      "baseExercise": "Jump Squat",
+      "modifier": "Weighted",
+      "category": "Lower Body"
+    },
+    {
+      "id": 284,
+      "name": "Tricep Push Down (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Push Down",
+      "modifier": "Band",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 285,
+      "name": "Pistol Squat (Box)",
+      "primaryType": "resistance",
+      "baseExercise": "Pistol Squat",
+      "modifier": "Box",
+      "category": "Lower Body"
+    },
+    {
+      "id": 286,
+      "name": "Lying Leg Curl (Static)",
+      "primaryType": "duration",
+      "baseExercise": "Lying Leg Curl",
+      "modifier": "Static",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 287,
+      "name": "Plank",
+      "primaryType": "duration",
+      "category": "Core"
+    },
+    {
+      "id": 288,
+      "name": "Hanging Knee Raise",
+      "primaryType": "duration"
+    },
+    {
+      "id": 289,
+      "name": "Tricep Extension (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Tricep Extension",
+      "modifier": "Band"
+    },
+    {
+      "id": 290,
+      "name": "Torso Rotation (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Torso Rotation",
+      "modifier": "Band"
+    },
+    {
+      "id": 291,
+      "name": "Chest Fly (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Chest Fly",
+      "modifier": "Band"
+    },
+    {
+      "id": 292,
+      "name": "Jump Squat (Suspension)",
+      "primaryType": "resistance",
+      "baseExercise": "Jump Squat",
+      "modifier": "Suspension",
+      "category": "Lower Body"
+    },
+    {
+      "id": 293,
+      "name": "V Up (Cross Body)",
+      "primaryType": "resistance",
+      "baseExercise": "V Up",
+      "modifier": "Cross Body"
+    },
+    {
+      "id": 294,
+      "name": "Seated Overhead Press (One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Overhead Press",
+      "modifier": "One Arm",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 295,
+      "name": "Hanging Knee Raise (3 Ways)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Knee Raise",
+      "modifier": "3 Ways"
+    },
+    {
+      "id": 296,
+      "name": "Rear Delt Flys (Bent Over, Band, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Rear Delt Flys",
+      "modifier": "Bent Over, Band, One Arm"
+    },
+    {
+      "id": 297,
+      "name": "V Up (Figure 8)",
+      "primaryType": "resistance",
+      "baseExercise": "V Up",
+      "modifier": "Figure 8"
+    },
+    {
+      "id": 298,
+      "name": "Lunge (Overhead)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Overhead",
+      "category": "Lower Body"
+    },
+    {
+      "id": 299,
+      "name": "Kettlebell Swing (One Arm)",
+      "primaryType": "complex",
+      "baseExercise": "Kettlebell Swing",
+      "modifier": "One Arm",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 300,
+      "name": "Kettlebell Snatch",
+      "primaryType": "resistance",
+      "equipment": "Kettlebell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 301,
+      "name": "Kettlebell Press",
+      "primaryType": "resistance",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 302,
+      "name": "Fly Circles (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Fly Circles",
+      "modifier": "Suspension Trainer"
+    },
+    {
+      "id": 303,
+      "name": "Waiter Walk (One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Waiter Walk",
+      "modifier": "One Arm"
+    },
+    {
+      "id": 304,
+      "name": "Farmer Walk (Unilateral, Racked)",
+      "primaryType": "resistance",
+      "baseExercise": "Farmer Walk",
+      "modifier": "Unilateral, Racked"
+    },
+    {
+      "id": 305,
+      "name": "Overhead Squat (Kettlebell, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Overhead Squat",
+      "modifier": "Kettlebell, One Arm",
+      "equipment": "Kettlebell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 306,
+      "name": "Z Press (One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Z Press",
+      "modifier": "One Arm"
+    },
+    {
+      "id": 307,
+      "name": "Y Raises (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Y Raises",
+      "modifier": "Suspension Trainer"
+    },
+    {
+      "id": 308,
+      "name": "Push Up (Med Ball)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Up",
+      "modifier": "Med Ball",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 309,
+      "name": "Staircase Walk",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 310,
+      "name": "Staircase Waiter Walk",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 311,
+      "name": "Push-Up (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Push-Up",
+      "modifier": "Suspension Trainer",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 312,
+      "name": "Push Up (Decline, 20”)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Up",
+      "modifier": "Decline, 20”",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 313,
+      "name": "Pull Apart (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Pull Apart",
+      "modifier": "Band",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 314,
+      "name": "Pistol Squat (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Pistol Squat",
+      "modifier": "Suspension Trainer",
+      "category": "Lower Body"
+    },
+    {
+      "id": 315,
+      "name": "Step Up (Weighted)",
+      "primaryType": "resistance",
+      "baseExercise": "Step Up",
+      "modifier": "Weighted"
+    },
+    {
+      "id": 316,
+      "name": "Seated Palms Up Wrist Curl (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Seated Palms Up Wrist Curl",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 317,
+      "name": "Seated Palms Down Wrist Curl",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 318,
+      "name": "Lateral Raise (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Lateral Raise",
+      "modifier": "Band"
+    },
+    {
+      "id": 319,
+      "name": "Push Up (Decline, 24”)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Up",
+      "modifier": "Decline, 24”",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 320,
+      "name": "Weighted Punches",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 321,
+      "name": "Ring Pull-Up (L-Sit)",
+      "primaryType": "duration",
+      "baseExercise": "Ring Pull-Up",
+      "modifier": "L-Sit",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 322,
+      "name": "Wrist Roller",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 323,
+      "name": "Torso Rotation (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Torso Rotation",
+      "modifier": "Suspension Trainer"
+    },
+    {
+      "id": 324,
+      "name": "Push Up (One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Up",
+      "modifier": "One Arm",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 325,
+      "name": "Hammer Curl (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Hammer Curl",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 326,
+      "name": "Chest Fly (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Chest Fly",
+      "modifier": "Suspension Trainer"
+    },
+    {
+      "id": 327,
+      "name": "Jump Rope (Double Under)",
+      "primaryType": "complex",
+      "baseExercise": "Jump Rope",
+      "modifier": "Double Under",
+      "category": "Cardio"
+    },
+    {
+      "id": 328,
+      "name": "Pull Through (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Pull Through",
+      "modifier": "Band",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 329,
+      "name": "Wall Ball",
+      "primaryType": "complex"
+    },
+    {
+      "id": 330,
+      "name": "Squeeze Press (Laying, Kettlebell)",
+      "primaryType": "resistance",
+      "baseExercise": "Squeeze Press",
+      "modifier": "Laying, Kettlebell",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 331,
+      "name": "Wrist Rotation",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 332,
+      "name": "Farmer Walk (Distance)",
+      "primaryType": "resistance",
+      "baseExercise": "Farmer Walk",
+      "modifier": "Distance"
+    },
+    {
+      "id": 333,
+      "name": "Upright Row (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Upright Row",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 334,
+      "name": "Heavy Bag Walk",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 335,
+      "name": "Hammer Curl (Kettlebell Rope)",
+      "primaryType": "resistance",
+      "baseExercise": "Hammer Curl",
+      "modifier": "Kettlebell Rope",
+      "equipment": "Kettlebell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 336,
+      "name": "Hiking",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 337,
+      "name": "Bicep Curl (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Bicep Curl",
+      "modifier": "Band",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 338,
+      "name": "Upright Row (Band)",
+      "primaryType": "resistance",
+      "baseExercise": "Upright Row",
+      "modifier": "Band",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 339,
+      "name": "One Arm Row (Kneeling, Band)",
+      "primaryType": "resistance",
+      "baseExercise": "One Arm Row",
+      "modifier": "Kneeling, Band",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 340,
+      "name": "Face Pull (Band, One Arm)",
+      "primaryType": "resistance",
+      "baseExercise": "Face Pull",
+      "modifier": "Band, One Arm",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 341,
+      "name": "Thruster (Barbell)",
+      "primaryType": "complex",
+      "baseExercise": "Thruster",
+      "modifier": "Barbell",
+      "equipment": "Barbell"
+    },
+    {
+      "id": 342,
+      "name": "Rope Pull",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 343,
+      "name": "Snatch (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 344,
+      "name": "Burpee (Over DB)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee",
+      "modifier": "Over DB"
+    },
+    {
+      "id": 345,
+      "name": "L Sit Rope Pull",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 346,
+      "name": "Thruster (Dumbbell)",
+      "primaryType": "complex",
+      "baseExercise": "Thruster",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 347,
+      "name": "Rope Pull (Machine)",
+      "primaryType": "resistance",
+      "baseExercise": "Rope Pull",
+      "modifier": "Machine",
+      "equipment": "Machine",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 348,
+      "name": "Power Snatch (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Power Snatch",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 349,
+      "name": "Hang Clean (Barbell)",
+      "primaryType": "duration",
+      "baseExercise": "Hang Clean",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 350,
+      "name": "Swimming",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 351,
+      "name": "Burpee (Over Bar)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee",
+      "modifier": "Over Bar"
+    },
+    {
+      "id": 352,
+      "name": "Snatch Pull (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch Pull",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 353,
+      "name": "Sit Up",
+      "primaryType": "resistance",
+      "category": "Core"
+    },
+    {
+      "id": 354,
+      "name": "Muscle Up",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 355,
+      "name": "Bag Over Shoulder",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 356,
+      "name": "Clean (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Clean",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 357,
+      "name": "Russian Dip",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 358,
+      "name": "Battle Ropes",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 359,
+      "name": "Split Jump",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 360,
+      "name": "Snatch Deadlift",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 361,
+      "name": "Ghd Sit Up",
+      "primaryType": "resistance",
+      "category": "Core"
+    },
+    {
+      "id": 362,
+      "name": "Tuck Planche",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 363,
+      "name": "Windshield Wipers",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 364,
+      "name": "Power Clean",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 365,
+      "name": "Split Jerk (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Split Jerk",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 366,
+      "name": "Clean and Jerk (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Clean and Jerk",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 367,
+      "name": "Burpee (Over Box)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee",
+      "modifier": "Over Box"
+    },
+    {
+      "id": 368,
+      "name": "Snatch (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 369,
+      "name": "Pistol Squat",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 370,
+      "name": "Push Up (Hand Release)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Up",
+      "modifier": "Hand Release",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 371,
+      "name": "Burpee (Med Ball)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee",
+      "modifier": "Med Ball"
+    },
+    {
+      "id": 372,
+      "name": "Wall Ball (2 For 1)",
+      "primaryType": "complex",
+      "baseExercise": "Wall Ball",
+      "modifier": "2 For 1"
+    },
+    {
+      "id": 373,
+      "name": "Clean (Medicine Ball)",
+      "primaryType": "resistance",
+      "baseExercise": "Clean",
+      "modifier": "Medicine Ball",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 374,
+      "name": "Cluster (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Cluster",
+      "modifier": "Barbell",
+      "equipment": "Barbell"
+    },
+    {
+      "id": 375,
+      "name": "Clean (Dumbbells)",
+      "primaryType": "resistance",
+      "baseExercise": "Clean",
+      "modifier": "Dumbbells",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 376,
+      "name": "Front Squat (Dumbbells)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Squat",
+      "modifier": "Dumbbells",
+      "equipment": "Dumbbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 377,
+      "name": "Muscle Snatch",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 378,
+      "name": "No Feet Snatch",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 379,
+      "name": "Hang Snatch (Barbell)",
+      "primaryType": "duration",
+      "baseExercise": "Hang Snatch",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 380,
+      "name": "Deadlift (Sandbag)",
+      "primaryType": "resistance",
+      "baseExercise": "Deadlift",
+      "modifier": "Sandbag",
+      "category": "Lower Body"
+    },
+    {
+      "id": 381,
+      "name": "Snatch Balance (No Feet)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch Balance",
+      "modifier": "No Feet",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 382,
+      "name": "Kettlebell Turkish Get Up",
+      "primaryType": "resistance",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 383,
+      "name": "Barbell Rollout",
+      "primaryType": "resistance",
+      "equipment": "Barbell"
+    },
+    {
+      "id": 384,
+      "name": "Headstand",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 385,
+      "name": "Thruster (Kettlebell, One Arm)",
+      "primaryType": "complex",
+      "baseExercise": "Thruster",
+      "modifier": "Kettlebell, One Arm",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 386,
+      "name": "Power Clean (Sandbag)",
+      "primaryType": "resistance",
+      "baseExercise": "Power Clean",
+      "modifier": "Sandbag",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 387,
+      "name": "Manmaker",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 388,
+      "name": "Jerk Drive",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 389,
+      "name": "Tall Snatch",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 390,
+      "name": "High Hang Snatch",
+      "primaryType": "duration",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 391,
+      "name": "Drop Snatch",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 392,
+      "name": "Press In Snatch",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 393,
+      "name": "Squat (Sandbag)",
+      "primaryType": "resistance",
+      "baseExercise": "Squat",
+      "modifier": "Sandbag",
+      "category": "Lower Body"
+    },
+    {
+      "id": 394,
+      "name": "Overhead Squat (Medicine Ball)",
+      "primaryType": "resistance",
+      "baseExercise": "Overhead Squat",
+      "modifier": "Medicine Ball",
+      "category": "Lower Body"
+    },
+    {
+      "id": 395,
+      "name": "Ring Muscle Up (Jumping)",
+      "primaryType": "resistance",
+      "baseExercise": "Ring Muscle Up",
+      "modifier": "Jumping"
+    },
+    {
+      "id": 396,
+      "name": "Burpee Pull-Up",
+      "primaryType": "complex",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 397,
+      "name": "Ring Muscle Up",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 398,
+      "name": "Clean And Jerk (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Clean And Jerk",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 399,
+      "name": "Air Bike",
+      "primaryType": "distance",
+      "category": "Cardio"
+    },
+    {
+      "id": 400,
+      "name": "Box Jump",
+      "primaryType": "complex"
+    },
+    {
+      "id": 401,
+      "name": "Chest To Bar",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 402,
+      "name": "Wall Walk",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 403,
+      "name": "Running (Treadmill)",
+      "primaryType": "distance",
+      "baseExercise": "Running",
+      "modifier": "Treadmill",
+      "category": "Cardio"
+    },
+    {
+      "id": 404,
+      "name": "Renegade Row",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 405,
+      "name": "Toes To Bar",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 406,
+      "name": "German Snatch",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 407,
+      "name": "Bulgarian Split Squat (Front Rack)",
+      "primaryType": "resistance",
+      "baseExercise": "Bulgarian Split Squat",
+      "modifier": "Front Rack",
+      "category": "Lower Body"
+    },
+    {
+      "id": 408,
+      "name": "Split Jerk (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Split Jerk",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 409,
+      "name": "German Clean",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 410,
+      "name": "Power Jerk",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 411,
+      "name": "Hollow Body Hold",
+      "primaryType": "duration"
+    },
+    {
+      "id": 412,
+      "name": "Snatch Deadlift (Paused)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch Deadlift",
+      "modifier": "Paused",
+      "category": "Lower Body"
+    },
+    {
+      "id": 413,
+      "name": "Devil Press",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 414,
+      "name": "Split Jerk (Paused)",
+      "primaryType": "resistance",
+      "baseExercise": "Split Jerk",
+      "modifier": "Paused",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 415,
+      "name": "Hang Clean (Dumbbell)",
+      "primaryType": "duration",
+      "baseExercise": "Hang Clean",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 416,
+      "name": "Push Press (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Press",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 417,
+      "name": "Snatch (Blocks)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch",
+      "modifier": "Blocks",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 418,
+      "name": "Kettlebell Clean (Two Arms)",
+      "primaryType": "resistance",
+      "baseExercise": "Kettlebell Clean",
+      "modifier": "Two Arms",
+      "equipment": "Kettlebell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 419,
+      "name": "Thruster (Kettlebell)",
+      "primaryType": "complex",
+      "baseExercise": "Thruster",
+      "modifier": "Kettlebell",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 420,
+      "name": "Inchworm",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 421,
+      "name": "Snatch (Clean Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch",
+      "modifier": "Clean Grip",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 422,
+      "name": "Snatch (Pause At Knee)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch",
+      "modifier": "Pause At Knee",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 423,
+      "name": "Snatch Liftoff",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 424,
+      "name": "Ring Muscle Up (Negative)",
+      "primaryType": "resistance",
+      "baseExercise": "Ring Muscle Up",
+      "modifier": "Negative"
+    },
+    {
+      "id": 425,
+      "name": "Cuban Press",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 426,
+      "name": "Trap Bar Deadlift (Jumping)",
+      "primaryType": "resistance",
+      "baseExercise": "Trap Bar Deadlift",
+      "modifier": "Jumping",
+      "category": "Lower Body"
+    },
+    {
+      "id": 427,
+      "name": "Kettlebell Press (Bottom Up)",
+      "primaryType": "resistance",
+      "baseExercise": "Kettlebell Press",
+      "modifier": "Bottom Up",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 428,
+      "name": "Farmer Walk (Racked)",
+      "primaryType": "resistance",
+      "baseExercise": "Farmer Walk",
+      "modifier": "Racked"
+    },
+    {
+      "id": 429,
+      "name": "Reverse Lunge (Kettlebell Up)",
+      "primaryType": "resistance",
+      "baseExercise": "Reverse Lunge",
+      "modifier": "Kettlebell Up",
+      "equipment": "Kettlebell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 430,
+      "name": "Push Press (Snatch Grip)",
+      "primaryType": "resistance",
+      "baseExercise": "Push Press",
+      "modifier": "Snatch Grip",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 431,
+      "name": "Front Squat (Double Kettlebell, Bottom Up)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Squat",
+      "modifier": "Double Kettlebell, Bottom Up",
+      "equipment": "Kettlebell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 432,
+      "name": "Kettlebell Press (Double)",
+      "primaryType": "resistance",
+      "baseExercise": "Kettlebell Press",
+      "modifier": "Double",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 433,
+      "name": "Ring Muscle Up (Bottom Part)",
+      "primaryType": "resistance",
+      "baseExercise": "Ring Muscle Up",
+      "modifier": "Bottom Part"
+    },
+    {
+      "id": 434,
+      "name": "Snatch Balance",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 435,
+      "name": "Press In Split",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 436,
+      "name": "Sumo Deadlift High Pull (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Sumo Deadlift High Pull",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 437,
+      "name": "Parallette Shoot Through",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 438,
+      "name": "Knees to Elbows",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 439,
+      "name": "Running",
+      "primaryType": "distance",
+      "category": "Cardio"
+    },
+    {
+      "id": 440,
+      "name": "Split Jerk Behind Neck In Split",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 441,
+      "name": "Split Jerk Behind Neck",
+      "primaryType": "resistance",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 442,
+      "name": "Incline Chest Fly (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Incline Chest Fly",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 443,
+      "name": "Hang Clean And Jerk (Dumbbell)",
+      "primaryType": "duration",
+      "baseExercise": "Hang Clean And Jerk",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 444,
+      "name": "Kipping Pull Up",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 445,
+      "name": "Deadlift (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Deadlift",
+      "modifier": "Cable",
+      "equipment": "Cable",
+      "category": "Lower Body"
+    },
+    {
+      "id": 446,
+      "name": "Side Plank (Adductor)",
+      "primaryType": "duration",
+      "baseExercise": "Side Plank",
+      "modifier": "Adductor",
+      "category": "Core"
+    },
+    {
+      "id": 447,
+      "name": "Ground To Shoulder (D Ball)",
+      "primaryType": "resistance",
+      "baseExercise": "Ground To Shoulder",
+      "modifier": "D Ball"
+    },
+    {
+      "id": 448,
+      "name": "Handstand Taps",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 449,
+      "name": "Low Row One Arm (Suspension Trainer)",
+      "primaryType": "resistance",
+      "baseExercise": "Low Row One Arm",
+      "modifier": "Suspension Trainer",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 450,
+      "name": "Ring Dip Top Hold",
+      "primaryType": "duration",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 451,
+      "name": "Cycling (Indoor)",
+      "primaryType": "distance",
+      "baseExercise": "Cycling",
+      "modifier": "Indoor"
+    },
+    {
+      "id": 452,
+      "name": "Handstand Wall Walk",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 453,
+      "name": "Hang Clean And Jerk (Dumbbell, 2 Arms)",
+      "primaryType": "duration",
+      "baseExercise": "Hang Clean And Jerk",
+      "modifier": "Dumbbell, 2 Arms",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 454,
+      "name": "Front Squat (Kettlebells)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Squat",
+      "modifier": "Kettlebells",
+      "equipment": "Kettlebell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 455,
+      "name": "Tire Flip",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 456,
+      "name": "Rope Climb (Legless)",
+      "primaryType": "resistance",
+      "baseExercise": "Rope Climb",
+      "modifier": "Legless"
+    },
+    {
+      "id": 457,
+      "name": "Deadlift (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Deadlift",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 458,
+      "name": "Kettlebell Jerk",
+      "primaryType": "resistance",
+      "equipment": "Kettlebell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 459,
+      "name": "Power Snatch (From Hip)",
+      "primaryType": "resistance",
+      "baseExercise": "Power Snatch",
+      "modifier": "From Hip",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 460,
+      "name": "Ring Muscle Up (Box)",
+      "primaryType": "resistance",
+      "baseExercise": "Ring Muscle Up",
+      "modifier": "Box"
+    },
+    {
+      "id": 461,
+      "name": "Sandbag Carry (70lb)",
+      "primaryType": "distance",
+      "baseExercise": "Sandbag Carry",
+      "modifier": "70lb"
+    },
+    {
+      "id": 462,
+      "name": "Kettlebell Snatch (Double)",
+      "primaryType": "resistance",
+      "baseExercise": "Kettlebell Snatch",
+      "modifier": "Double",
+      "equipment": "Kettlebell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 463,
+      "name": "Cluster (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Cluster",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell"
+    },
+    {
+      "id": 464,
+      "name": "Cluster (Kettlebell)",
+      "primaryType": "resistance",
+      "baseExercise": "Cluster",
+      "modifier": "Kettlebell",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 465,
+      "name": "Sled Push",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 466,
+      "name": "Lunge (Overhead, Dumbbells)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Overhead, Dumbbells",
+      "equipment": "Dumbbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 467,
+      "name": "Power Clean And Jerk (Dumbbell, 2 Arms)",
+      "primaryType": "resistance",
+      "baseExercise": "Power Clean And Jerk",
+      "modifier": "Dumbbell, 2 Arms",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 468,
+      "name": "Squat (Safety Bar)",
+      "primaryType": "resistance",
+      "baseExercise": "Squat",
+      "modifier": "Safety Bar",
+      "category": "Lower Body"
+    },
+    {
+      "id": 469,
+      "name": "Squat Walkout",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 470,
+      "name": "Ring Push Up",
+      "primaryType": "resistance",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 471,
+      "name": "Clean And Press (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Clean And Press",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 472,
+      "name": "Power Jerk (Behind Neck)",
+      "primaryType": "resistance",
+      "baseExercise": "Power Jerk",
+      "modifier": "Behind Neck",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 473,
+      "name": "Sled Pull",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 474,
+      "name": "Clean Pull",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 475,
+      "name": "Earthquake Press",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 476,
+      "name": "Burpee (Facing The Bar)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee",
+      "modifier": "Facing The Bar"
+    },
+    {
+      "id": 477,
+      "name": "Box Jump Over",
+      "primaryType": "complex"
+    },
+    {
+      "id": 478,
+      "name": "Handstand Push Up (Chest To Wall)",
+      "primaryType": "resistance",
+      "baseExercise": "Handstand Push Up",
+      "modifier": "Chest To Wall",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 479,
+      "name": "Pull Up (Rope)",
+      "primaryType": "resistance",
+      "baseExercise": "Pull Up",
+      "modifier": "Rope",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 480,
+      "name": "Ground To Overhead (Kettlebell)",
+      "primaryType": "resistance",
+      "baseExercise": "Ground To Overhead",
+      "modifier": "Kettlebell",
+      "equipment": "Kettlebell"
+    },
+    {
+      "id": 481,
+      "name": "Kettlebell Push-Up",
+      "primaryType": "resistance",
+      "equipment": "Kettlebell",
+      "category": "Upper Body Push"
+    },
+    {
+      "id": 482,
+      "name": "Beastmaker",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 483,
+      "name": "Static Hang (One Arm)",
+      "primaryType": "duration",
+      "baseExercise": "Static Hang",
+      "modifier": "One Arm"
+    },
+    {
+      "id": 484,
+      "name": "Shuttle Run (Distance)",
+      "primaryType": "distance",
+      "baseExercise": "Shuttle Run",
+      "modifier": "Distance",
+      "category": "Cardio"
+    },
+    {
+      "id": 485,
+      "name": "Rope Pull (Sled)",
+      "primaryType": "resistance",
+      "baseExercise": "Rope Pull",
+      "modifier": "Sled",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 486,
+      "name": "Snatch Deadlift (Deficit)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch Deadlift",
+      "modifier": "Deficit",
+      "category": "Lower Body"
+    },
+    {
+      "id": 487,
+      "name": "Suitcase Deadlift",
+      "primaryType": "resistance",
+      "category": "Lower Body"
+    },
+    {
+      "id": 488,
+      "name": "Slow Pull Snatch",
+      "primaryType": "resistance",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 489,
+      "name": "Front Squat (Barbell, Paused)",
+      "primaryType": "resistance",
+      "baseExercise": "Front Squat",
+      "modifier": "Barbell, Paused",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 490,
+      "name": "Burpee Snatch (Dumbbell)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee Snatch",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 491,
+      "name": "Burpee (Over Bench)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee",
+      "modifier": "Over Bench"
+    },
+    {
+      "id": 492,
+      "name": "Lunge (Barbell, Racked)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Barbell, Racked",
+      "equipment": "Barbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 493,
+      "name": "Hanging Leg Raise (One Arm)",
+      "primaryType": "duration",
+      "baseExercise": "Hanging Leg Raise",
+      "modifier": "One Arm"
+    },
+    {
+      "id": 494,
+      "name": "Burpee (Deadlift)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee",
+      "modifier": "Deadlift",
+      "category": "Lower Body"
+    },
+    {
+      "id": 495,
+      "name": "Handstand Walk",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 496,
+      "name": "Lunge (Front Rack, Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Front Rack, Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Lower Body"
+    },
+    {
+      "id": 497,
+      "name": "Reverse Curl (Barbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Reverse Curl",
+      "modifier": "Barbell",
+      "equipment": "Barbell",
+      "category": "Upper Body Pull"
+    },
+    {
+      "id": 498,
+      "name": "Rope Climb",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 499,
+      "name": "Burpee (Broad Jump)",
+      "primaryType": "complex",
+      "baseExercise": "Burpee",
+      "modifier": "Broad Jump"
+    },
+    {
+      "id": 500,
+      "name": "Snatch (Dumbbell, Double)",
+      "primaryType": "resistance",
+      "baseExercise": "Snatch",
+      "modifier": "Dumbbell, Double",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 501,
+      "name": "Chest To Bar (Strict)",
+      "primaryType": "resistance",
+      "baseExercise": "Chest To Bar",
+      "modifier": "Strict"
+    },
+    {
+      "id": 502,
+      "name": "Box Jump (36”)",
+      "primaryType": "complex",
+      "baseExercise": "Box Jump",
+      "modifier": "36”"
+    },
+    {
+      "id": 503,
+      "name": "Box Jump (38”)",
+      "primaryType": "complex",
+      "baseExercise": "Box Jump",
+      "modifier": "38”"
+    },
+    {
+      "id": 504,
+      "name": "Depth Jump",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 505,
+      "name": "Calf Jump",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 506,
+      "name": "Power Clean (Dumbbell)",
+      "primaryType": "resistance",
+      "baseExercise": "Power Clean",
+      "modifier": "Dumbbell",
+      "equipment": "Dumbbell",
+      "category": "Olympic Lifting"
+    },
+    {
+      "id": 507,
+      "name": "Burpee Muscle Up",
+      "primaryType": "complex"
+    },
+    {
+      "id": 508,
+      "name": "Lateral Box Jump",
+      "primaryType": "complex"
+    },
+    {
+      "id": 509,
+      "name": "Toes Through Rings",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 510,
+      "name": "Static Hang (Two Arms)",
+      "primaryType": "duration",
+      "baseExercise": "Static Hang",
+      "modifier": "Two Arms"
+    },
+    {
+      "id": 511,
+      "name": "Lunge (Jumping)",
+      "primaryType": "resistance",
+      "baseExercise": "Lunge",
+      "modifier": "Jumping",
+      "category": "Lower Body"
+    },
+    {
+      "id": 512,
+      "name": "Broad Jump",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 513,
+      "name": "Triceps Extension (Cable)",
+      "primaryType": "resistance",
+      "baseExercise": "Triceps Extension",
+      "modifier": "Cable",
+      "equipment": "Cable"
+    },
+    {
+      "id": 514,
+      "name": "Farmer Walk",
+      "primaryType": "resistance"
+    },
+    {
+      "id": 515,
+      "name": "Chest Dip (Straight Bar)",
+      "primaryType": "resistance",
+      "baseExercise": "Chest Dip",
+      "modifier": "Straight Bar",
+      "category": "Upper Body Push"
+    }
+  ]
+}

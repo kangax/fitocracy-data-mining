@@ -1,0 +1,8 @@
+- create unified exercise/sessions format
+- convert "strong app" data (CSV) to the new format
+- convert fitocracy data (json) to the new format
+- combine both data
+- create visualization / exploration of combined data
+    - frequency
+    - volume
+    - maxes

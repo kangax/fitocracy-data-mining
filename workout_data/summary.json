@@ -1,0 +1,46 @@
+{
+  "exportDate": "2025-03-17T19:06:04.784Z",
+  "totalExercises": 515,
+  "yearlyStats": {
+    "2018": {
+      "entries": 5867,
+      "sessions": 223,
+      "jsonSizeMB": "0.95"
+    },
+    "2019": {
+      "entries": 9538,
+      "sessions": 302,
+      "jsonSizeMB": "1.37"
+    },
+    "2020": {
+      "entries": 8787,
+      "sessions": 288,
+      "jsonSizeMB": "1.07"
+    },
+    "2021": {
+      "entries": 8324,
+      "sessions": 300,
+      "jsonSizeMB": "1.07"
+    },
+    "2022": {
+      "entries": 6716,
+      "sessions": 273,
+      "jsonSizeMB": "0.88"
+    },
+    "2023": {
+      "entries": 7617,
+      "sessions": 276,
+      "jsonSizeMB": "0.99"
+    },
+    "2024": {
+      "entries": 6296,
+      "sessions": 234,
+      "jsonSizeMB": "0.78"
+    },
+    "2025": {
+      "entries": 1297,
+      "sessions": 53,
+      "jsonSizeMB": "0.15"
+    }
+  }
+}
