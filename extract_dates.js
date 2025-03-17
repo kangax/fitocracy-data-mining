@@ -1,0 +1,1 @@
+const fs = require("fs"); const data = fs.readFileSync("data4.json", "utf8"); const dates = data.match(/"actiondate":"([^"]*)"/g).map(m => m.match(/"actiondate":"([^"]*)"/)[1]); const sortedDates = dates.sort(); console.log("Earliest date:", sortedDates[0]); console.log("Latest date:", sortedDates[sortedDates.length - 1]);

@@ -1,0 +1,2328 @@
+{
+  "summary": {
+    "totalFitocracyExercises": 399,
+    "totalStrongExercises": 515,
+    "exactMatches": 35,
+    "confidentMatches": 71,
+    "ambiguousMatches": 211,
+    "noMatches": 82
+  },
+  "matches": [
+    {
+      "fitocracy": "Ball Slams",
+      "strong": "Ball Slams",
+      "score": 100,
+      "strongId": 102
+    },
+    {
+      "fitocracy": "Battle Ropes",
+      "strong": "Battle Ropes",
+      "score": 100,
+      "strongId": 358
+    },
+    {
+      "fitocracy": "Bear Crawl",
+      "strong": "Bear Crawl",
+      "score": 100,
+      "strongId": 275
+    },
+    {
+      "fitocracy": "Cable Crunch",
+      "strong": "Cable Crunch",
+      "score": 100,
+      "strongId": 42
+    },
+    {
+      "fitocracy": "Cable Twist",
+      "strong": "Cable Twist",
+      "score": 100,
+      "strongId": 111
+    },
+    {
+      "fitocracy": "Burpee",
+      "strong": "Burpee",
+      "score": 100,
+      "strongId": 273
+    },
+    {
+      "fitocracy": "Crunch",
+      "strong": "Crunch",
+      "score": 100,
+      "strongId": 153
+    },
+    {
+      "fitocracy": "Cuban Press",
+      "strong": "Cuban Press",
+      "score": 100,
+      "strongId": 425
+    },
+    {
+      "fitocracy": "Foam Rolling",
+      "strong": "Foam Rolling",
+      "score": 100,
+      "strongId": 27
+    },
+    {
+      "fitocracy": "Handstand",
+      "strong": "Handstand",
+      "score": 100,
+      "strongId": 233
+    },
+    {
+      "fitocracy": "Hanging Knee Raise",
+      "strong": "Hanging Knee Raise",
+      "score": 100,
+      "strongId": 288
+    },
+    {
+      "fitocracy": "Headstand",
+      "strong": "Headstand",
+      "score": 100,
+      "strongId": 384
+    },
+    {
+      "fitocracy": "Heavy Bag",
+      "strong": "Heavy Bag",
+      "score": 100,
+      "strongId": 43
+    },
+    {
+      "fitocracy": "Hiking",
+      "strong": "Hiking",
+      "score": 100,
+      "strongId": 336
+    },
+    {
+      "fitocracy": "Kettlebell Press",
+      "strong": "Kettlebell Press",
+      "score": 100,
+      "strongId": 301
+    },
+    {
+      "fitocracy": "Jump Rope",
+      "strong": "Jump Rope",
+      "score": 100,
+      "strongId": 215
+    },
+    {
+      "fitocracy": "Leg Press",
+      "strong": "Leg Press",
+      "score": 100,
+      "strongId": 105
+    },
+    {
+      "fitocracy": "Muscle Snatch",
+      "strong": "Muscle Snatch",
+      "score": 100,
+      "strongId": 377
+    },
+    {
+      "fitocracy": "Pallof Press",
+      "strong": "Pallof Press",
+      "score": 100,
+      "strongId": 19
+    },
+    {
+      "fitocracy": "Power Clean",
+      "strong": "Power Clean",
+      "score": 100,
+      "strongId": 364
+    },
+    {
+      "fitocracy": "Plank",
+      "strong": "Plank",
+      "score": 100,
+      "strongId": 287
+    },
+    {
+      "fitocracy": "Push Press",
+      "strong": "Push Press",
+      "score": 100,
+      "strongId": 112
+    },
+    {
+      "fitocracy": "Renegade Row",
+      "strong": "Renegade Row",
+      "score": 100,
+      "strongId": 404
+    },
+    {
+      "fitocracy": "Ring Dip",
+      "strong": "Ring Dip",
+      "score": 100,
+      "strongId": 222
+    },
+    {
+      "fitocracy": "Rope Climb",
+      "strong": "Rope Climb",
+      "score": 100,
+      "strongId": 498
+    },
+    {
+      "fitocracy": "Running",
+      "strong": "Running",
+      "score": 100,
+      "strongId": 439
+    },
+    {
+      "fitocracy": "Sled Pull",
+      "strong": "Sled Pull",
+      "score": 100,
+      "strongId": 473
+    },
+    {
+      "fitocracy": "Sled Push",
+      "strong": "Sled Push",
+      "score": 100,
+      "strongId": 465
+    },
+    {
+      "fitocracy": "Swimming",
+      "strong": "Swimming",
+      "score": 100,
+      "strongId": 350
+    },
+    {
+      "fitocracy": "Tire Flip",
+      "strong": "Tire Flip",
+      "score": 100,
+      "strongId": 455
+    },
+    {
+      "fitocracy": "Stretching",
+      "strong": "Stretching",
+      "score": 100,
+      "strongId": 97
+    },
+    {
+      "fitocracy": "Trap Bar Deadlift",
+      "strong": "Trap Bar Deadlift",
+      "score": 100,
+      "strongId": 254
+    },
+    {
+      "fitocracy": "Tuck Planche",
+      "strong": "Tuck Planche",
+      "score": 100,
+      "strongId": 362
+    },
+    {
+      "fitocracy": "Walking",
+      "strong": "Walking",
+      "score": 100,
+      "strongId": 81
+    },
+    {
+      "fitocracy": "Wall Ball",
+      "strong": "Wall Ball",
+      "score": 100,
+      "strongId": 329
+    },
+    {
+      "fitocracy": "Bent Over Barbell Row",
+      "strong": "Bent Over Row (Barbell)",
+      "score": 95,
+      "strongId": 181
+    },
+    {
+      "fitocracy": "Incline Dumbbell Bench Press",
+      "strong": "Incline Bench Press (Dumbbell)",
+      "score": 95,
+      "strongId": 146
+    },
+    {
+      "fitocracy": "Neck Lateral Flexion - Plates",
+      "strong": "Neck Lateral Flexion (Plate)",
+      "score": 95,
+      "strongId": 37
+    },
+    {
+      "fitocracy": "Standing Barbell Calf Raise",
+      "strong": "Standing Calf Raise (Barbell)",
+      "score": 95,
+      "strongId": 195
+    },
+    {
+      "fitocracy": "Standing Dumbbell Calf Raise",
+      "strong": "Standing Calf Raise (Dumbbell)",
+      "score": 95,
+      "strongId": 114
+    },
+    {
+      "fitocracy": "Arnold Dumbbell Press",
+      "strong": "Arnold Press (Dumbbell)",
+      "score": 90,
+      "strongId": 199
+    },
+    {
+      "fitocracy": "Barbell Hip Thrust",
+      "strong": "Hip Thrust (Barbell)",
+      "score": 90,
+      "strongId": 121
+    },
+    {
+      "fitocracy": "Body Weight Inverted Row (Let Me Ups)",
+      "strong": "Inverted Row (Bodyweight)",
+      "score": 90,
+      "strongId": 243
+    },
+    {
+      "fitocracy": "Body Weight Ring Push-Up",
+      "strong": "Ring Push Up",
+      "score": 90,
+      "strongId": 470
+    },
+    {
+      "fitocracy": "Dumbbell Bench Press",
+      "strong": "Bench Press (Dumbbell)",
+      "score": 90,
+      "strongId": 180
+    },
+    {
+      "fitocracy": "Front Plate Raise",
+      "strong": "Front Raise (Plate)",
+      "score": 90,
+      "strongId": 241
+    },
+    {
+      "fitocracy": "Goblet Squat (kettlebell)",
+      "strong": "Goblet Squat (Kettlebell)",
+      "score": 90,
+      "strongId": 149
+    },
+    {
+      "fitocracy": "Hammer Dumbbell Curl",
+      "strong": "Hammer Curl (Dumbbell)",
+      "score": 90,
+      "strongId": 325
+    },
+    {
+      "fitocracy": "Incline Dumbbell Curl",
+      "strong": "Incline Curl (Dumbbell)",
+      "score": 90,
+      "strongId": 173
+    },
+    {
+      "fitocracy": "Lateral Raise - With Bands",
+      "strong": "Lateral Raise (Band)",
+      "score": 90,
+      "strongId": 318
+    },
+    {
+      "fitocracy": "Machine Back Extension",
+      "strong": "Back Extension (Machine)",
+      "score": 90,
+      "strongId": 177
+    },
+    {
+      "fitocracy": "Machine Lateral Raise",
+      "strong": "Lateral Raise (Machine)",
+      "score": 90,
+      "strongId": 103
+    },
+    {
+      "fitocracy": "Machine Bench Press",
+      "strong": "Bench Press (Smith Machine)",
+      "score": 90,
+      "strongId": 82
+    },
+    {
+      "fitocracy": "Machine Shoulder (Military) Press",
+      "strong": "Shoulder Press (Machine)",
+      "score": 90,
+      "strongId": 77
+    },
+    {
+      "fitocracy": "Machine Triceps Extension",
+      "strong": "Triceps Extension (Machine)",
+      "score": 90,
+      "strongId": 217
+    },
+    {
+      "fitocracy": "Machine Chest Press",
+      "strong": "Chest Press (Machine)",
+      "score": 90,
+      "strongId": 147
+    },
+    {
+      "fitocracy": "Machine Seated Row",
+      "strong": "Seated Row (Machine)",
+      "score": 90,
+      "strongId": 164
+    },
+    {
+      "fitocracy": "Neck Flexion - Plates",
+      "strong": "Neck Flexion (Plate)",
+      "score": 90,
+      "strongId": 36
+    },
+    {
+      "fitocracy": "Neck Extension - Plates",
+      "strong": "Neck Extension (Plate)",
+      "score": 90,
+      "strongId": 35
+    },
+    {
+      "fitocracy": "Pendlay Row",
+      "strong": "Pendlay Row (Barbell)",
+      "score": 90,
+      "strongId": 73
+    },
+    {
+      "fitocracy": "Sandbag Carry",
+      "strong": "Sandbag Carry (70lb)",
+      "score": 90,
+      "strongId": 461
+    },
+    {
+      "fitocracy": "Seated Cable Row",
+      "strong": "Seated Row (Cable)",
+      "score": 90,
+      "strongId": 95
+    },
+    {
+      "fitocracy": "Turkish Get-Up (kettlebell)",
+      "strong": "Kettlebell Turkish Get Up",
+      "score": 90,
+      "strongId": 382
+    },
+    {
+      "fitocracy": "Sumo Deadlift",
+      "strong": "Sumo Deadlift (Barbell)",
+      "score": 90,
+      "strongId": 218
+    },
+    {
+      "fitocracy": "Upright Cable Row",
+      "strong": "Upright Row (Cable)",
+      "score": 90,
+      "strongId": 152
+    },
+    {
+      "fitocracy": "Abductor Machine",
+      "strong": "Abductor (Machine)",
+      "score": 85,
+      "strongId": 16
+    },
+    {
+      "fitocracy": "Cable Shrug",
+      "strong": "Shrug (Cable)",
+      "score": 85,
+      "strongId": 64
+    },
+    {
+      "fitocracy": "Body Weight Squat",
+      "strong": "Squat (Bodyweight)",
+      "score": 85,
+      "strongId": 140
+    },
+    {
+      "fitocracy": "Dumbbell Squat",
+      "strong": "Squat (Sandbag)",
+      "score": 85,
+      "strongId": 393
+    },
+    {
+      "fitocracy": "Dumbbell Shrug",
+      "strong": "Shrug (Dumbbell)",
+      "score": 85,
+      "strongId": 87
+    },
+    {
+      "fitocracy": "Rowing (machine)",
+      "strong": "Rowing (Machine)",
+      "score": 85,
+      "strongId": 261
+    },
+    {
+      "fitocracy": "Suspension Trainer Crunch",
+      "strong": "Crunch (TRX)",
+      "score": 85,
+      "strongId": 68
+    },
+    {
+      "fitocracy": "Calf Press On The Leg Press Machine",
+      "strong": "Calf Press on Leg Press",
+      "score": 70,
+      "strongId": 183
+    },
+    {
+      "fitocracy": "One-Arm Dumbbell Row",
+      "strong": "Bent Over One Arm Row (Dumbbell)",
+      "score": 70,
+      "strongId": 154
+    },
+    {
+      "fitocracy": "Dumbbell 2-Arm Triceps Extension",
+      "strong": "Triceps Extension (Dumbbell)",
+      "score": 67,
+      "strongId": 116
+    },
+    {
+      "fitocracy": "Dumbbell One-Arm Triceps Extension",
+      "strong": "Triceps Extension (Dumbbell)",
+      "score": 67,
+      "strongId": 116
+    },
+    {
+      "fitocracy": "Seated Barbell Shoulder Press",
+      "strong": "Shoulder Press (Klokov)",
+      "score": 67,
+      "strongId": 21
+    },
+    {
+      "fitocracy": "Standing Dumbbell Triceps Extension",
+      "strong": "Triceps Extension (Dumbbell)",
+      "score": 67,
+      "strongId": 116
+    },
+    {
+      "fitocracy": "Machine Incline Bench Press",
+      "strong": "Bench Press (Smith Machine)",
+      "score": 66,
+      "strongId": 82
+    },
+    {
+      "fitocracy": "One-Arm Body Weight Inverted Row (One-Arm Let Me Ups)",
+      "strong": "Inverted Row (Bodyweight)",
+      "score": 66,
+      "strongId": 243
+    },
+    {
+      "fitocracy": "One-Arm Dumbbell Bench Press",
+      "strong": "Bench Press (Dumbbell)",
+      "score": 66,
+      "strongId": 180
+    },
+    {
+      "fitocracy": "Smith Machine Bench Press",
+      "strong": "Bench Press (Smith Machine)",
+      "score": 66,
+      "strongId": 82
+    },
+    {
+      "fitocracy": "Standing Dumbbell Upright Row",
+      "strong": "Upright Row (Dumbbell)",
+      "score": 66,
+      "strongId": 230
+    },
+    {
+      "fitocracy": "Standing Barbell Shoulder Press (OHP)",
+      "strong": "Shoulder Press (Klokov)",
+      "score": 66,
+      "strongId": 21
+    },
+    {
+      "fitocracy": "Alternate Incline Dumbbell Curl",
+      "strong": "Incline Curl (Dumbbell)",
+      "score": 65,
+      "strongId": 173
+    },
+    {
+      "fitocracy": "Cable Rope Overhead Triceps Extension",
+      "strong": "Triceps Extension (Cable)",
+      "score": 65,
+      "strongId": 513
+    },
+    {
+      "fitocracy": "Clean and Press",
+      "strong": "Clean And Press (Dumbbell)",
+      "score": 65,
+      "strongId": 471
+    },
+    {
+      "fitocracy": "Cross Body Hammer Dumbbell Curl",
+      "strong": "Hammer Curl (Dumbbell)",
+      "score": 65,
+      "strongId": 325
+    },
+    {
+      "fitocracy": "Seated Leg Curl",
+      "strong": "Seated Leg Curl (Machine)",
+      "score": 65,
+      "strongId": 17
+    },
+    {
+      "fitocracy": "Stiff Leg Barbell Good Morning",
+      "strong": "Good Morning (Barbell)",
+      "score": 65,
+      "strongId": 51
+    },
+    {
+      "fitocracy": "Band Pull Aparts",
+      "strong": "Pull Apart (Band)",
+      "score": 64,
+      "strongId": 313
+    },
+    {
+      "fitocracy": "Machine Preacher Curls",
+      "strong": "Preacher Curl (Machine)",
+      "score": 64,
+      "strongId": 184
+    },
+    {
+      "fitocracy": "Seated Bent-Over 2-Arm Dumbbell Triceps Extension",
+      "strong": "Triceps Extension (Dumbbell)",
+      "score": 64,
+      "strongId": 116
+    },
+    {
+      "fitocracy": "Smith Machine Close-Grip Bench Press",
+      "strong": "Bench Press (Smith Machine)",
+      "score": 64,
+      "strongId": 82
+    },
+    {
+      "fitocracy": "Smith Machine Incline Bench Press",
+      "strong": "Bench Press (Smith Machine)",
+      "score": 64,
+      "strongId": 82
+    },
+    {
+      "fitocracy": "Suspension Trainer Push-ups",
+      "strong": "Push-Up (Suspension Trainer)",
+      "score": 64,
+      "strongId": 311
+    },
+    {
+      "fitocracy": "Machine Ab Crunch",
+      "strong": "Crunch (Machine)",
+      "score": 62,
+      "strongId": 62
+    },
+    {
+      "fitocracy": "Body Weight Split Squat",
+      "strong": "Squat (Bodyweight)",
+      "score": 60,
+      "strongId": 140
+    },
+    {
+      "fitocracy": "Dumbbell Split Squat",
+      "strong": "Squat (Sandbag)",
+      "score": 60,
+      "strongId": 393
+    },
+    {
+      "fitocracy": "Kettlebell Romanian Deadlift",
+      "strong": "Deadlift (Kettlebell)",
+      "score": 60,
+      "strongId": 269
+    },
+    {
+      "fitocracy": "Machine Chest Fly (Pec Deck)",
+      "strong": "Chest Fly",
+      "score": 60,
+      "strongId": 118
+    },
+    {
+      "fitocracy": "Russian Twist",
+      "strong": "Russian Twist (Weighted)",
+      "score": 60,
+      "strongId": 7
+    },
+    {
+      "fitocracy": "Smith Machine Shrug",
+      "strong": "Shrug (Machine)",
+      "score": 60,
+      "strongId": 101
+    },
+    {
+      "fitocracy": "Snatch Pull",
+      "strong": "Snatch Pull (Barbell)",
+      "score": 60,
+      "strongId": 352
+    },
+    {
+      "fitocracy": "Toes-To-Bar",
+      "strong": "Toes To Bar",
+      "score": 60,
+      "strongId": 405
+    },
+    {
+      "fitocracy": "Waiter Walk",
+      "strong": "Waiter Walk (One Arm)",
+      "score": 60,
+      "strongId": 303
+    }
+  ],
+  "ambiguousMatches": [
+    {
+      "fitocracy": "Barbell Bench Press",
+      "strong": "Bench Press (Paused)",
+      "score": 90,
+      "strongId": 1
+    },
+    {
+      "fitocracy": "Dumbbell Bicep Curl",
+      "strong": "Bicep Curl (Dumbbell, Fat Grip)",
+      "score": 90,
+      "strongId": 63
+    },
+    {
+      "fitocracy": "Front Dumbbell Raise",
+      "strong": "Front Raise (Dumbbell)",
+      "score": 90,
+      "strongId": 60
+    },
+    {
+      "fitocracy": "Front Barbell Squat",
+      "strong": "Front Squat (Barbell)",
+      "score": 90,
+      "strongId": 158
+    },
+    {
+      "fitocracy": "Jump Squat (Toyotas)",
+      "strong": "Jump Squat",
+      "score": 90,
+      "strongId": 175
+    },
+    {
+      "fitocracy": "Overhead Barbell Squat",
+      "strong": "Overhead Squat (Barbell)",
+      "score": 90,
+      "strongId": 138
+    },
+    {
+      "fitocracy": "Romanian Dumbbell Deadlift",
+      "strong": "Romanian Deadlift (One Leg, Dumbbells)",
+      "score": 90,
+      "strongId": 78
+    },
+    {
+      "fitocracy": "Romanian Deadlift",
+      "strong": "Romanian Deadlift (Barbell)",
+      "score": 90,
+      "strongId": 107
+    },
+    {
+      "fitocracy": "T-Bar Row",
+      "strong": "T Bar Row (Chest Supported)",
+      "score": 90,
+      "strongId": 38
+    },
+    {
+      "fitocracy": "Upright Barbell Row",
+      "strong": "Upright Row (Barbell, Wide)",
+      "score": 90,
+      "strongId": 196
+    },
+    {
+      "fitocracy": "Barbell Deadlift",
+      "strong": "Deadlift (Barbell)",
+      "score": 85,
+      "strongId": 11
+    },
+    {
+      "fitocracy": "Body Weight Lunge",
+      "strong": "Lunge (Bodyweight)",
+      "score": 85,
+      "strongId": 207
+    },
+    {
+      "fitocracy": "Barbell Squat",
+      "strong": "Squat (Paused)",
+      "score": 85,
+      "strongId": 28
+    },
+    {
+      "fitocracy": "Dumbbell Deadlift",
+      "strong": "Deadlift (Sandbag)",
+      "score": 85,
+      "strongId": 380
+    },
+    {
+      "fitocracy": "Kettlebell Thruster",
+      "strong": "Thruster (Kettlebell, One Arm)",
+      "score": 85,
+      "strongId": 385
+    },
+    {
+      "fitocracy": "Suspension Trainer Fallouts",
+      "strong": "Fallouts (Suspension Trainer, Static)",
+      "score": 85,
+      "strongId": 33
+    },
+    {
+      "fitocracy": "Lying Dumbbell Tricep Extension",
+      "strong": "Tricep Extension (Dumbbell, Lying)",
+      "score": 67,
+      "strongId": 67
+    },
+    {
+      "fitocracy": "One-Leg Romanian Deadlift",
+      "strong": "Romanian Deadlift (Barbell)",
+      "score": 67,
+      "strongId": 107
+    },
+    {
+      "fitocracy": "Barbell Incline Bench Press",
+      "strong": "Bench Press (Paused)",
+      "score": 66,
+      "strongId": 1
+    },
+    {
+      "fitocracy": "Decline Barbell Bench Press",
+      "strong": "Bench Press (Paused)",
+      "score": 66,
+      "strongId": 1
+    },
+    {
+      "fitocracy": "Split Jump Squat (Iron Mikes)",
+      "strong": "Jump Squat",
+      "score": 66,
+      "strongId": 175
+    },
+    {
+      "fitocracy": "Clean and Jerk",
+      "strong": "Clean and Jerk (Barbell)",
+      "score": 65,
+      "strongId": 366
+    },
+    {
+      "fitocracy": "Close-Grip Barbell Bench Press",
+      "strong": "Bench Press (Paused)",
+      "score": 65,
+      "strongId": 1
+    },
+    {
+      "fitocracy": "Dumbbell Lying Rear Lateral Raise",
+      "strong": "Lateral Raise (Dumbbell)",
+      "score": 65,
+      "strongId": 40
+    },
+    {
+      "fitocracy": "Seated Calf Raise",
+      "strong": "Seated Calf Raise (Plate Loaded)",
+      "score": 65,
+      "strongId": 13
+    },
+    {
+      "fitocracy": "Standing Calf Raise",
+      "strong": "Standing Calf Raise (Machine)",
+      "score": 65,
+      "strongId": 52
+    },
+    {
+      "fitocracy": "Barbell Box Squat",
+      "strong": "Squat (Paused)",
+      "score": 61,
+      "strongId": 28
+    },
+    {
+      "fitocracy": "Rack Deadlift",
+      "strong": "Deadlift (Barbell)",
+      "score": 61,
+      "strongId": 11
+    },
+    {
+      "fitocracy": "Barbell Rear Lunge",
+      "strong": "Lunge (Barbell)",
+      "score": 60,
+      "strongId": 30
+    },
+    {
+      "fitocracy": "Deficit Barbell Deadlift",
+      "strong": "Deadlift (Barbell)",
+      "score": 60,
+      "strongId": 11
+    },
+    {
+      "fitocracy": "Double Kettlebell Snatch",
+      "strong": "Kettlebell Snatch",
+      "score": 60,
+      "strongId": 300
+    },
+    {
+      "fitocracy": "Dumbbell Rear Lunge",
+      "strong": "Lunge (Dumbbell)",
+      "score": 60,
+      "strongId": 125
+    },
+    {
+      "fitocracy": "Face Pull",
+      "strong": "Face Pull (Cable)",
+      "score": 60,
+      "strongId": 9
+    },
+    {
+      "fitocracy": "Hang Clean",
+      "strong": "Hang Clean (Barbell)",
+      "score": 60,
+      "strongId": 349
+    },
+    {
+      "fitocracy": "Handstand Push-Up",
+      "strong": "Handstand Push-up (Deficit)",
+      "score": 60,
+      "strongId": 137
+    },
+    {
+      "fitocracy": "Lat Pulldown",
+      "strong": "Lat Pulldown (Straight Arm)",
+      "score": 60,
+      "strongId": 10
+    },
+    {
+      "fitocracy": "One-Arm Barbell Deadlift",
+      "strong": "Deadlift (Barbell)",
+      "score": 60,
+      "strongId": 11
+    },
+    {
+      "fitocracy": "One-Arm Dumbbell Deadlift",
+      "strong": "Deadlift (Sandbag)",
+      "score": 60,
+      "strongId": 380
+    },
+    {
+      "fitocracy": "Power Snatch",
+      "strong": "Power Snatch (Barbell)",
+      "score": 60,
+      "strongId": 348
+    },
+    {
+      "fitocracy": "Preacher Curl",
+      "strong": "Preacher Curl (Machine)",
+      "score": 60,
+      "strongId": 184
+    },
+    {
+      "fitocracy": "Ring Pull-Up",
+      "strong": "Ring Pull Up",
+      "score": 60,
+      "strongId": 209
+    },
+    {
+      "fitocracy": "Barbell Curl",
+      "strong": "Bicep Curl (Barbell)",
+      "score": 59,
+      "strongId": 53
+    },
+    {
+      "fitocracy": "Body Weight One-Leg Squat",
+      "strong": "Squat (Bodyweight)",
+      "score": 59,
+      "strongId": 140
+    },
+    {
+      "fitocracy": "Cable Hammer Curls - Rope Attachment",
+      "strong": "Hammer Curl (Cable)",
+      "score": 59,
+      "strongId": 216
+    },
+    {
+      "fitocracy": "Coccoon Crunch",
+      "strong": "Crunch",
+      "score": 59,
+      "strongId": 153
+    },
+    {
+      "fitocracy": "Double Kettlebell Press",
+      "strong": "Kettlebell Press",
+      "score": 59,
+      "strongId": 301
+    },
+    {
+      "fitocracy": "Double Kettlebell Jerk",
+      "strong": "Kettlebell Jerk",
+      "score": 59,
+      "strongId": 458
+    },
+    {
+      "fitocracy": "Double Kettlebell Swing",
+      "strong": "Kettlebell Swing (Two Arms)",
+      "score": 59,
+      "strongId": 113
+    },
+    {
+      "fitocracy": "Double Kettlebell Clean",
+      "strong": "Kettlebell Clean",
+      "score": 59,
+      "strongId": 278
+    },
+    {
+      "fitocracy": "Glute Ham Sit Up",
+      "strong": "Sit Up",
+      "score": 59,
+      "strongId": 353
+    },
+    {
+      "fitocracy": "Goblet Squat (dumbbell)",
+      "strong": "Squat (Sandbag)",
+      "score": 59,
+      "strongId": 393
+    },
+    {
+      "fitocracy": "Kettlebell Lunge",
+      "strong": "Reverse Lunge (Kettlebell Up)",
+      "score": 59,
+      "strongId": 429
+    },
+    {
+      "fitocracy": "One-Arm Dumbbell Snatch",
+      "strong": "Snatch (Dumbbell)",
+      "score": 59,
+      "strongId": 343
+    },
+    {
+      "fitocracy": "One-Arm Kettlebell Clean",
+      "strong": "Kettlebell Clean",
+      "score": 59,
+      "strongId": 278
+    },
+    {
+      "fitocracy": "One-Arm Kettlebell Swing",
+      "strong": "Kettlebell Swing (Two Arms)",
+      "score": 59,
+      "strongId": 113
+    },
+    {
+      "fitocracy": "One-Arm Kettlebell Snatch",
+      "strong": "Kettlebell Snatch",
+      "score": 59,
+      "strongId": 300
+    },
+    {
+      "fitocracy": "Reverse Crunch",
+      "strong": "Crunch",
+      "score": 59,
+      "strongId": 153
+    },
+    {
+      "fitocracy": "Snatch-Grip Deadlift",
+      "strong": "Deadlift (Barbell)",
+      "score": 59,
+      "strongId": 11
+    },
+    {
+      "fitocracy": "Stiff-Legged Barbell Deadlift",
+      "strong": "Deadlift (Barbell)",
+      "score": 59,
+      "strongId": 11
+    },
+    {
+      "fitocracy": "Walking Lunge",
+      "strong": "Lunge (Bodyweight)",
+      "score": 59,
+      "strongId": 207
+    },
+    {
+      "fitocracy": "Weighted Crunch",
+      "strong": "Crunch",
+      "score": 59,
+      "strongId": 153
+    },
+    {
+      "fitocracy": "Two-Arm Kettlebell Swing",
+      "strong": "Kettlebell Swing (Two Arms)",
+      "score": 59,
+      "strongId": 113
+    },
+    {
+      "fitocracy": "Zercher Squat",
+      "strong": "Squat (Paused)",
+      "score": 59,
+      "strongId": 28
+    },
+    {
+      "fitocracy": "Barbell Lunges",
+      "strong": "Lunge (Barbell)",
+      "score": 58,
+      "strongId": 30
+    },
+    {
+      "fitocracy": "Bottoms Up Kettlebell Press",
+      "strong": "Kettlebell Press",
+      "score": 58,
+      "strongId": 301
+    },
+    {
+      "fitocracy": "Curls in the Squat Rack",
+      "strong": "Squat (Paused)",
+      "score": 58,
+      "strongId": 28
+    },
+    {
+      "fitocracy": "Dumbbell Lunges",
+      "strong": "Lunge (Dumbbell)",
+      "score": 58,
+      "strongId": 125
+    },
+    {
+      "fitocracy": "Dumbbell Stationary Lunge",
+      "strong": "Lunge (Dumbbell)",
+      "score": 58,
+      "strongId": 125
+    },
+    {
+      "fitocracy": "Exercise Ball Crunch",
+      "strong": "Crunch",
+      "score": 58,
+      "strongId": 153
+    },
+    {
+      "fitocracy": "Kettlebell Clean and Press",
+      "strong": "Kettlebell Clean",
+      "score": 58,
+      "strongId": 278
+    },
+    {
+      "fitocracy": "Long-Lever Plank",
+      "strong": "Plank (One Arm One Leg)",
+      "score": 58,
+      "strongId": 24
+    },
+    {
+      "fitocracy": "Machine MTS High Row",
+      "strong": "Row (Machine, High)",
+      "score": 58,
+      "strongId": 119
+    },
+    {
+      "fitocracy": "One-Arm Kettlebell Floor Press",
+      "strong": "Kettlebell Press",
+      "score": 58,
+      "strongId": 301
+    },
+    {
+      "fitocracy": "One-Arm Kettlebell Jerk",
+      "strong": "Kettlebell Jerk",
+      "score": 58,
+      "strongId": 458
+    },
+    {
+      "fitocracy": "Single-Leg Plank",
+      "strong": "Plank (One Arm One Leg)",
+      "score": 58,
+      "strongId": 24
+    },
+    {
+      "fitocracy": "Vertical Leg Crunch",
+      "strong": "Crunch",
+      "score": 58,
+      "strongId": 153
+    },
+    {
+      "fitocracy": "Alternating Body Weight Reverse Lunge",
+      "strong": "Lunge (Bodyweight)",
+      "score": 57,
+      "strongId": 207
+    },
+    {
+      "fitocracy": "Body Weight Assisted One-Leg Squat",
+      "strong": "Squat (Bodyweight)",
+      "score": 57,
+      "strongId": 140
+    },
+    {
+      "fitocracy": "Body Weight Bulgarian Split Squat",
+      "strong": "Squat (Bodyweight)",
+      "score": 57,
+      "strongId": 140
+    },
+    {
+      "fitocracy": "Double Kettlebell Clean and Press",
+      "strong": "Kettlebell Clean",
+      "score": 57,
+      "strongId": 278
+    },
+    {
+      "fitocracy": "Dumbbell Bulgarian Split Squat",
+      "strong": "Squat (Sandbag)",
+      "score": 57,
+      "strongId": 393
+    },
+    {
+      "fitocracy": "Front Grip Barbell Rear Lunge",
+      "strong": "Lunge (Barbell)",
+      "score": 57,
+      "strongId": 30
+    },
+    {
+      "fitocracy": "Single Arm Kettlebell Clean and Press",
+      "strong": "Kettlebell Clean",
+      "score": 57,
+      "strongId": 278
+    },
+    {
+      "fitocracy": "Smith Machine Bent Over Row",
+      "strong": "Row (Machine, High)",
+      "score": 57,
+      "strongId": 119
+    },
+    {
+      "fitocracy": "Smith Machine Upright Row",
+      "strong": "Row (Machine, High)",
+      "score": 57,
+      "strongId": 119
+    },
+    {
+      "fitocracy": "Weighted Exercise Ball Crunch",
+      "strong": "Crunch",
+      "score": 57,
+      "strongId": 153
+    },
+    {
+      "fitocracy": "Weighted One-Leg Squat",
+      "strong": "Squat (Paused)",
+      "score": 57,
+      "strongId": 28
+    },
+    {
+      "fitocracy": "Ab Wheel (kneeling)",
+      "strong": "Ab Wheel",
+      "score": 55,
+      "strongId": 122
+    },
+    {
+      "fitocracy": "Ab Wheel (standing)",
+      "strong": "Ab Wheel",
+      "score": 55,
+      "strongId": 122
+    },
+    {
+      "fitocracy": "Barbell Shrug",
+      "strong": "Shrug (Behind Back)",
+      "score": 55,
+      "strongId": 59
+    },
+    {
+      "fitocracy": "Clean",
+      "strong": "Kettlebell Clean",
+      "score": 55,
+      "strongId": 278
+    },
+    {
+      "fitocracy": "Chin-Up",
+      "strong": "Chin Up",
+      "score": 55,
+      "strongId": 109
+    },
+    {
+      "fitocracy": "Cycling",
+      "strong": "Cycling (Indoor)",
+      "score": 55,
+      "strongId": 451
+    },
+    {
+      "fitocracy": "Kettlebell Halo",
+      "strong": "Halo",
+      "score": 55,
+      "strongId": 92
+    },
+    {
+      "fitocracy": "L-Sit",
+      "strong": "L Sit",
+      "score": 55,
+      "strongId": 227
+    },
+    {
+      "fitocracy": "Muscle-Up",
+      "strong": "Muscle Up",
+      "score": 55,
+      "strongId": 354
+    },
+    {
+      "fitocracy": "Running (treadmill)",
+      "strong": "Running (Treadmill)",
+      "score": 55,
+      "strongId": 403
+    },
+    {
+      "fitocracy": "Running (Intervals/Sprints)",
+      "strong": "Running (Treadmill)",
+      "score": 55,
+      "strongId": 403
+    },
+    {
+      "fitocracy": "Push-Up",
+      "strong": "Push Up",
+      "score": 55,
+      "strongId": 8
+    },
+    {
+      "fitocracy": "Sit-Up",
+      "strong": "Sit Up",
+      "score": 55,
+      "strongId": 353
+    },
+    {
+      "fitocracy": "Snatch",
+      "strong": "Kettlebell Snatch",
+      "score": 55,
+      "strongId": 300
+    },
+    {
+      "fitocracy": "Pull-Up",
+      "strong": "Pull Up (Wide Grip)",
+      "score": 55,
+      "strongId": 22
+    },
+    {
+      "fitocracy": "Walking (treadmill)",
+      "strong": "Walking",
+      "score": 55,
+      "strongId": 81
+    },
+    {
+      "fitocracy": "Lateral Lunges",
+      "strong": "Lunge (Bodyweight)",
+      "score": 54,
+      "strongId": 207
+    },
+    {
+      "fitocracy": "Walking Barbell Lunges",
+      "strong": "Lunge (Barbell)",
+      "score": 54,
+      "strongId": 30
+    },
+    {
+      "fitocracy": "Suspension Trainer Ys",
+      "strong": "Rear Delt Flys (Suspension Trainer)",
+      "score": 51,
+      "strongId": 14
+    },
+    {
+      "fitocracy": "V-Up",
+      "strong": "V Up",
+      "score": 50,
+      "strongId": 70
+    },
+    {
+      "fitocracy": "Bent Over Two-Dumbbell Row",
+      "strong": "Bent Over Row (Dumbbell)",
+      "score": 45,
+      "strongId": 3
+    },
+    {
+      "fitocracy": "Lying Close-Grip Barbell Triceps Press To Chin",
+      "strong": "Bench Press - Close Grip (Barbell)",
+      "score": 45,
+      "strongId": 4
+    },
+    {
+      "fitocracy": "One-Arm Barbell Corner Row",
+      "strong": "One Arm Landmine Row",
+      "score": 45,
+      "strongId": 203
+    },
+    {
+      "fitocracy": "Log Clean and Press",
+      "strong": "Clean And Press (Dumbbell)",
+      "score": 43,
+      "strongId": 471
+    },
+    {
+      "fitocracy": "Neck Lateral Flexion - Harness",
+      "strong": "Neck Lateral Flexion (Plate)",
+      "score": 42,
+      "strongId": 37
+    },
+    {
+      "fitocracy": "Power Clean and Press",
+      "strong": "Clean And Press (Dumbbell)",
+      "score": 42,
+      "strongId": 471
+    },
+    {
+      "fitocracy": "Bent-Over Rear Delt Raise",
+      "strong": "Rear Delt Raise (3 Way)",
+      "score": 41,
+      "strongId": 228
+    },
+    {
+      "fitocracy": "Bent-Arm Dumbbell Pullover",
+      "strong": "Bent Over One Arm Row (Dumbbell)",
+      "score": 40,
+      "strongId": 154
+    },
+    {
+      "fitocracy": "Cable Rope Rear-Delt Rows",
+      "strong": "Rear Delt Flys (Bent Over, Cable, One Arm)",
+      "score": 40,
+      "strongId": 91
+    },
+    {
+      "fitocracy": "Dumbbell Rear Delt Row",
+      "strong": "Rear Delt Flys (Dumbbells)",
+      "score": 40,
+      "strongId": 49
+    },
+    {
+      "fitocracy": "Front Two-Dumbbell Raise",
+      "strong": "Front Raise (Dumbbell)",
+      "score": 40,
+      "strongId": 60
+    },
+    {
+      "fitocracy": "Kneeling One-Arm Dumbbell Press",
+      "strong": "Bent Over One Arm Row (Dumbbell)",
+      "score": 40,
+      "strongId": 154
+    },
+    {
+      "fitocracy": "One-Arm Dumbbell Floor Press",
+      "strong": "Bent Over One Arm Row (Dumbbell)",
+      "score": 40,
+      "strongId": 154
+    },
+    {
+      "fitocracy": "Seated Bent-Over Rear Delt Raise",
+      "strong": "Rear Delt Raise (3 Way)",
+      "score": 40,
+      "strongId": 228
+    },
+    {
+      "fitocracy": "Seated Dumbbell Curl",
+      "strong": "Seated Palms Up Wrist Curl (Dumbbell)",
+      "score": 40,
+      "strongId": 316
+    },
+    {
+      "fitocracy": "Seated Dumbbell Shoulder Press",
+      "strong": "Seated Overhead Press (Dumbbell)",
+      "score": 40,
+      "strongId": 145
+    },
+    {
+      "fitocracy": "Standing One-Arm Dumbbell Shoulder Press",
+      "strong": "Bent Over One Arm Row (Dumbbell)",
+      "score": 40,
+      "strongId": 154
+    },
+    {
+      "fitocracy": "Lying Leg Curls",
+      "strong": "Lying Leg Curl (Machine)",
+      "score": 39,
+      "strongId": 32
+    },
+    {
+      "fitocracy": "Rear Delt Fly",
+      "strong": "Rear Delt Flys (Suspension Trainer)",
+      "score": 39,
+      "strongId": 14
+    },
+    {
+      "fitocracy": "Close Handstand Push-Up",
+      "strong": "Handstand Push-up (Deficit)",
+      "score": 37,
+      "strongId": 137
+    },
+    {
+      "fitocracy": "Lever Handstand Push-Up",
+      "strong": "Handstand Push-up (Deficit)",
+      "score": 37,
+      "strongId": 137
+    },
+    {
+      "fitocracy": "Uneven Handstand Push-Up",
+      "strong": "Handstand Push-up (Deficit)",
+      "score": 37,
+      "strongId": 137
+    },
+    {
+      "fitocracy": "Handstand Push-Up Progression",
+      "strong": "Handstand Push-up (Deficit)",
+      "score": 36,
+      "strongId": 137
+    },
+    {
+      "fitocracy": "Neck Extension - Harness",
+      "strong": "Neck Extension (Plate)",
+      "score": 36,
+      "strongId": 35
+    },
+    {
+      "fitocracy": "Neck Flexion - Harness",
+      "strong": "Neck Flexion (Plate)",
+      "score": 36,
+      "strongId": 36
+    },
+    {
+      "fitocracy": "One Arm Lat Pulldown",
+      "strong": "Lat Pulldown (Straight Arm)",
+      "score": 36,
+      "strongId": 10
+    },
+    {
+      "fitocracy": "Seated Good Morning",
+      "strong": "Good Morning (Barbell)",
+      "score": 36,
+      "strongId": 51
+    },
+    {
+      "fitocracy": "Weighted Russian Twist",
+      "strong": "Russian Twist (Weighted)",
+      "score": 36,
+      "strongId": 7
+    },
+    {
+      "fitocracy": "Weighted Ring Push-Up",
+      "strong": "Ring Push Up",
+      "score": 36,
+      "strongId": 470
+    },
+    {
+      "fitocracy": "Zercher Good Morning",
+      "strong": "Good Morning (Barbell)",
+      "score": 36,
+      "strongId": 51
+    },
+    {
+      "fitocracy": "2-Arm Dumbbell Preacher Curl",
+      "strong": "Bicep Curl (Dumbbell, Fat Grip)",
+      "score": 35,
+      "strongId": 63
+    },
+    {
+      "fitocracy": "Alternating Kettlebell Row",
+      "strong": "One Arm Row (Kettlebell)",
+      "score": 35,
+      "strongId": 226
+    },
+    {
+      "fitocracy": "Arch Back Good Morning",
+      "strong": "Good Morning (Barbell)",
+      "score": 35,
+      "strongId": 51
+    },
+    {
+      "fitocracy": "Band-Resisted Push-Up",
+      "strong": "Tricep Push Down (Band, Unilateral)",
+      "score": 35,
+      "strongId": 264
+    },
+    {
+      "fitocracy": "Barbell Rear Delt Row",
+      "strong": "T Bar Row (Chest Supported)",
+      "score": 35,
+      "strongId": 38
+    },
+    {
+      "fitocracy": "Bench Dip (Seated Dip)",
+      "strong": "Chest Dip",
+      "score": 35,
+      "strongId": 99
+    },
+    {
+      "fitocracy": "Bent-Arm Barbell Pullover",
+      "strong": "Bent Over Row (Barbell)",
+      "score": 35,
+      "strongId": 181
+    },
+    {
+      "fitocracy": "Body Weight Ring L-sit",
+      "strong": "Ring Pull Up",
+      "score": 35,
+      "strongId": 209
+    },
+    {
+      "fitocracy": "Body Weight Ring Row",
+      "strong": "Ring Pull Up",
+      "score": 35,
+      "strongId": 209
+    },
+    {
+      "fitocracy": "Cable Hip Abduction",
+      "strong": "Hip Adductor (Cable, Standing)",
+      "score": 35,
+      "strongId": 159
+    },
+    {
+      "fitocracy": "Corner Barbell Press (Lumberjack Press)",
+      "strong": "Bench Press (Paused)",
+      "score": 35,
+      "strongId": 1
+    },
+    {
+      "fitocracy": "Decline EZ Bar Triceps Extension",
+      "strong": "Triceps Extension (Dumbbell)",
+      "score": 35,
+      "strongId": 116
+    },
+    {
+      "fitocracy": "Dip Station Straight Leg Raise",
+      "strong": "Chest Dip",
+      "score": 35,
+      "strongId": 99
+    },
+    {
+      "fitocracy": "Dips - Chest Version",
+      "strong": "Chest Dip",
+      "score": 35,
+      "strongId": 99
+    },
+    {
+      "fitocracy": "Head Supported Dumbbell Row",
+      "strong": "Bent Over Row (Dumbbell)",
+      "score": 35,
+      "strongId": 3
+    },
+    {
+      "fitocracy": "High Pull",
+      "strong": "Deadlift High Pull (Barbell)",
+      "score": 35,
+      "strongId": 47
+    },
+    {
+      "fitocracy": "Incline Dumbbell Flyes",
+      "strong": "Incline Bench Press (Dumbbell)",
+      "score": 35,
+      "strongId": 146
+    },
+    {
+      "fitocracy": "Incline Dumbbell Row",
+      "strong": "Bent Over Row (Dumbbell)",
+      "score": 35,
+      "strongId": 3
+    },
+    {
+      "fitocracy": "Isolateral Plate Loaded Press",
+      "strong": "Shoulder Press (Plate Loaded)",
+      "score": 35,
+      "strongId": 179
+    },
+    {
+      "fitocracy": "Isolateral Plate Loaded Row",
+      "strong": "Seated Row (Plate Loaded)",
+      "score": 35,
+      "strongId": 5
+    },
+    {
+      "fitocracy": "Rowing",
+      "strong": "Rowing (Machine)",
+      "score": 35,
+      "strongId": 261
+    },
+    {
+      "fitocracy": "Standing Dumbbell Shoulder Press",
+      "strong": "Overhead Press (Dumbbell)",
+      "score": 35,
+      "strongId": 56
+    },
+    {
+      "fitocracy": "Standing Overhead Barbell Triceps Extension",
+      "strong": "Overhead Press (Barbell)",
+      "score": 35,
+      "strongId": 20
+    },
+    {
+      "fitocracy": "Standing One-Arm Biceps Cable Curl",
+      "strong": "Bicep Curl (Cable)",
+      "score": 35,
+      "strongId": 18
+    },
+    {
+      "fitocracy": "Standing Biceps Cable Curl",
+      "strong": "Bicep Curl (Cable)",
+      "score": 35,
+      "strongId": 18
+    },
+    {
+      "fitocracy": "Standing Row",
+      "strong": "T Bar Row (Chest Supported)",
+      "score": 35,
+      "strongId": 38
+    },
+    {
+      "fitocracy": "Standing Palms-In Dumbbell Shoulder Press",
+      "strong": "Overhead Press (Dumbbell)",
+      "score": 35,
+      "strongId": 56
+    },
+    {
+      "fitocracy": "Standing Zottman Dumbbell Curls",
+      "strong": "Standing Calf Raise (Dumbbell)",
+      "score": 35,
+      "strongId": 114
+    },
+    {
+      "fitocracy": "Suspension Trainer Biceps Curl",
+      "strong": "Bicep Curl (Suspension Trainer)",
+      "score": 35,
+      "strongId": 165
+    },
+    {
+      "fitocracy": "Weighted Narrow Arm Push-Up",
+      "strong": "One Arm Landmine Row",
+      "score": 35,
+      "strongId": 203
+    },
+    {
+      "fitocracy": "Weighted Inverted Row (Let Me Ups)",
+      "strong": "T Bar Row (Chest Supported)",
+      "score": 35,
+      "strongId": 38
+    },
+    {
+      "fitocracy": "Yates Row",
+      "strong": "T Bar Row (Chest Supported)",
+      "score": 35,
+      "strongId": 38
+    },
+    {
+      "fitocracy": "Barbell Step Ups",
+      "strong": "Step-up",
+      "score": 34,
+      "strongId": 256
+    },
+    {
+      "fitocracy": "Box Jumps",
+      "strong": "Box Jump (24”)",
+      "score": 34,
+      "strongId": 72
+    },
+    {
+      "fitocracy": "Close-Grip Front Lat Pulldown",
+      "strong": "Lat Pulldown (Straight Arm)",
+      "score": 34,
+      "strongId": 10
+    },
+    {
+      "fitocracy": "Double Under Jump Rope",
+      "strong": "Jump Rope",
+      "score": 34,
+      "strongId": 215
+    },
+    {
+      "fitocracy": "Dumbbell Step Ups",
+      "strong": "Step-up",
+      "score": 34,
+      "strongId": 256
+    },
+    {
+      "fitocracy": "Isolateral Plate Loaded Lat Pulldown",
+      "strong": "Lat Pulldown (Straight Arm)",
+      "score": 34,
+      "strongId": 10
+    },
+    {
+      "fitocracy": "Jumping Jacks",
+      "strong": "Jumping Jack",
+      "score": 34,
+      "strongId": 266
+    },
+    {
+      "fitocracy": "Kirk Shrugs",
+      "strong": "Kirk Shrug (Smith Machine)",
+      "score": 34,
+      "strongId": 54
+    },
+    {
+      "fitocracy": "Leg Extensions",
+      "strong": "Leg Extension (Machine)",
+      "score": 34,
+      "strongId": 31
+    },
+    {
+      "fitocracy": "Mountain Climbers",
+      "strong": "Mountain Climber",
+      "score": 34,
+      "strongId": 201
+    },
+    {
+      "fitocracy": "Alternating One-Leg Hip Thrust",
+      "strong": "Hip Thrust (One Leg, Jumping)",
+      "score": 33,
+      "strongId": 80
+    },
+    {
+      "fitocracy": "Clap Push-Up",
+      "strong": "Push Up",
+      "score": 31,
+      "strongId": 8
+    },
+    {
+      "fitocracy": "Rolling",
+      "strong": "Foam Rolling",
+      "score": 31,
+      "strongId": 27
+    },
+    {
+      "fitocracy": "Superman Hold",
+      "strong": "Superman",
+      "score": 31,
+      "strongId": 141
+    },
+    {
+      "fitocracy": "Adductor Machine",
+      "strong": "Abductor (Machine)",
+      "score": 30,
+      "strongId": 16
+    },
+    {
+      "fitocracy": "Bicycle",
+      "strong": "Bicycle Crunch",
+      "score": 30,
+      "strongId": 65
+    },
+    {
+      "fitocracy": "Boxing",
+      "strong": "Shadow Boxing",
+      "score": 30,
+      "strongId": 267
+    },
+    {
+      "fitocracy": "Cable Crossover",
+      "strong": "Face Pull (Cable)",
+      "score": 30,
+      "strongId": 9
+    },
+    {
+      "fitocracy": "Decline Push-Up",
+      "strong": "Push Up",
+      "score": 30,
+      "strongId": 8
+    },
+    {
+      "fitocracy": "Dips - Triceps Version",
+      "strong": "Push Up",
+      "score": 30,
+      "strongId": 8
+    },
+    {
+      "fitocracy": "Diamond Push-Up",
+      "strong": "Push Up",
+      "score": 30,
+      "strongId": 8
+    },
+    {
+      "fitocracy": "Dumbbell Flyes",
+      "strong": "Bent Over Row (Dumbbell)",
+      "score": 30,
+      "strongId": 3
+    },
+    {
+      "fitocracy": "Elbow-Supported Dumbbell External Rotation",
+      "strong": "Bent Over Row (Dumbbell)",
+      "score": 30,
+      "strongId": 3
+    },
+    {
+      "fitocracy": "Flat Bench Cable Flyes",
+      "strong": "Face Pull (Cable)",
+      "score": 30,
+      "strongId": 9
+    },
+    {
+      "fitocracy": "High Cable Curls",
+      "strong": "Face Pull (Cable)",
+      "score": 30,
+      "strongId": 9
+    },
+    {
+      "fitocracy": "Incline Cable Flyes",
+      "strong": "Face Pull (Cable)",
+      "score": 30,
+      "strongId": 9
+    },
+    {
+      "fitocracy": "Incline Push-Up",
+      "strong": "Push Up",
+      "score": 30,
+      "strongId": 8
+    },
+    {
+      "fitocracy": "Kettlebell Figure 8",
+      "strong": "Leg Kickback",
+      "score": 30,
+      "strongId": 66
+    },
+    {
+      "fitocracy": "Kroc Rows",
+      "strong": "Bench Press (Paused)",
+      "score": 30,
+      "strongId": 1
+    },
+    {
+      "fitocracy": "L-Sit Pull-Up",
+      "strong": "Pull Up (Wide Grip)",
+      "score": 30,
+      "strongId": 22
+    },
+    {
+      "fitocracy": "Lying Barbell Triceps Extension",
+      "strong": "Bench Press (Paused)",
+      "score": 30,
+      "strongId": 1
+    },
+    {
+      "fitocracy": "Machine Bicep Curls",
+      "strong": "Abductor (Machine)",
+      "score": 30,
+      "strongId": 16
+    },
+    {
+      "fitocracy": "One Arm Chin-Up",
+      "strong": "Chin Up",
+      "score": 30,
+      "strongId": 109
+    },
+    {
+      "fitocracy": "One-Arm Push-Up",
+      "strong": "Push Up",
+      "score": 30,
+      "strongId": 8
+    },
+    {
+      "fitocracy": "Other Bodyweight",
+      "strong": "Push Up",
+      "score": 30,
+      "strongId": 8
+    },
+    {
+      "fitocracy": "Pistol (Kettlebell)",
+      "strong": "Leg Kickback",
+      "score": 30,
+      "strongId": 66
+    },
+    {
+      "fitocracy": "Suspension Trainer Biceps Clutch",
+      "strong": "Rear Delt Flys (Suspension Trainer)",
+      "score": 30,
+      "strongId": 14
+    },
+    {
+      "fitocracy": "Suspension Trainer Crossing Balance Lunge",
+      "strong": "Rear Delt Flys (Suspension Trainer)",
+      "score": 30,
+      "strongId": 14
+    },
+    {
+      "fitocracy": "Suspension Trainer Flutter",
+      "strong": "Rear Delt Flys (Suspension Trainer)",
+      "score": 30,
+      "strongId": 14
+    },
+    {
+      "fitocracy": "Suspension Trainer Inverted Rows",
+      "strong": "Rear Delt Flys (Suspension Trainer)",
+      "score": 30,
+      "strongId": 14
+    },
+    {
+      "fitocracy": "Trail Running",
+      "strong": "Running (Treadmill)",
+      "score": 30,
+      "strongId": 403
+    },
+    {
+      "fitocracy": "V-Bar Pull-Up",
+      "strong": "Pull Up (Wide Grip)",
+      "score": 30,
+      "strongId": 22
+    }
+  ],
+  "noMatches": [
+    {
+      "fitocracy": "360 Twist Jump",
+      "normalized": "360 twist jump",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Alternating Floor Press",
+      "normalized": "alternating floor press",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Assisted One-Arm Pull-Up",
+      "normalized": "assisted one arm pull up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Bikram / Hot Yoga",
+      "normalized": "bikram / hot yoga",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Boot Camp",
+      "normalized": "boot camp",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Brazilian Jiu-Jitsu",
+      "normalized": "brazilian jiu jitsu",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Close Grip Chin-Up",
+      "normalized": "close grip chin up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Close Grip Pull-Up",
+      "normalized": "close grip pull up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Close Grip Push-Up",
+      "normalized": "close grip push up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Corn Cob Pull-Up",
+      "normalized": "corn cob pull up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Concentration Curls",
+      "normalized": "concentration curls",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Divebomber Push-Up",
+      "normalized": "divebomber push up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Dragon Flag",
+      "normalized": "dragon flag",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Double Long Cycle",
+      "normalized": "double long cycle",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Elliptical Trainer",
+      "normalized": "elliptical trainer",
+      "equipment": null
+    },
+    {
+      "fitocracy": "EZ-Bar Curl",
+      "normalized": "ez bar curl",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Exercise Ball Rollout",
+      "normalized": "exercise ball rollout",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Flat Straight Leg Raise",
+      "normalized": "flat straight leg raise",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Flexed-Arm Hang",
+      "normalized": "flexed arm hang",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Farmer's Walk",
+      "normalized": "farmer's walk",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Hand Gripper",
+      "normalized": "hand gripper",
+      "equipment": null
+    },
+    {
+      "fitocracy": "General Gymnastics",
+      "normalized": "general gymnastics",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Hanging Bent Leg Raise",
+      "normalized": "hanging bent leg raise",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Hang High Pull",
+      "normalized": "hang high pull",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Hanging Straight Leg Raise",
+      "normalized": "hanging straight leg raise",
+      "equipment": null
+    },
+    {
+      "fitocracy": "High Knees",
+      "normalized": "high knees",
+      "equipment": null
+    },
+    {
+      "fitocracy": "House Dancing",
+      "normalized": "house dancing",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Internal Shoulder Cuff Rotation (Lucky Cat)",
+      "normalized": "internal shoulder cuff rotation",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Jack Knife Sit-Up",
+      "normalized": "jack knife sit up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Hyperextension",
+      "normalized": "hyperextension",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Horizontal Pull Progression",
+      "normalized": "horizontal pull progression",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Knee Hug Sit-Up",
+      "normalized": "knee hug sit up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Krav Maga",
+      "normalized": "krav maga",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Lateral Hurdle Jumps",
+      "normalized": "lateral hurdle jumps",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Leg Raise Progression",
+      "normalized": "leg raise progression",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Long Jumps",
+      "normalized": "long jumps",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Long-Lever Push-Up Hold",
+      "normalized": "long lever push up hold",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Lying Triceps Press",
+      "normalized": "lying triceps press",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Medicine Ball Jack Knife Sit-Up",
+      "normalized": "medicine ball jack knife sit up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Moving boxes",
+      "normalized": "moving boxes",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Oblique V-Ups",
+      "normalized": "oblique v ups",
+      "equipment": null
+    },
+    {
+      "fitocracy": "One Arm Farmer's Walk",
+      "normalized": "one arm farmer's walk",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Other Cardio",
+      "normalized": "other cardio",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Parallel Grip L-Sit Pull-Up",
+      "normalized": "parallel grip l sit pull up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Pull-Up Progression",
+      "normalized": "pull up progression",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Recreational Swimming",
+      "normalized": "recreational swimming",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Renegade Push-Up",
+      "normalized": "renegade push up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Reverse Grip Triceps Pushdown",
+      "normalized": "reverse grip triceps pushdown",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Reverse Hyperextension",
+      "normalized": "reverse hyperextension",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Reverse Flyes",
+      "normalized": "reverse flyes",
+      "equipment": null
+    },
+    {
+      "fitocracy": "River Kayaking",
+      "normalized": "river kayaking",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Parallel-Grip Pull-Up",
+      "normalized": "parallel grip pull up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Rock Climbing (time only)",
+      "normalized": "rock climbing",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Scissor Kicks",
+      "normalized": "scissor kicks",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Scissors with Hold (Beach Scissors)",
+      "normalized": "scissors hold",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Scapular Push-Up",
+      "normalized": "scapular push up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Seated Triceps Press",
+      "normalized": "seated triceps press",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Shoveling snow",
+      "normalized": "shoveling snow",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Shoulder Dislocation",
+      "normalized": "shoulder dislocation",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Sitting on my Butt",
+      "normalized": "sitting my butt",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Skiing",
+      "normalized": "skiing",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Snatch Grip Behind the Neck Press",
+      "normalized": "snatch grip behind neck press",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Stability Ball Push-Up",
+      "normalized": "stability ball push up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Staggered Push-Up",
+      "normalized": "staggered push up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Stability Ball Jack Knife Sit-Up",
+      "normalized": "stability ball jack knife sit up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Standing Military Press",
+      "normalized": "standing military press",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Straight Arm Pulldown",
+      "normalized": "straight arm pulldown",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Surf Getup",
+      "normalized": "surf getup",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Swing Dancing",
+      "normalized": "swing dancing",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Tennis",
+      "normalized": "tennis",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Thrusters",
+      "normalized": "thrusters",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Triceps Pushdown - V-Bar Attachment",
+      "normalized": "triceps pushdown v bar attachment",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Triceps Pushdown - Rope Attachment",
+      "normalized": "triceps pushdown rope attachment",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Triceps Pushdown",
+      "normalized": "triceps pushdown",
+      "equipment": null
+    },
+    {
+      "fitocracy": "V-Bar Pulldown",
+      "normalized": "v bar pulldown",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Walked up the stairs (in lieu of the elevator)",
+      "normalized": "walked up stairs",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Weighted Decline Sit-Up",
+      "normalized": "weighted decline sit up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Weighted Sit-Up",
+      "normalized": "weighted sit up",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Weighted Hyperextension",
+      "normalized": "weighted hyperextension",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Woodchoppers",
+      "normalized": "woodchoppers",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Wrestling",
+      "normalized": "wrestling",
+      "equipment": null
+    },
+    {
+      "fitocracy": "Yard Work",
+      "normalized": "yard work",
+      "equipment": null
+    }
+  ]
+}
