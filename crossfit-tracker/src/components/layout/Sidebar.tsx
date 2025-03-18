@@ -9,11 +9,8 @@ const Sidebar: React.FC = () => {
 
   const navItems = [
     { name: 'Dashboard', path: '/' },
-    { name: 'WODs', path: '/wods' },
-    { name: 'Benchmarks', path: '/benchmarks' },
     { name: 'Skills', path: '/skills' },
     { name: 'Analytics', path: '/analytics' },
-    { name: 'Settings', path: '/settings' },
   ];
 
   return (

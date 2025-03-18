@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Layout from '@/components/layout/Layout';
 import { useExerciseDetails } from '@/hooks/useWorkoutData';
 import { format } from 'date-fns';
+import { formatWeight } from '@/lib/utils';
 
 export default function MovementDetail() {
   const params = useParams();
@@ -17,12 +18,12 @@ export default function MovementDetail() {
   const formatSets = (sets: any[]) => {
     return sets.map(set => {
       let setStr = '';
-      if (set.reps) setStr += `${set.reps} reps`;
-      if (set.weight) setStr += ` @ ${set.weight.value} ${set.weight.unit}`;
+      if (set.reps) setStr += `${set.reps} × `;
+      if (set.weight) setStr += `${formatWeight(set.weight.value)}${set.weight.unit === 'pound' ? 'lb' : 'kg'}`;
       if (set.distance) setStr += ` ${set.distance.value} ${set.distance.unit}`;
       if (set.seconds) setStr += ` for ${set.seconds} seconds`;
       return setStr;
-    }).join(' • ');
+    }).join(' | ');
   };
   
   if (isLoading) {
@@ -78,7 +79,7 @@ export default function MovementDetail() {
                 <div>
                   <div className="text-sm text-gray-300">Max Weight</div>
                   <div className="text-2xl font-semibold text-white">
-                    {personalRecords.maxWeight.value} {personalRecords.maxWeight.session?.exercises.find((e: { exerciseId: number }) => e.exerciseId === id)?.sets[0]?.weight?.unit || 'lbs'}
+                    {formatWeight(personalRecords.maxWeight.value)} {personalRecords.maxWeight.session?.exercises.find((e: { exerciseId: number }) => e.exerciseId === id)?.sets[0]?.weight?.unit || 'lbs'}
                   </div>
                   <div className="text-xs text-gray-400">
                     {personalRecords.maxWeight.session && format(new Date(personalRecords.maxWeight.session.date), 'MMM d, yyyy')}

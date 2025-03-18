@@ -15,11 +15,11 @@ const CrossfitMastery: React.FC = () => {
   const { data: exercises, error, isLoading } = useSWR<ExerciseMastery[]>('/api/exercises/mastery', fetcher);
 
   if (isLoading) {
-    return (<React.Fragment>Loading...</React.Fragment>);
+    return <div>Loading...</div>;
   }
 
   if (error) {
-    return (<React.Fragment>Error loading data</React.Fragment>);
+    return <div>Error loading data</div>;
   }
 
   const masteredExercises = exercises ? exercises.filter(ex => ex.mastered) : [];
