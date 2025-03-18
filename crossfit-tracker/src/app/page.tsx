@@ -3,6 +3,7 @@ import Layout from '@/components/layout/Layout';
 import PerformanceMetrics from '@/components/dashboard/PerformanceMetrics';
 import MovementProficiencyTable from '@/components/movements/MovementProficiencyTable';
 import ConsistencyChart from '@/components/charts/ConsistencyChart';
+import CrossfitMastery from '@/components/dashboard/CrossfitMastery';
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <CrossfitMastery />
           </div>
         </div>
         
