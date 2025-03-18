@@ -23,7 +23,11 @@ ChartJS.register(
   Legend
 );
 
-const ConsistencyChart: React.FC = () => {
+interface ConsistencyChartProps {
+    data: { month: string; sessionCount: number; exerciseTypes: number; totalDuration: number }[];
+}
+
+const ConsistencyChart: React.FC<ConsistencyChartProps> = ({ data }) => {
   const { monthlyMetrics, isLoading, isError } = useTrainingConsistency();
   
   if (isLoading) {
@@ -47,16 +51,19 @@ const ConsistencyChart: React.FC = () => {
   
   // Get the last 12 months of data
   const recentMetrics = sortedMetrics.slice(-12);
-  
-  // Format month labels (e.g., "2023-01" to "Jan 2023")
-  const formatMonthLabel = (monthKey: string) => {
-    const [year, month] = monthKey.split('-');
-    const date = new Date(parseInt(year), parseInt(month) - 1, 1);
-    return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
-  };
+
+
   
   const chartData = {
-    labels: recentMetrics.map(metric => formatMonthLabel(metric.month)),
+    labels: recentMetrics.map(metric => {
+      // Format month labels (e.g., "2023-01" to "Jan 2023")
+      const formatMonthLabel = (monthKey: string) => {
+        const [year, month] = monthKey.split('-');
+        const date = new Date(parseInt(year), parseInt(month) - 1, 1);
+        return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+      };
+      return formatMonthLabel(metric.month)
+    }),
     datasets: [
       {
         label: 'Workout Sessions',
