@@ -1,7 +1,4 @@
-import React from 'react';
-import useSWR from 'swr';
-
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
+import React, { Fragment } from 'react';
 
 interface ExerciseMastery {
   exerciseId: number;
@@ -12,45 +9,47 @@ interface ExerciseMastery {
 }
 
 const CrossfitMastery: React.FC = () => {
-  const { data: exercises, error, isLoading } = useSWR<ExerciseMastery[]>('/api/exercises/mastery', fetcher);
+  const exercises: ExerciseMastery[] = [
+    { exerciseId: 1, name: 'Squats', sessionCount: 120, remaining: 0, mastered: true },
+    { exerciseId: 2, name: 'Push-ups', sessionCount: 80, remaining: 20, mastered: false },
+    { exerciseId: 3, name: 'Pull-ups', sessionCount: 50, remaining: 50, mastered: false },
+  ];
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+  const masteredExercises = exercises.filter(ex => ex.mastered);
+  const practiceExercises = exercises.filter(ex => !ex.mastered);
 
-  if (error) {
-    return <div>Error loading data</div>;
-  }
-
-  const masteredExercises = exercises ? exercises.filter(ex => ex.mastered) : [];
-  const practiceExercises = exercises ? exercises.filter(ex => !ex.mastered) : [];
-
-  return (
-    <div className="bg-gray-800 rounded-lg shadow p-4 space-y-4">
-      <h2 className="text-xl font-bold text-white">Crossfit Mastery</h2>
-
-      <div>
-        <h3 className="text-lg font-semibold text-gray-300">Mastery (100+)</h3>
-        <ul className="list-disc list-inside text-gray-400">
-          {masteredExercises.map(exercise => (
-            <li key={exercise.exerciseId}>
-              {exercise.name} ({exercise.sessionCount} sessions)
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div>
-        <h3 className="text-lg font-semibold text-gray-300">Practice → Mastery (<100)</h3>
-        <ul className="list-disc list-inside text-gray-400">
-          {practiceExercises.map(exercise => (
-            <li key={exercise.exerciseId}>
-              {exercise.name} ({exercise.sessionCount} sessions, {exercise.remaining} left)
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+  return React.createElement(
+    React.Fragment,
+    null,
+    React.createElement(
+      "div",
+      { className: "bg-gray-800 rounded-lg shadow p-4 space-y-4" },
+      React.createElement("h2", { className: "text-xl font-bold text-white" }, "Crossfit Mastery"),
+      React.createElement(
+        "div",
+        null,
+        React.createElement("h3", { className: "text-lg font-semibold text-gray-300" }, "Mastery (100+)"),
+        React.createElement(
+          "ul",
+          { className: "list-disc list-inside text-gray-400" },
+          masteredExercises.map(exercise =>
+            React.createElement("li", { key: exercise.exerciseId }, `${exercise.name} (${exercise.sessionCount} sessions)`)
+          )
+        )
+      ),
+      React.createElement(
+        "div",
+        null,
+        React.createElement("h3", { className: "text-lg font-semibold text-gray-300" }, "Practice → Mastery (<100)"),
+        React.createElement(
+          "ul",
+          { className: "list-disc list-inside text-gray-400" },
+          practiceExercises.map(exercise =>
+            React.createElement("li", { key: exercise.exerciseId }, `${exercise.name} (${exercise.sessionCount} sessions, ${exercise.remaining} left)`)
+          )
+        )
+      )
+    )
   );
 };
 
