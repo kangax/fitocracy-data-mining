@@ -28,15 +28,15 @@ const ConsistencyChart: React.FC = () => {
   
   if (isLoading) {
     return (
-      <div className="bg-white rounded-lg shadow p-4 h-80 flex items-center justify-center">
-        <div className="animate-pulse h-4 bg-gray-200 rounded w-1/2"></div>
+      <div className="bg-gray-800 rounded-lg shadow p-4 h-80 flex items-center justify-center">
+        <div className="animate-pulse h-4 bg-gray-600 rounded w-1/2"></div>
       </div>
     );
   }
   
   if (isError) {
     return (
-      <div className="bg-white rounded-lg shadow p-4 h-80 flex items-center justify-center text-red-500">
+      <div className="bg-gray-800 rounded-lg shadow p-4 h-80 flex items-center justify-center text-red-500">
         Error loading training consistency data
       </div>
     );
@@ -77,10 +77,14 @@ const ConsistencyChart: React.FC = () => {
     plugins: {
       legend: {
         position: 'top' as const,
+        labels: {
+          color: '#fff'
+        }
       },
       title: {
         display: true,
         text: 'Training Consistency',
+        color: '#fff',
         font: {
           size: 16,
           weight: 'bold' as const,
@@ -100,20 +104,31 @@ const ConsistencyChart: React.FC = () => {
       x: {
         grid: {
           display: false,
+          color: '#374151'
         },
+        ticks: {
+          color: '#9CA3AF'
+        }
       },
       y: {
         beginAtZero: true,
+        grid: {
+          color: '#374151'
+        },
+        ticks: {
+          color: '#9CA3AF'
+        },
         title: {
           display: true,
           text: 'Count',
+          color: '#9CA3AF'
         },
       },
     },
   };
   
   return (
-    <div className="bg-white rounded-lg shadow p-4">
+    <div className="bg-gray-800 rounded-lg shadow p-4">
       <div className="h-80">
         <Bar data={chartData} options={chartOptions} />
       </div>
