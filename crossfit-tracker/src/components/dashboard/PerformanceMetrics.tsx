@@ -3,6 +3,7 @@
 import React from 'react';
 import { useSessions } from '@/hooks/useWorkoutData';
 import type { Session, ExerciseSession, Set } from '@/lib/data';
+import { Grid, Card, CardContent, Typography, Table, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
 
 interface MetricCardProps {
   title: string;
@@ -13,17 +14,25 @@ interface MetricCardProps {
 
 const MetricCard: React.FC<MetricCardProps> = ({ title, value, subValue, isLoading }) => {
   return (
-    <div className="bg-gray-800 rounded-lg shadow p-4">
-      <h3 className="text-sm font-medium text-gray-300">{title}</h3>
-      {isLoading ? (
-        <div className="animate-pulse h-8 bg-gray-700 rounded mt-2"></div>
-      ) : (
-        <div className="mt-1">
-          <p className="text-2xl font-semibold text-white">{value}</p>
-          {subValue && <p className="text-sm text-gray-400">{subValue}</p>}
-        </div>
-      )}
-    </div>
+    <Card>
+      <CardContent>
+        <Typography variant="subtitle2" color="textSecondary">{title}</Typography>
+        {isLoading ? (
+          <div className="animate-pulse h-8 bg-gray-700 rounded mt-2"></div>
+        ) : (
+          <div>
+            <Typography variant="h5" component="div">
+              {value}
+            </Typography>
+            {subValue && (
+              <Typography variant="caption" color="textSecondary">
+                {subValue}
+              </Typography>
+            )}
+          </div>
+        )}
+      </CardContent>
+    </Card>
   );
 };
 
@@ -85,44 +94,90 @@ const PerformanceMetrics: React.FC = () => {
     });
   });
   
+  const gymnasticsSkills = [
+    { movement: 'Pull-ups', maxReps: 25 },
+    { movement: 'Push-ups', maxReps: 50 },
+    { movement: 'Air Squats', maxReps: 100 },
+    { movement: 'Handstand Push-ups', maxReps: 12 },
+    { movement: 'Toes to Bar', maxReps: 15 },
+    { movement: 'Muscle Ups', maxReps: 5 },
+    { movement: 'Pistol Squats', maxReps: 10 },
+  ];
+
   return (
-    <div className="mb-8">
-      <h2 className="text-xl font-bold mb-4">Performance Metrics</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <MetricCard
-          title="TRAINING DAYS"
-          value={totalWorkouts}
-          isLoading={isLoading}
-        />
-        <MetricCard
-          title="WORKOUT FREQUENCY"
-          value={workoutsPerWeek.toFixed(1)}
-          subValue="per week"
-          isLoading={isLoading}
-        />
-        <MetricCard
-          title="SKILL DEVELOPMENT"
-          value={`${uniqueExercises.size} movements`}
-          isLoading={isLoading}
-        />
-        <MetricCard
-          title="METCON CAPACITY"
-          value={`${Math.round(totalDistance)} mi`}
-          isLoading={isLoading}
-        />
-        <MetricCard
-          title="TOTAL VOLUME"
-          value={`${Math.round(totalVolume / 1000)}K lbs`}
-          isLoading={isLoading}
-        />
-        <MetricCard
-          title="GYMNASTICS SKILLS"
-          value="12 MU"
-          subValue="Max unbroken"
-          isLoading={isLoading}
-        />
-      </div>
-    </div>
+    <Grid container spacing={2} direction="column" className="mb-8">
+      <Grid item>
+        <Typography variant="h5" component="h2">
+          Performance Metrics
+        </Typography>
+      </Grid>
+      <Grid item container spacing={2}>
+        <Grid item xs={12} md={6} lg={4}>
+          <MetricCard
+            title="TRAINING DAYS"
+            value={totalWorkouts}
+            isLoading={isLoading}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={4}>
+          <MetricCard
+            title="WORKOUT FREQUENCY"
+            value={workoutsPerWeek.toFixed(1)}
+            subValue="per week"
+            isLoading={isLoading}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={4}>
+          <MetricCard
+            title="SKILL DEVELOPMENT"
+            value={`${uniqueExercises.size} movements`}
+            isLoading={isLoading}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={4}>
+          <MetricCard
+            title="METCON CAPACITY"
+            value={`${Math.round(totalDistance)} mi`}
+            isLoading={isLoading}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={4}>
+          <MetricCard
+            title="TOTAL VOLUME"
+            value={`${Math.round(totalVolume / 1000)}K lbs`}
+            isLoading={isLoading}
+          />
+        </Grid>
+      </Grid>
+      <Grid item>
+        <Card>
+          <CardContent>
+            <Typography variant="h6" component="h2">
+              Gymnastics Skills
+            </Typography>
+            <Typography variant="body2" color="textSecondary">
+              Top 10 Movements (Max Reps)
+            </Typography>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Movement</TableCell>
+                  <TableCell>Max Reps</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {gymnasticsSkills.map((skill) => (
+                  <TableRow key={skill.movement}>
+                    <TableCell>{skill.movement}</TableCell>
+                    <TableCell>{skill.maxReps}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      </Grid>
+    </Grid>
   );
 };
 
