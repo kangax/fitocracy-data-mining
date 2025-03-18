@@ -7,12 +7,14 @@ import Layout from '@/components/layout/Layout';
 import { useExerciseDetails } from '@/hooks/useWorkoutData';
 import { format } from 'date-fns';
 import { formatWeight } from '@/lib/utils';
+import MovementFrequencyChart from '@/components/charts/MovementFrequencyChart';
+import MovementVolumeChart from '@/components/charts/MovementVolumeChart';
 
 export default function MovementDetail() {
   const params = useParams();
   const id = parseInt(params.id as string);
   
-  const { exercise, sessions, personalRecords, isLoading, isError } = useExerciseDetails(id);
+  const { exercise, sessions, personalRecords, frequencyData, volumeData, isLoading, isError } = useExerciseDetails(id);
   
   // Helper function to format sets as a string with dot separators
   const formatSets = (sets: any[]) => {
@@ -162,6 +164,26 @@ export default function MovementDetail() {
               <div className="text-gray-500">No sessions recorded</div>
             )}
           </div>
+        </div>
+        
+        {/* Movement Frequency Chart */}
+        <div className="mb-6">
+          <h2 className="text-xl font-bold mb-4">Training Frequency</h2>
+          <MovementFrequencyChart 
+            data={frequencyData} 
+            isLoading={isLoading} 
+            isError={isError} 
+          />
+        </div>
+        
+        {/* Movement Volume Chart */}
+        <div className="mb-6">
+          <h2 className="text-xl font-bold mb-4">Volume Progression</h2>
+          <MovementVolumeChart 
+            data={volumeData} 
+            isLoading={isLoading} 
+            isError={isError} 
+          />
         </div>
         
         {/* Session History */}

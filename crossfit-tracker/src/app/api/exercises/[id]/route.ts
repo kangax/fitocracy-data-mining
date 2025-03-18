@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getExerciseById, getSessionsForExercise } from '@/lib/data';
-import { calculatePersonalRecords } from '@/lib/calculations';
+import { 
+  calculatePersonalRecords, 
+  calculateMovementFrequency,
+  calculateMovementVolume
+} from '@/lib/calculations';
 
 export async function GET(
   request: NextRequest,
@@ -28,11 +32,15 @@ export async function GET(
     
     const exerciseSessions = getSessionsForExercise(exerciseId);
     const personalRecords = calculatePersonalRecords(exerciseId, exerciseSessions);
+    const frequencyData = calculateMovementFrequency(exerciseId, exerciseSessions);
+    const volumeData = calculateMovementVolume(exerciseId, exerciseSessions);
     
     return NextResponse.json({
       exercise,
       sessions: exerciseSessions,
-      personalRecords
+      personalRecords,
+      frequencyData,
+      volumeData
     });
   } catch (error) {
     console.error(`Error fetching exercise data:`, error);

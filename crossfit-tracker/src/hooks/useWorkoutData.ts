@@ -47,6 +47,8 @@ export function useExerciseDetails(id: number) {
     exercise: data?.exercise,
     sessions: data?.sessions || [],
     personalRecords: data?.personalRecords,
+    frequencyData: data?.frequencyData || [],
+    volumeData: data?.volumeData || [],
     isLoading,
     isError: error
   };

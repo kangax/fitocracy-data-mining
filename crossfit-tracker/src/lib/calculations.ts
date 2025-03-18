@@ -1,4 +1,4 @@
-import { differenceInDays } from 'date-fns';
+import { differenceInDays, format } from 'date-fns';
 import type { Exercise, Session, ExerciseSession, Set } from './data';
 
 // Interface for movement proficiency metrics
@@ -177,6 +177,83 @@ export function calculatePersonalRecords(
       session: maxVolumeSession
     }
   };
+}
+
+// Calculate movement frequency data (sessions per month)
+export function calculateMovementFrequency(
+  exerciseId: number,
+  sessions: { session: Session; exerciseSession: ExerciseSession }[]
+) {
+  // Group sessions by month
+  const sessionsByMonth: Record<string, number> = {};
+  
+  sessions.forEach(({ session }) => {
+    const date = new Date(session.date);
+    const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+    
+    if (!sessionsByMonth[monthKey]) {
+      sessionsByMonth[monthKey] = 0;
+    }
+    
+    // Count each session once
+    sessionsByMonth[monthKey] += 1;
+  });
+  
+  // Convert to array format for the chart
+  return Object.entries(sessionsByMonth).map(([month, sessionCount]) => ({
+    month,
+    sessionCount
+  }));
+}
+
+// Calculate movement volume data
+export function calculateMovementVolume(
+  exerciseId: number,
+  sessions: { session: Session; exerciseSession: ExerciseSession }[]
+) {
+  // Sort sessions by date
+  const sortedSessions = [...sessions].sort((a, b) => {
+    return new Date(a.session.date).getTime() - new Date(b.session.date).getTime();
+  });
+  
+  // Calculate volume for each session
+  return sortedSessions.map(({ session, exerciseSession }) => {
+    // Calculate total volume for this session
+    const totalVolume = exerciseSession.sets.reduce((sum, set) => {
+      if (set.reps) {
+        if (set.weight) {
+          // If weight is available, calculate weight × reps
+          return sum + (set.reps * set.weight.value);
+        } else if (set.primaryLoad) {
+          // If primaryLoad is available, use that instead
+          return sum + (set.reps * set.primaryLoad.value);
+        } else {
+          // For bodyweight exercises, just count reps
+          return sum + set.reps;
+        }
+      }
+      return sum;
+    }, 0);
+    
+    // Determine the unit
+    let unit = '';
+    if (exerciseSession.sets.length > 0) {
+      const firstSet = exerciseSession.sets[0];
+      if (firstSet.weight) {
+        unit = firstSet.weight.unit === 'pound' ? 'lbs' : 'kg';
+      } else if (firstSet.primaryLoad) {
+        unit = firstSet.primaryLoad.unit === 'pound' ? 'lbs' : 'kg';
+      } else {
+        unit = 'reps'; // For bodyweight exercises
+      }
+    }
+    
+    return {
+      date: session.date,
+      volume: totalVolume,
+      unit
+    };
+  });
 }
 
 // Calculate training consistency metrics
