@@ -17,11 +17,11 @@ const CrossfitMastery: React.FC = () => {
   const { data: exercises, error, isLoading } = useSWR<ExerciseMastery[]>('/api/exercises/mastery', fetcher);
 
   if (isLoading) {
-    return (<React.Fragment><div>Loading...</div></React.Fragment>);
+    return (<><div>Loading...</div></>);
   }
 
   if (error) {
-    return (<React.Fragment><div>Error loading data</div></React.Fragment>);
+    return (<><div>Error loading data</div></>);
   }
 
   const masteredExercises = exercises ? exercises.filter(ex => ex.mastered) : [];
@@ -40,14 +40,10 @@ const CrossfitMastery: React.FC = () => {
             </li>
           ))}
         </ul>
-              {exercise.name} ({exercise.sessionCount} sessions)
-            </li>
-          ))}
-        </ul>
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-300">Practice → Mastery (<100)</h3>
+        <h3 className="text-lg font-semibold text-gray-300">Practice → Mastery (&lt;100)</h3>
         <ul className="list-disc list-inside text-gray-400">
           {practiceExercises.map(exercise => (
             <li key={exercise.exerciseId}>

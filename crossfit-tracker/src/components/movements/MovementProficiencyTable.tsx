@@ -4,6 +4,24 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useMovementProficiency } from '@/hooks/useWorkoutData';
 import type { MovementProficiency } from '@/lib/calculations';
+import {
+  Paper,
+  Typography,
+  TextField,
+  Box,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  LinearProgress,
+  Skeleton,
+  TableSortLabel,
+  Chip,
+  Alert,
+  Stack
+} from '@mui/material';
 
 const MovementProficiencyTable: React.FC = () => {
   const { proficiencyData, isLoading, isError } = useMovementProficiency();
@@ -44,149 +62,164 @@ const MovementProficiencyTable: React.FC = () => {
     });
   
   if (isError) {
-    return <div className="text-red-500">Error loading movement proficiency data</div>;
+    return <Alert severity="error">Error loading movement proficiency data</Alert>;
   }
   
   return (
-    <div className="bg-gray-800 rounded-lg shadow">
-      <div className="p-4 border-b border-gray-700">
-        <h2 className="text-xl font-bold">Movement Proficiency</h2>
-        <p className="text-gray-400 text-sm mt-1">
+    <Paper elevation={2} sx={{ overflow: 'hidden' }}>
+      <Box sx={{ p: 3, borderBottom: 1, borderColor: 'divider' }}>
+        <Typography variant="h5" component="h2" gutterBottom>
+          Movement Proficiency
+        </Typography>
+        <Typography variant="body2" color="text.secondary" gutterBottom>
           Track your skill development across different movements
-        </p>
-        <div className="mt-4">
-          <input
-            type="text"
-            placeholder="Search movements..."
-            className="w-full p-2 border rounded"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-        </div>
-      </div>
+        </Typography>
+        <TextField
+          fullWidth
+          variant="outlined"
+          placeholder="Search movements..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          margin="normal"
+          size="small"
+        />
+      </Box>
       
-      <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-700">
-          <thead className="bg-gray-700">
-            <tr>
-              <th 
-                className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer"
-                onClick={() => handleSort('name')}
-              >
-                Movement
-                {sortBy === 'name' && (
-                  <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-              <th 
-                className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer"
-                onClick={() => handleSort('frequency')}
-              >
-                Frequency
-                {sortBy === 'frequency' && (
-                  <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-                <div className="text-xxs text-gray-400 font-normal normal-case">
-                  <span className="cursor-pointer hover:text-gray-300" onClick={(e) => { e.stopPropagation(); handleSort('sessionCount'); }}>
+      <TableContainer>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>
+                <TableSortLabel
+                  active={sortBy === 'name'}
+                  direction={sortBy === 'name' ? sortDirection : 'asc'}
+                  onClick={() => handleSort('name')}
+                >
+                  Movement
+                </TableSortLabel>
+              </TableCell>
+              <TableCell>
+                <TableSortLabel
+                  active={sortBy === 'frequency'}
+                  direction={sortBy === 'frequency' ? sortDirection : 'asc'}
+                  onClick={() => handleSort('frequency')}
+                >
+                  Frequency
+                </TableSortLabel>
+                <Typography variant="caption" display="block" color="text.secondary">
+                  <Box component="span" sx={{ cursor: 'pointer' }} onClick={(e) => { e.stopPropagation(); handleSort('sessionCount'); }}>
                     Sessions
                     {sortBy === 'sessionCount' && (
-                      <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                      <Box component="span" sx={{ ml: 0.5 }}>
+                        {sortDirection === 'asc' ? '↑' : '↓'}
+                      </Box>
                     )}
-                  </span>
+                  </Box>
                   {' • '}
-                  <span className="cursor-pointer hover:text-gray-300" onClick={(e) => { e.stopPropagation(); handleSort('frequency'); }}>
+                  <Box component="span" sx={{ cursor: 'pointer' }} onClick={(e) => { e.stopPropagation(); handleSort('frequency'); }}>
                     Sets
                     {sortBy === 'frequency' && (
-                      <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                      <Box component="span" sx={{ ml: 0.5 }}>
+                        {sortDirection === 'asc' ? '↑' : '↓'}
+                      </Box>
                     )}
-                  </span>
-                </div>
-              </th>
-              <th 
-                className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer"
-                onClick={() => handleSort('lastPerformed')}
-              >
-                Last Performed
-                {sortBy === 'lastPerformed' && (
-                  <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-              <th 
-                className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer"
-                onClick={() => handleSort('proficiencyScore')}
-              >
-                Proficiency
-                {sortBy === 'proficiencyScore' && (
-                  <span className="ml-1">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </th>
-            </tr>
-          </thead>
-          <tbody className="bg-gray-800 divide-y divide-gray-700">
+                  </Box>
+                </Typography>
+              </TableCell>
+              <TableCell>
+                <TableSortLabel
+                  active={sortBy === 'lastPerformed'}
+                  direction={sortBy === 'lastPerformed' ? sortDirection : 'asc'}
+                  onClick={() => handleSort('lastPerformed')}
+                >
+                  Last Performed
+                </TableSortLabel>
+              </TableCell>
+              <TableCell>
+                <TableSortLabel
+                  active={sortBy === 'proficiencyScore'}
+                  direction={sortBy === 'proficiencyScore' ? sortDirection : 'asc'}
+                  onClick={() => handleSort('proficiencyScore')}
+                >
+                  Proficiency
+                </TableSortLabel>
+              </TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
             {isLoading ? (
               Array.from({ length: 10 }).map((_, index) => (
-                <tr key={index}>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="animate-pulse h-4 bg-gray-200 rounded w-3/4"></div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="animate-pulse h-4 bg-gray-200 rounded w-1/2"></div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="animate-pulse h-4 bg-gray-200 rounded w-1/2"></div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="animate-pulse h-4 bg-gray-200 rounded w-1/4"></div>
-                  </td>
-                </tr>
+                <TableRow key={index}>
+                  <TableCell><Skeleton variant="text" width="75%" /></TableCell>
+                  <TableCell><Skeleton variant="text" width="50%" /></TableCell>
+                  <TableCell><Skeleton variant="text" width="50%" /></TableCell>
+                  <TableCell><Skeleton variant="text" width="25%" /></TableCell>
+                </TableRow>
               ))
             ) : (
               filteredAndSortedData.map((movement) => (
-                <tr key={movement.exerciseId}>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                <TableRow key={movement.exerciseId}>
+                  <TableCell>
                     <Link 
                       href={`/movements/${movement.exerciseId}`}
-                      className="text-blue-400 hover:text-blue-300"
+                      style={{ color: 'inherit', textDecoration: 'none' }}
                     >
-                      {movement.name}
+                      <Typography color="primary" sx={{ '&:hover': { textDecoration: 'underline' } }}>
+                        {movement.name}
+                      </Typography>
                     </Link>
-                    <div className="text-xs text-gray-400">
-                      {movement.category && `${movement.category}`}
-                      {movement.equipment && ` • ${movement.equipment}`}
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-white">
-                    {movement.frequency} sets
-                    <div className="text-xs text-gray-400">
+                    <Stack direction="row" spacing={1} sx={{ mt: 0.5 }}>
+                      {movement.category && (
+                        <Chip 
+                          label={movement.category} 
+                          size="small" 
+                          variant="outlined" 
+                          sx={{ height: 20, fontSize: '0.7rem' }}
+                        />
+                      )}
+                      {movement.equipment && (
+                        <Chip 
+                          label={movement.equipment} 
+                          size="small" 
+                          variant="outlined" 
+                          sx={{ height: 20, fontSize: '0.7rem' }}
+                        />
+                      )}
+                    </Stack>
+                  </TableCell>
+                  <TableCell>
+                    <Typography>{movement.frequency} sets</Typography>
+                    <Typography variant="caption" color="text.secondary">
                       {movement.sessionCount} sessions • {movement.totalReps} total reps
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-white">
-                    {new Date(movement.lastPerformed).toLocaleDateString()}
-                    <div className="text-xs text-gray-400">
+                    </Typography>
+                  </TableCell>
+                  <TableCell>
+                    <Typography>{new Date(movement.lastPerformed).toLocaleDateString()}</Typography>
+                    <Typography variant="caption" color="text.secondary">
                       {movement.daysAgo} days ago
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="flex items-center">
-                      <div className="w-16 bg-gray-600 rounded-full h-2.5">
-                        <div 
-                          className="bg-blue-400 h-2.5 rounded-full" 
-                          style={{ width: `${Math.min(100, movement.proficiencyScore)}%` }}
-                        ></div>
-                      </div>
-                      <span className="ml-2 text-sm text-gray-300">
+                    </Typography>
+                  </TableCell>
+                  <TableCell>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                      <Box sx={{ width: 100, mr: 1 }}>
+                        <LinearProgress 
+                          variant="determinate" 
+                          value={Math.min(100, movement.proficiencyScore)} 
+                          color="primary"
+                        />
+                      </Box>
+                      <Typography variant="body2" color="text.secondary">
                         {movement.proficiencyScore.toFixed(1)}
-                      </span>
-                    </div>
-                  </td>
-                </tr>
+                      </Typography>
+                    </Box>
+                  </TableCell>
+                </TableRow>
               ))
             )}
-          </tbody>
-        </table>
-      </div>
-    </div>
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </Paper>
   );
 };
 

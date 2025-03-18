@@ -12,6 +12,13 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { useTrainingConsistency } from '@/hooks/useWorkoutData';
+import { 
+  Paper, 
+  Box, 
+  Typography, 
+  CircularProgress, 
+  useTheme 
+} from '@mui/material';
 
 // Register ChartJS components
 ChartJS.register(
@@ -24,25 +31,46 @@ ChartJS.register(
 );
 
 interface ConsistencyChartProps {
-    data: { month: string; sessionCount: number; exerciseTypes: number; totalDuration: number }[];
+    data?: { month: string; sessionCount: number; exerciseTypes: number; totalDuration: number }[];
 }
 
 const ConsistencyChart: React.FC<ConsistencyChartProps> = ({ data }) => {
   const { monthlyMetrics, isLoading, isError } = useTrainingConsistency();
+  const theme = useTheme();
   
   if (isLoading) {
     return (
-      <div className="bg-gray-800 rounded-lg shadow p-4 h-80 flex items-center justify-center">
-        <div className="animate-pulse h-4 bg-gray-600 rounded w-1/2"></div>
-      </div>
+      <Paper 
+        elevation={2} 
+        sx={{ 
+          p: 3, 
+          height: 320, 
+          display: 'flex', 
+          alignItems: 'center', 
+          justifyContent: 'center' 
+        }}
+      >
+        <CircularProgress />
+      </Paper>
     );
   }
   
   if (isError) {
     return (
-      <div className="bg-gray-800 rounded-lg shadow p-4 h-80 flex items-center justify-center text-red-500">
-        Error loading training consistency data
-      </div>
+      <Paper 
+        elevation={2} 
+        sx={{ 
+          p: 3, 
+          height: 320, 
+          display: 'flex', 
+          alignItems: 'center', 
+          justifyContent: 'center' 
+        }}
+      >
+        <Typography color="error">
+          Error loading training consistency data
+        </Typography>
+      </Paper>
     );
   }
   
@@ -51,8 +79,6 @@ const ConsistencyChart: React.FC<ConsistencyChartProps> = ({ data }) => {
   
   // Get the last 12 months of data
   const recentMetrics = sortedMetrics.slice(-12);
-
-
   
   const chartData = {
     labels: recentMetrics.map(metric => {
@@ -68,12 +94,12 @@ const ConsistencyChart: React.FC<ConsistencyChartProps> = ({ data }) => {
       {
         label: 'Workout Sessions',
         data: recentMetrics.map(metric => metric.sessionCount),
-        backgroundColor: 'rgba(59, 130, 246, 0.8)', // Blue
+        backgroundColor: theme.palette.primary.main,
       },
       {
         label: 'Exercise Variety',
         data: recentMetrics.map(metric => metric.exerciseTypes),
-        backgroundColor: 'rgba(16, 185, 129, 0.8)', // Green
+        backgroundColor: theme.palette.secondary.main,
       },
     ],
   };
@@ -85,13 +111,13 @@ const ConsistencyChart: React.FC<ConsistencyChartProps> = ({ data }) => {
       legend: {
         position: 'top' as const,
         labels: {
-          color: '#fff'
+          color: theme.palette.text.primary
         }
       },
       title: {
         display: true,
         text: 'Training Consistency',
-        color: '#fff',
+        color: theme.palette.text.primary,
         font: {
           size: 16,
           weight: 'bold' as const,
@@ -111,35 +137,35 @@ const ConsistencyChart: React.FC<ConsistencyChartProps> = ({ data }) => {
       x: {
         grid: {
           display: false,
-          color: '#374151'
+          color: theme.palette.divider
         },
         ticks: {
-          color: '#9CA3AF'
+          color: theme.palette.text.secondary
         }
       },
       y: {
         beginAtZero: true,
         grid: {
-          color: '#374151'
+          color: theme.palette.divider
         },
         ticks: {
-          color: '#9CA3AF'
+          color: theme.palette.text.secondary
         },
         title: {
           display: true,
           text: 'Count',
-          color: '#9CA3AF'
+          color: theme.palette.text.secondary
         },
       },
     },
   };
   
   return (
-    <div className="bg-gray-800 rounded-lg shadow p-4">
-      <div className="h-80">
+    <Paper elevation={2} sx={{ p: 3 }}>
+      <Box sx={{ height: 320 }}>
         <Bar data={chartData} options={chartOptions} />
-      </div>
-    </div>
+      </Box>
+    </Paper>
   );
 };
 

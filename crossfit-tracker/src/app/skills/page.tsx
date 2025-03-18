@@ -1,20 +1,25 @@
+'use client';
+
 import React from 'react';
 import Layout from '@/components/layout/Layout';
 import MovementProficiencyTable from '@/components/movements/MovementProficiencyTable';
+import { Typography, Stack, Box } from '@mui/material';
 
 export default function SkillsPage() {
   return (
     <Layout>
-      <div className="space-y-8">
-        <div>
-          <h1 className="text-3xl font-bold mb-2">Movement Skills</h1>
-          <p className="text-gray-600">
+      <Stack spacing={4}>
+        <Box>
+          <Typography variant="h4" component="h1" gutterBottom>
+            Movement Skills
+          </Typography>
+          <Typography variant="subtitle1" color="text.secondary">
             Track your proficiency across different CrossFit movements
-          </p>
-        </div>
+          </Typography>
+        </Box>
         
         <MovementProficiencyTable />
-      </div>
+      </Stack>
     </Layout>
   );
 }

@@ -1,4 +1,7 @@
+'use client';
+
 import React, { ReactNode } from 'react';
+import { Box, Container } from '@mui/material';
 import Header from './Header';
 import Sidebar from './Sidebar';
 
@@ -8,15 +11,25 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Header />
-      <div className="flex flex-1">
+      <Box sx={{ display: 'flex', flex: 1 }}>
         <Sidebar />
-        <main className="flex-1 p-6 bg-gray-900 text-white">
-          {children}
-        </main>
-      </div>
-    </div>
+        <Box 
+          component="main" 
+          sx={{ 
+            flex: 1, 
+            p: 3, 
+            bgcolor: 'background.paper',
+            color: 'text.primary'
+          }}
+        >
+          <Container maxWidth="lg">
+            {children}
+          </Container>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

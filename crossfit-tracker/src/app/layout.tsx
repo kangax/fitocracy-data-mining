@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+'use client';
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from '@mui/material/styles';
@@ -14,10 +15,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "CrossFit Tracker",
-  description: "Track your CrossFit progress and movement proficiency",
-};
+// Metadata is handled differently in Client Components
+// We'll set the title directly in the head element
 
 export default function RootLayout({
   children,
@@ -26,6 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>CrossFit Tracker</title>
+        <meta name="description" content="Track your CrossFit progress and movement proficiency" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
       >
